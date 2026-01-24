@@ -1,0 +1,10 @@
+--bare
+-I
+C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug
+-I
+C:/Qt/6.9.2/mingw_64/qml
+--resource
+C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/rcc/qmake_ProfitAgent.qrc
+--resource
+C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/rcc/appProfitAgent_raw_qml_0.qrc
+C:/Users/boyko/Documents/ProfitAgent/Main.qml

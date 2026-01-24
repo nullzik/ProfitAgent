@@ -1,0 +1,6 @@
+module ProfitAgent
+typeinfo appProfitAgent.qmltypes
+prefer :/qt/qml/ProfitAgent/
+Main 1.0 Main.qml
+depends QtQuick
+

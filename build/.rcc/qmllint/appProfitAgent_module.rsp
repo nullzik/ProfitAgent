@@ -1,0 +1,10 @@
+-I
+C:/Users/boyko/Documents/ProfitAgent/build
+-I
+C:/Qt/6.9.2/mingw_64/qml
+--resource
+C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/qmake_ProfitAgent.qrc
+--resource
+C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/appProfitAgent_raw_qml_0.qrc
+--module
+ProfitAgent

@@ -1,0 +1,196 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-1e6ce8b8a5a66e7c1911.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ProfitAgent",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-270937b9db0c850d3e6e.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-b626f30c40adf4be0d3f.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-974e9ec27a1b5ac748a2.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-29d231881e1f40444f18.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-7033d727f39a64a52acb.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent-Debug-d37c99a38f6d0e5b2704.json",
+					"name" : "appProfitAgent",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_autogen-Debug-442cf68a302d0c5bd430.json",
+					"name" : "appProfitAgent_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_autogen_timestamp_deps-Debug-1e4e8926dfe4eab7eb45.json",
+					"name" : "appProfitAgent_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_copy_qml-Debug-241387482e7f1a405637.json",
+					"name" : "appProfitAgent_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_copy_res-Debug-2b36a15ac6dc7135f789.json",
+					"name" : "appProfitAgent_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_qmlimportscan-Debug-c0f218727442abb32c09.json",
+					"name" : "appProfitAgent_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_qmllint-Debug-dbc9d1900b6ecd76f6fa.json",
+					"name" : "appProfitAgent_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_qmllint_json-Debug-c6e81ed30d8f0fba7c6a.json",
+					"name" : "appProfitAgent_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_qmllint_module-Debug-93add1827d0152442b89.json",
+					"name" : "appProfitAgent_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appProfitAgent_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appProfitAgent_qmltyperegistration-Debug-5af1398a0f2e9895f58d.json",
+					"name" : "appProfitAgent_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appProfitAgent_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appProfitAgent_aotstats_target-Debug-7f98719af1d541fbedbd.json",
+					"name" : "module_appProfitAgent_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/boyko/Documents/ProfitAgent"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

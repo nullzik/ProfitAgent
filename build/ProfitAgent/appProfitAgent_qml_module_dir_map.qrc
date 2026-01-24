@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/ProfitAgent">C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent</file>
+
+  </qresource>
+</RCC>
