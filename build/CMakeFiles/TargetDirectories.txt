@@ -1,3 +1,4 @@
+C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/domain_model.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent_qmltyperegistration.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/all_qmltyperegistrations.dir
@@ -9,6 +10,7 @@ C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/all_qmllint_json.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/all_qmllint_module.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent_copy_qml.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent_copy_res.dir
+C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent_generate_qmlls_ini_file.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/module_appProfitAgent_aotstats_target.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/all_aotstats.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent_qmlimportscan.dir

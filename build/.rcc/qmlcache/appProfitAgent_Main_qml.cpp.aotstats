@@ -1,0 +1,76 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 3209,
+                        "errorMessage": "Cannot access value for name appStateViewModel",
+                        "functionName": "updateSource",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 436,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 257,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 135,
+                        "errorMessage": "Cannot access value for name appStateViewModel",
+                        "functionName": "target",
+                        "line": 43
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 9,
+                        "durationMicroseconds": 186,
+                        "errorMessage": "",
+                        "functionName": "onIsAuthenticatedChanged",
+                        "line": 44
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 9,
+                        "durationMicroseconds": 125,
+                        "errorMessage": "",
+                        "functionName": "onCurrentRoleChanged",
+                        "line": 47
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 145,
+                        "errorMessage": "Cannot access value for name authViewModel",
+                        "functionName": "target",
+                        "line": 79
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onLoginSuccess",
+                        "line": 80
+                    }
+                ],
+                "filePath": "C:/Users/boyko/Documents/ProfitAgent/Main.qml"
+            }
+        ],
+        "moduleId": "ProfitAgent(appProfitAgent)"
+    }
+]

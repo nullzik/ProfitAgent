@@ -1,3 +1,5 @@
+set(__QT_DEPLOY_TARGET_domain_model_FILE C:/Users/boyko/Documents/ProfitAgent/build/libdomain_model.a)
+set(__QT_DEPLOY_TARGET_domain_model_TYPE STATIC_LIBRARY)
 set(__QT_DEPLOY_TARGET_appProfitAgent_FILE C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent.exe)
 set(__QT_DEPLOY_TARGET_appProfitAgent_TYPE EXECUTABLE)
 set(__QT_DEPLOY_TARGET_appProfitAgent_RUNTIME_DLLS C:/Qt/6.9.2/mingw_64/bin/Qt6Quick.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6QmlMeta.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6QmlWorkerScript.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6QmlModels.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Qml.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Network.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6OpenGL.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Core.dll)
