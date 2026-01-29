@@ -988,6 +988,12 @@
 			"MU",
 			"EWIEGA46WW/moc_WaiterViewModel.cpp",
 			null
+		],
+		[
+			"C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.h",
+			"MU",
+			"EWIEGA46WW/moc_WarehouseViewModel.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -1121,6 +1127,11 @@
 		],
 		[
 			"C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.cpp",
 			"MU",
 			null
 		],

@@ -49,6 +49,12 @@
 },
 {
   "directory": "C:/Users/boyko/Documents/ProfitAgent/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -IC:/Users/boyko/Documents/ProfitAgent -g -std=gnu++17 -o CMakeFiles\\domain_model.dir\\domain\\warehouse\\WarehouseService.cpp.obj -c C:\\Users\\boyko\\Documents\\ProfitAgent\\domain\\warehouse\\WarehouseService.cpp",
+  "file": "C:/Users/boyko/Documents/ProfitAgent/domain/warehouse/WarehouseService.cpp",
+  "output": "C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/domain_model.dir/domain/warehouse/WarehouseService.cpp.obj"
+},
+{
+  "directory": "C:/Users/boyko/Documents/ProfitAgent/build",
   "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -IC:/Users/boyko/Documents/ProfitAgent -g -std=gnu++17 -o CMakeFiles\\domain_model.dir\\domain\\orders\\Order.cpp.obj -c C:\\Users\\boyko\\Documents\\ProfitAgent\\domain\\orders\\Order.cpp",
   "file": "C:/Users/boyko/Documents/ProfitAgent/domain/orders/Order.cpp",
   "output": "C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/domain_model.dir/domain/orders/Order.cpp.obj"
@@ -106,6 +112,12 @@
   "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include -IC:/Users/boyko/Documents/ProfitAgent -isystem C:/Qt/6.9.2/mingw_64/include/QtQml/6.9.2 -isystem C:/Qt/6.9.2/mingw_64/include/QtQml/6.9.2/QtQml -isystem C:/Qt/6.9.2/mingw_64/include/QtCore/6.9.2 -isystem C:/Qt/6.9.2/mingw_64/include/QtCore/6.9.2/QtCore -isystem C:/Qt/6.9.2/mingw_64/include/QtCore -isystem C:/Qt/6.9.2/mingw_64/include -isystem C:/Qt/6.9.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.2/mingw_64/include/QtQml -isystem C:/Qt/6.9.2/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.9.2/mingw_64/include/QtNetwork -isystem C:/Qt/6.9.2/mingw_64/include/QtQuick -isystem C:/Qt/6.9.2/mingw_64/include/QtGui -isystem C:/Qt/6.9.2/mingw_64/include/QtQmlMeta -isystem C:/Qt/6.9.2/mingw_64/include/QtQmlModels -isystem C:/Qt/6.9.2/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt/6.9.2/mingw_64/include/QtOpenGL -g -std=gnu++17 -o CMakeFiles\\appProfitAgent.dir\\ChefViewModel.cpp.obj -c C:\\Users\\boyko\\Documents\\ProfitAgent\\ChefViewModel.cpp",
   "file": "C:/Users/boyko/Documents/ProfitAgent/ChefViewModel.cpp",
   "output": "C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent.dir/ChefViewModel.cpp.obj"
+},
+{
+  "directory": "C:/Users/boyko/Documents/ProfitAgent/build",
+  "command": "c:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include -IC:/Users/boyko/Documents/ProfitAgent -isystem C:/Qt/6.9.2/mingw_64/include/QtQml/6.9.2 -isystem C:/Qt/6.9.2/mingw_64/include/QtQml/6.9.2/QtQml -isystem C:/Qt/6.9.2/mingw_64/include/QtCore/6.9.2 -isystem C:/Qt/6.9.2/mingw_64/include/QtCore/6.9.2/QtCore -isystem C:/Qt/6.9.2/mingw_64/include/QtCore -isystem C:/Qt/6.9.2/mingw_64/include -isystem C:/Qt/6.9.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.9.2/mingw_64/include/QtQml -isystem C:/Qt/6.9.2/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.9.2/mingw_64/include/QtNetwork -isystem C:/Qt/6.9.2/mingw_64/include/QtQuick -isystem C:/Qt/6.9.2/mingw_64/include/QtGui -isystem C:/Qt/6.9.2/mingw_64/include/QtQmlMeta -isystem C:/Qt/6.9.2/mingw_64/include/QtQmlModels -isystem C:/Qt/6.9.2/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt/6.9.2/mingw_64/include/QtOpenGL -g -std=gnu++17 -o CMakeFiles\\appProfitAgent.dir\\WarehouseViewModel.cpp.obj -c C:\\Users\\boyko\\Documents\\ProfitAgent\\WarehouseViewModel.cpp",
+  "file": "C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.cpp",
+  "output": "C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent.dir/WarehouseViewModel.cpp.obj"
 },
 {
   "directory": "C:/Users/boyko/Documents/ProfitAgent/build",

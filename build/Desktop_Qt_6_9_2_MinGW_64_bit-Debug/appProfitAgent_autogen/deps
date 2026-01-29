@@ -6,6 +6,7 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QObject \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QString \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QVariant \
+	C:/Qt/6.9.2/mingw_64/include/QtCore/QVariantList \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/q20memory.h \
@@ -120,6 +121,7 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qtypes.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qutf8stringview.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qvariant.h \
+	C:/Qt/6.9.2/mingw_64/include/QtCore/qvariantlist.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qvarlengtharray.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qxptype_traits.h \
@@ -1004,6 +1006,8 @@ appProfitAgent_autogen/timestamp: \
 	C:/Users/boyko/Documents/ProfitAgent/NavigationViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.cpp \
 	C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/qml_imports/appProfitAgent_conf.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake \

@@ -33,11 +33,18 @@ public:
     // Mutates batches to reflect FIFO consumption; never allows negative remainder.
     void consumeFifo(const std::string& productId, Quantity quantityToConsume);
 
+    // Removes all batches for a given product.
+    void removeBatchesForProduct(const std::string& productId);
+
 private:
     std::vector<StockBatch> batches_;
 };
 
 } // namespace domain
+
+
+
+
 
 
 

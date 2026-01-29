@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 439,
+                        "durationMicroseconds": 306,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 10
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 157,
+                        "durationMicroseconds": 364,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 33
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 32,
+                        "durationMicroseconds": 27,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
                         "line": 37
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 42,
-                        "durationMicroseconds": 579,
+                        "durationMicroseconds": 846,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 39
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 40,
-                        "durationMicroseconds": 481,
+                        "durationMicroseconds": 278,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 40
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 441,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 55
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 498,
+                        "durationMicroseconds": 398,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "model",
                         "line": 71
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 169,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 75
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 36,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 95,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
                         "line": 77
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 47,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 80
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 43,
-                        "durationMicroseconds": 517,
+                        "durationMicroseconds": 409,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 84
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 43,
-                        "durationMicroseconds": 356,
+                        "durationMicroseconds": 1170,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "text",
                         "line": 94
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 44,
-                        "durationMicroseconds": 379,
+                        "durationMicroseconds": 455,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
                         "line": 96
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 44,
-                        "durationMicroseconds": 734,
+                        "durationMicroseconds": 1775,
                         "errorMessage": "Cannot access value for name chefViewModel",
                         "functionName": "onClicked",
                         "line": 102
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 46,
-                        "durationMicroseconds": 246,
+                        "durationMicroseconds": 458,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 103
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 47,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 137,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 101
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 17,
-                        "durationMicroseconds": 111,
+                        "durationMicroseconds": 162,
                         "errorMessage": "Cannot access value for name chefViewModel",
                         "functionName": "target",
                         "line": 118
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 9,
-                        "durationMicroseconds": 260,
+                        "durationMicroseconds": 232,
                         "errorMessage": "Cannot access value for name chefViewModel",
                         "functionName": "onIsProductDialogOpenChanged",
                         "line": 119

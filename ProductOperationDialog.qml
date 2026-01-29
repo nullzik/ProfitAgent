@@ -9,7 +9,15 @@ Dialog {
     width: 500
     height: 400
 
-    property string productName: "Продукт " + (chefViewModel.selectedProductId + 1)
+    // Для использования на экране склада:
+    //  - product.id   : string
+    //  - product.name : string
+    property var product: null
+
+    // Заголовок: если передали доменный продукт, показываем его имя
+    property string productName: product && product.name !== undefined
+                                 ? product.name
+                                 : "Новый продукт"
 
     contentItem: Rectangle {
         color: "#FFFFFF"
@@ -63,6 +71,26 @@ Dialog {
                         color: "#FFFFFF"
                     }
                 }
+
+                Text {
+                    text: "Закупочная цена (за единицу)"
+                    font.pixelSize: 14
+                    color: "#666666"
+                }
+
+                TextField {
+                    id: priceField
+                    Layout.fillWidth: true
+                    height: 48
+                    placeholderText: "Введите цену, например 150.50"
+                    text: "0"
+                    background: Rectangle {
+                        radius: 8
+                        border.color: "#E0E0E0"
+                        border.width: 1
+                        color: "#FFFFFF"
+                    }
+                }
             }
 
             Item {
@@ -76,7 +104,15 @@ Dialog {
                 Button {
                     Layout.fillWidth: true
                     text: "Добавить (поставка)"
-                    onClicked: chefViewModel.addProduct()
+                    enabled: product !== null
+                    onClicked: {
+                        if (product) {
+                            const qty = Number(quantityField.text)
+                            const price = Number(priceField.text)
+                            warehouseViewModel.addProductBatch(product.id, qty, price)
+                            productDialog.close()
+                        }
+                    }
                     background: Rectangle {
                         color: parent.hovered ? "#4CAF50" : "#5CBF60"
                         radius: 8
@@ -92,7 +128,14 @@ Dialog {
                 Button {
                     Layout.fillWidth: true
                     text: "Списать"
-                    onClicked: chefViewModel.writeOffProduct()
+                    enabled: product !== null
+                    onClicked: {
+                        if (product) {
+                            const qty = Number(quantityField.text)
+                            warehouseViewModel.writeOffProduct(product.id, qty)
+                            productDialog.close()
+                        }
+                    }
                     background: Rectangle {
                         color: parent.hovered ? "#F44336" : "#E53935"
                         radius: 8
@@ -109,7 +152,7 @@ Dialog {
             Button {
                 Layout.fillWidth: true
                 text: "Закрыть"
-                onClicked: chefViewModel.closeProductDialog()
+                onClicked: productDialog.close()
                 background: Rectangle {
                     color: parent.hovered ? "#999999" : "#888888"
                     radius: 8
@@ -124,6 +167,7 @@ Dialog {
         }
     }
 }
+
 
 
 

@@ -5,3 +5,4 @@
 #include "EWIEGA46WW/moc_DashboardViewModel.cpp"
 #include "EWIEGA46WW/moc_NavigationViewModel.cpp"
 #include "EWIEGA46WW/moc_WaiterViewModel.cpp"
+#include "EWIEGA46WW/moc_WarehouseViewModel.cpp"

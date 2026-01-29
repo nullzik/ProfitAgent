@@ -25,6 +25,9 @@ add_library(domain_model STATIC
     domain/warehouse/StockBatch.cpp
     domain/warehouse/Warehouse.h
     domain/warehouse/Warehouse.cpp
+    domain/warehouse/IWarehouseService.h
+    domain/warehouse/WarehouseService.h
+    domain/warehouse/WarehouseService.cpp
 
     domain/orders/Order.h
     domain/orders/Order.cpp
@@ -55,6 +58,8 @@ qt_add_executable(appProfitAgent
     WaiterViewModel.h
     ChefViewModel.cpp
     ChefViewModel.h
+    WarehouseViewModel.cpp
+    WarehouseViewModel.h
 )
 
 qt_add_qml_module(appProfitAgent

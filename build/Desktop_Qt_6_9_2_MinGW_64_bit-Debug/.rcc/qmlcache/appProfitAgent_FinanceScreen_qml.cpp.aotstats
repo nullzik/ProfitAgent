@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 319,
+                        "durationMicroseconds": 248,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 33
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 43,
-                        "durationMicroseconds": 439,
+                        "durationMicroseconds": 112,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 39
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 43,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 46
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 43,
-                        "durationMicroseconds": 146,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 54
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 68
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 43,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 74
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 43,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 81
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 43,
-                        "durationMicroseconds": 105,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 89
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 62,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 104
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 322,
+                        "durationMicroseconds": 242,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "model",
                         "line": 120
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 36,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 99,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
                         "line": 126
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 39,
-                        "durationMicroseconds": 527,
+                        "durationMicroseconds": 490,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 132
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 47,
-                        "durationMicroseconds": 191,
+                        "durationMicroseconds": 165,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 129
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 57,
-                        "durationMicroseconds": 155,
+                        "durationMicroseconds": 117,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 131

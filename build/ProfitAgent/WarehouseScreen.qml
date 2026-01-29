@@ -6,6 +6,8 @@ Rectangle {
     id: warehouseScreen
     color: "#F5F5F5"
 
+    property var selectedProduct: null
+
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 24
@@ -24,7 +26,6 @@ Rectangle {
             color: "#FFFFFF"
             radius: 12
             border.color: "#E0E0E0"
-            border.width: 1
 
             ColumnLayout {
                 anchors.fill: parent
@@ -32,10 +33,19 @@ Rectangle {
                 spacing: 16
 
                 Text {
-                    text: "Список товаров на складе"
+                    text: "Список товаров"
                     font.pixelSize: 18
                     font.bold: true
-                    color: "#1E1E2E"
+                }
+
+                // Отображение последней ошибки доменного слоя (если есть)
+                Text {
+                    visible: warehouseViewModel.lastError.length > 0
+                    text: warehouseViewModel.lastError
+                    color: "#F44336"
+                    font.pixelSize: 12
+                    wrapMode: Text.Wrap
+                    Layout.fillWidth: true
                 }
 
                 ScrollView {
@@ -43,32 +53,43 @@ Rectangle {
                     Layout.fillHeight: true
 
                     ListView {
-                        model: ["Товар 1 - 100 шт", "Товар 2 - 50 шт", "Товар 3 - 200 шт", 
-                                "Товар 4 - 75 шт", "Товар 5 - 150 шт"]
+                        id: productsList
+                        width: parent.width
+                        height: parent.height
+                        clip: true
+
+                        model: warehouseViewModel.products
 
                         delegate: Rectangle {
-                            width: parent.width
-                            height: 60
+                            width: ListView.view.width
+                            height: 56
                             color: index % 2 === 0 ? "#FAFAFA" : "#FFFFFF"
+                            radius: 6
 
                             RowLayout {
                                 anchors.fill: parent
-                                anchors.margins: 16
+                                anchors.margins: 12
 
                                 Text {
-                                    text: modelData
+                                    text: modelData.name
                                     font.pixelSize: 14
-                                    color: "#1E1E2E"
                                 }
 
-                                Item {
-                                    Layout.fillWidth: true
-                                }
+                                Item { Layout.fillWidth: true }
 
                                 Text {
-                                    text: "В наличии"
-                                    font.pixelSize: 12
-                                    color: "#4CAF50"
+                                    text: modelData.availableQuantity
+                                    font.pixelSize: 13
+                                    color: modelData.isInStopList ? "#F44336" : "#4CAF50"
+                                }
+                            }
+
+                            MouseArea {
+                                anchors.fill: parent
+                                cursorShape: Qt.PointingHandCursor
+                                onClicked: {
+                                    selectedProduct = modelData
+                                    productDialog.open()
                                 }
                             }
                         }
@@ -77,9 +98,9 @@ Rectangle {
             }
         }
     }
+
+    ProductOperationDialog {
+        id: productDialog
+        product: selectedProduct
+    }
 }
-
-
-
-
-

@@ -68,39 +68,58 @@ Rectangle {
                     Layout.fillHeight: true
 
                     ListView {
-                        model: ["Мука - 50 кг", "Яйца - 120 шт", "Молоко - 30 л", 
-                                "Мясо - 25 кг", "Овощи - 40 кг", "Специи - 5 кг"]
+                        id: productsList
+                        width: parent.width
+                        height: parent.height
+                        clip: true
+                        model: warehouseViewModel.products
 
                         delegate: Rectangle {
-                            width: parent.width
-                            height: 50
+                            width: ListView.view.width
+                            height: 56
                             color: index % 2 === 0 ? "#FAFAFA" : "#FFFFFF"
+                            radius: 6
 
                             RowLayout {
                                 anchors.fill: parent
                                 anchors.margins: 12
 
-                                Text {
-                                    text: modelData
-                                    font.pixelSize: 14
-                                    color: "#1E1E2E"
-                                }
-
-                                Item {
+                                ColumnLayout {
+                                    spacing: 4
                                     Layout.fillWidth: true
-                                }
 
-                                Text {
-                                    text: index < 2 ? "Низкий" : "Норма"
-                                    font.pixelSize: 12
-                                    color: index < 2 ? "#F44336" : "#4CAF50"
+                                    Text {
+                                        text: modelData.name
+                                        font.pixelSize: 14
+                                        font.bold: true
+                                        color: "#1E1E2E"
+                                    }
+
+                                    Text {
+                                        text: {
+                                            var unitStr = ""
+                                            if (modelData.unit === "Kilogram") {
+                                                unitStr = "кг"
+                                            } else if (modelData.unit === "Gram") {
+                                                unitStr = "г"
+                                            } else if (modelData.unit === "Liter") {
+                                                unitStr = "л"
+                                            }
+                                            return modelData.availableQuantity + " " + unitStr
+                                        }
+                                        font.pixelSize: 12
+                                        color: modelData.isInStopList ? "#F44336" : "#4CAF50"
+                                    }
                                 }
                             }
 
                             MouseArea {
                                 anchors.fill: parent
-                                onClicked: chefViewModel.onProductSelected(index)
                                 cursorShape: Qt.PointingHandCursor
+                                onClicked: {
+                                    productOperationDialog.product = modelData
+                                    productOperationDialog.open()
+                                }
                             }
                         }
                     }
@@ -112,17 +131,6 @@ Rectangle {
     ProductOperationDialog {
         id: productOperationDialog
         parent: chefScreen
-    }
-
-    Connections {
-        target: chefViewModel
-        function onIsProductDialogOpenChanged() {
-            if (chefViewModel.isProductDialogOpen) {
-                productOperationDialog.open()
-            } else {
-                productOperationDialog.close()
-            }
-        }
     }
 }
 

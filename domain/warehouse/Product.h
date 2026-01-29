@@ -5,9 +5,9 @@
 namespace domain {
 
 enum class Unit {
-    Piece,
+    Kilogram,
     Gram,
-    Milliliter
+    Liter
 };
 
 class Product final {
@@ -30,11 +30,15 @@ public:
 private:
     std::string id_;
     std::string name_;
-    Unit unit_{Unit::Piece};
+    Unit unit_{Unit::Kilogram};
     bool isInStopList_{false};
 };
 
 } // namespace domain
+
+
+
+
 
 
 

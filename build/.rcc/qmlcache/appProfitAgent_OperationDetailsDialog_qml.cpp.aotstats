@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 116,
+                        "durationMicroseconds": 386,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "fill",
                         "line": 22
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 93,
+                        "durationMicroseconds": 107,
                         "errorMessage": "Cannot access value for name operationDialog",
                         "functionName": "text",
                         "line": 33
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 58,
                         "errorMessage": "Cannot access value for name operationDialog",
                         "functionName": "text",
                         "line": 53
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 35,
+                        "durationMicroseconds": 34,
                         "errorMessage": "Cannot access value for name operationDialog",
                         "functionName": "text",
                         "line": 72
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Cannot access value for name operationDialog",
                         "functionName": "text",
                         "line": 91
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 39,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Cannot access value for name Qt",
                         "functionName": "alignment",
                         "line": 102
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 95,
+                        "durationMicroseconds": 79,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 106
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 42,
-                        "durationMicroseconds": 568,
+                        "durationMicroseconds": 400,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 112
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 40,
-                        "durationMicroseconds": 339,
+                        "durationMicroseconds": 336,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 113

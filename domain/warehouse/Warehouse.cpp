@@ -1,5 +1,7 @@
 #include "domain/warehouse/Warehouse.h"
 
+#include <algorithm>
+
 namespace domain {
 
 Quantity Warehouse::totalQuantity(const std::string& productId) const {
@@ -62,7 +64,21 @@ void Warehouse::consumeFifo(const std::string& productId, Quantity quantityToCon
     }
 }
 
+void Warehouse::removeBatchesForProduct(const std::string& productId) {
+    batches_.erase(
+        std::remove_if(batches_.begin(), batches_.end(),
+            [&productId](const StockBatch& batch) {
+                return batch.productId() == productId;
+            }),
+        batches_.end()
+    );
+}
+
 } // namespace domain
+
+
+
+
 
 
 
