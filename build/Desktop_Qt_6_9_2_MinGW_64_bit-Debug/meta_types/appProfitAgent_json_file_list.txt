@@ -2,6 +2,7 @@ C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/a
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../EWIEGA46WW/moc_AuthViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../EWIEGA46WW/moc_ChefViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../EWIEGA46WW/moc_DashboardViewModel.cpp.json
+C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../EWIEGA46WW/moc_MenuViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../EWIEGA46WW/moc_NavigationViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../EWIEGA46WW/moc_WaiterViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../EWIEGA46WW/moc_WarehouseViewModel.cpp.json

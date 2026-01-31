@@ -103,7 +103,7 @@ Rectangle {
                     id: roleComboBox
                     Layout.fillWidth: true
                     height: 48
-                    model: ["Официант", "Повар", "Менеджер", "Директор"]
+                    model: ["Официант", "Повар", "Менеджер"]
                     currentIndex: authViewModel.selectedRole
                     onCurrentIndexChanged: authViewModel.selectedRole = currentIndex
                     background: Rectangle {

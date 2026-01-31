@@ -11,8 +11,7 @@
                         "values": [
                             "Waiter",
                             "Chef",
-                            "Manager",
-                            "Director"
+                            "Manager"
                         ]
                     }
                 ],
@@ -106,8 +105,7 @@
                         "values": [
                             "Waiter",
                             "Chef",
-                            "Manager",
-                            "Director"
+                            "Manager"
                         ]
                     }
                 ],
@@ -538,6 +536,154 @@
     {
         "classes": [
             {
+                "className": "MenuViewModel",
+                "lineNumber": 14,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dishId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "salePrice",
+                                "type": "double"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "createDish",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dishId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "salePrice",
+                                "type": "double"
+                            },
+                            {
+                                "name": "isAvailable",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "updateDish",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dishId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "deleteDish",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dishId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "getRecipe",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dishId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "ingredients",
+                                "type": "QVariantList"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "setRecipe",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "dishes",
+                        "notify": "dishesChanged",
+                        "read": "dishes",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "lastError",
+                        "notify": "lastErrorChanged",
+                        "read": "lastError",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "MenuViewModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "dishesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "lastErrorChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MenuViewModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
                 "className": "NavigationViewModel",
                 "enums": [
                     {
@@ -547,6 +693,7 @@
                         "values": [
                             "Dashboard",
                             "Warehouse",
+                            "Menu",
                             "Employees",
                             "Finance",
                             "Help"

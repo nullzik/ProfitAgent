@@ -41,6 +41,11 @@ public:
     // Throws std::invalid_argument if product with such id does not exist.
     virtual Quantity getAvailableQuantity(const std::string& productId) const = 0;
 
+    // Returns average purchase price for a product based on current warehouse batches.
+    // Returns zero Money if product has no batches or does not exist.
+    // Throws std::invalid_argument if product does not exist.
+    virtual Money getAveragePurchasePrice(const std::string& productId) const = 0;
+
     // Returns a snapshot of all known products.
     virtual std::vector<Product> getAllProducts() const = 0;
 

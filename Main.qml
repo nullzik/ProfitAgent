@@ -27,9 +27,6 @@ ApplicationWindow {
                 case AppStateViewModel.Manager:
                     sourceComponent = managerScreenComponent
                     break
-                case AppStateViewModel.Director:
-                    sourceComponent = directorScreenComponent
-                    break
                 default:
                     sourceComponent = loginScreenComponent
                 }
@@ -67,11 +64,6 @@ ApplicationWindow {
     Component {
         id: managerScreenComponent
         ManagerScreen {}
-    }
-
-    Component {
-        id: directorScreenComponent
-        DirectorScreen {}
     }
 
     // Обработка успешного входа

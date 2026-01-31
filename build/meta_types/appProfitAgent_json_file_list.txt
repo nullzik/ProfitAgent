@@ -2,5 +2,7 @@ C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include/../EWI
 C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include/../EWIEGA46WW/moc_AuthViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include/../EWIEGA46WW/moc_ChefViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include/../EWIEGA46WW/moc_DashboardViewModel.cpp.json
+C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include/../EWIEGA46WW/moc_MenuViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include/../EWIEGA46WW/moc_NavigationViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include/../EWIEGA46WW/moc_WaiterViewModel.cpp.json
+C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/include/../EWIEGA46WW/moc_WarehouseViewModel.cpp.json

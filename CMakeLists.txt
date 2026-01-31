@@ -18,6 +18,9 @@ add_library(domain_model STATIC
     domain/menu/Dish.cpp
     domain/menu/Recipe.h
     domain/menu/Recipe.cpp
+    domain/menu/IMenuService.h
+    domain/menu/MenuService.h
+    domain/menu/MenuService.cpp
 
     domain/warehouse/Product.h
     domain/warehouse/Product.cpp
@@ -40,7 +43,7 @@ add_library(domain_model STATIC
 
 target_include_directories(domain_model PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
@@ -60,6 +63,8 @@ qt_add_executable(appProfitAgent
     ChefViewModel.h
     WarehouseViewModel.cpp
     WarehouseViewModel.h
+    MenuViewModel.cpp
+    MenuViewModel.h
 )
 
 qt_add_qml_module(appProfitAgent
@@ -75,13 +80,13 @@ qt_add_qml_module(appProfitAgent
         WaiterScreen.qml
         ChefScreen.qml
         ManagerScreen.qml
-        DirectorScreen.qml
         OrderEntryDialog.qml
         ProductOperationDialog.qml
         WarehouseScreen.qml
         EmployeesScreen.qml
         FinanceScreen.qml
         HelpScreen.qml
+        MenuScreen.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -97,6 +102,7 @@ set_target_properties(appProfitAgent PROPERTIES
 
 target_link_libraries(appProfitAgent
     PRIVATE Qt6::Quick
+    PRIVATE Qt6::QuickControls2
     PRIVATE domain_model
 )
 

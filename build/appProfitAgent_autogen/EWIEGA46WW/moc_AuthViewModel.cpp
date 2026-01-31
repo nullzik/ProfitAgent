@@ -56,8 +56,7 @@ template <> constexpr inline auto AuthViewModel::qt_create_metaobjectdata<qt_met
         "Role",
         "Waiter",
         "Chef",
-        "Manager",
-        "Director"
+        "Manager"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -96,7 +95,6 @@ template <> constexpr inline auto AuthViewModel::qt_create_metaobjectdata<qt_met
             {   16, Role::Waiter },
             {   17, Role::Chef },
             {   18, Role::Manager },
-            {   19, Role::Director },
         }),
     };
     return QtMocHelpers::metaObjectData<AuthViewModel, qt_meta_tag_ZN13AuthViewModelE_t>(QMC::MetaObjectFlag{}, qt_stringData,

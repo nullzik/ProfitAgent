@@ -9,13 +9,13 @@
     <file alias="WaiterScreen.qml">C:/Users/boyko/Documents/ProfitAgent/WaiterScreen.qml</file>
     <file alias="ChefScreen.qml">C:/Users/boyko/Documents/ProfitAgent/ChefScreen.qml</file>
     <file alias="ManagerScreen.qml">C:/Users/boyko/Documents/ProfitAgent/ManagerScreen.qml</file>
-    <file alias="DirectorScreen.qml">C:/Users/boyko/Documents/ProfitAgent/DirectorScreen.qml</file>
     <file alias="OrderEntryDialog.qml">C:/Users/boyko/Documents/ProfitAgent/OrderEntryDialog.qml</file>
     <file alias="ProductOperationDialog.qml">C:/Users/boyko/Documents/ProfitAgent/ProductOperationDialog.qml</file>
     <file alias="WarehouseScreen.qml">C:/Users/boyko/Documents/ProfitAgent/WarehouseScreen.qml</file>
     <file alias="EmployeesScreen.qml">C:/Users/boyko/Documents/ProfitAgent/EmployeesScreen.qml</file>
     <file alias="FinanceScreen.qml">C:/Users/boyko/Documents/ProfitAgent/FinanceScreen.qml</file>
     <file alias="HelpScreen.qml">C:/Users/boyko/Documents/ProfitAgent/HelpScreen.qml</file>
+    <file alias="MenuScreen.qml">C:/Users/boyko/Documents/ProfitAgent/MenuScreen.qml</file>
   </qresource>
 </RCC>
 

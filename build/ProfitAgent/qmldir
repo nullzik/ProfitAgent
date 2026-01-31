@@ -10,12 +10,12 @@ LoginScreen 1.0 LoginScreen.qml
 WaiterScreen 1.0 WaiterScreen.qml
 ChefScreen 1.0 ChefScreen.qml
 ManagerScreen 1.0 ManagerScreen.qml
-DirectorScreen 1.0 DirectorScreen.qml
 OrderEntryDialog 1.0 OrderEntryDialog.qml
 ProductOperationDialog 1.0 ProductOperationDialog.qml
 WarehouseScreen 1.0 WarehouseScreen.qml
 EmployeesScreen 1.0 EmployeesScreen.qml
 FinanceScreen 1.0 FinanceScreen.qml
 HelpScreen 1.0 HelpScreen.qml
+MenuScreen 1.0 MenuScreen.qml
 depends QtQuick
 

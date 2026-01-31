@@ -1,0 +1,148 @@
+{
+    "classes": [
+        {
+            "className": "WarehouseViewModel",
+            "lineNumber": 13,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "productId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "unit",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "createProduct",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "productId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "deleteProduct",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "productId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "double"
+                        },
+                        {
+                            "name": "purchasePrice",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "addProductBatch",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "productId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "writeOffProduct",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "productId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "enabled",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "setStopList",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "products",
+                    "notify": "productsChanged",
+                    "read": "products",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "lastError",
+                    "notify": "lastErrorChanged",
+                    "read": "lastError",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "WarehouseViewModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "productsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "lastErrorChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "WarehouseViewModel.h",
+    "outputRevision": 69
+}

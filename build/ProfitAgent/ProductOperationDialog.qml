@@ -14,11 +14,10 @@ Dialog {
     //  - product.name : string
     property var product: null
 
-    // Заголовок: если передали доменный продукт, показываем его имя,
-    // иначе (режим повара) — старый текст по индексу.
+    // Заголовок: если передали доменный продукт, показываем его имя
     property string productName: product && product.name !== undefined
                                  ? product.name
-                                 : ("Продукт " + (chefViewModel.selectedProductId + 1))
+                                 : "Новый продукт"
 
     contentItem: Rectangle {
         color: "#FFFFFF"
@@ -105,14 +104,13 @@ Dialog {
                 Button {
                     Layout.fillWidth: true
                     text: "Добавить (поставка)"
+                    enabled: product !== null
                     onClicked: {
                         if (product) {
                             const qty = Number(quantityField.text)
                             const price = Number(priceField.text)
                             warehouseViewModel.addProductBatch(product.id, qty, price)
                             productDialog.close()
-                        } else {
-                            chefViewModel.addProduct()
                         }
                     }
                     background: Rectangle {
@@ -130,13 +128,12 @@ Dialog {
                 Button {
                     Layout.fillWidth: true
                     text: "Списать"
+                    enabled: product !== null
                     onClicked: {
                         if (product) {
                             const qty = Number(quantityField.text)
                             warehouseViewModel.writeOffProduct(product.id, qty)
                             productDialog.close()
-                        } else {
-                            chefViewModel.writeOffProduct()
                         }
                     }
                     background: Rectangle {
@@ -155,13 +152,7 @@ Dialog {
             Button {
                 Layout.fillWidth: true
                 text: "Закрыть"
-                onClicked: {
-                    if (product) {
-                        productDialog.close()
-                    } else {
-                        chefViewModel.closeProductDialog()
-                    }
-                }
+                onClicked: productDialog.close()
                 background: Rectangle {
                     color: parent.hovered ? "#999999" : "#888888"
                     radius: 8

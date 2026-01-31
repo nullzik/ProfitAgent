@@ -68,13 +68,6 @@ namespace _qt_qml_ProfitAgent_ManagerScreen_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_DirectorScreen_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
 namespace _qt_qml_ProfitAgent_OrderEntryDialog_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -117,6 +110,13 @@ namespace _qt_qml_ProfitAgent_HelpScreen_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_ProfitAgent_MenuScreen_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -140,13 +140,13 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/WaiterScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_WaiterScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/ChefScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_ChefScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/ManagerScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_ManagerScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/DirectorScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_DirectorScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/OrderEntryDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_OrderEntryDialog_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/ProductOperationDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_ProductOperationDialog_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/WarehouseScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_WarehouseScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/EmployeesScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_EmployeesScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/FinanceScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_FinanceScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/HelpScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_HelpScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/MenuScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_MenuScreen_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

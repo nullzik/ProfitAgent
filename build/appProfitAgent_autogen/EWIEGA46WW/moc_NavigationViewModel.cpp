@@ -54,6 +54,7 @@ template <> constexpr inline auto NavigationViewModel::qt_create_metaobjectdata<
         "Section",
         "Dashboard",
         "Warehouse",
+        "Menu",
         "Employees",
         "Finance",
         "Help"
@@ -92,9 +93,10 @@ template <> constexpr inline auto NavigationViewModel::qt_create_metaobjectdata<
         QtMocHelpers::EnumData<enum Section>(13, 13, QMC::EnumFlags{}).add({
             {   14, Section::Dashboard },
             {   15, Section::Warehouse },
-            {   16, Section::Employees },
-            {   17, Section::Finance },
-            {   18, Section::Help },
+            {   16, Section::Menu },
+            {   17, Section::Employees },
+            {   18, Section::Finance },
+            {   19, Section::Help },
         }),
     };
     return QtMocHelpers::metaObjectData<NavigationViewModel, qt_meta_tag_ZN19NavigationViewModelE_t>(QMC::MetaObjectFlag{}, qt_stringData,

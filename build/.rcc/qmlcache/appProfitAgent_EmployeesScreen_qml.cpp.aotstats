@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 229,
+                        "durationMicroseconds": 362,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 77,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 30
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 277,
+                        "durationMicroseconds": 296,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "model",
                         "line": 46
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 101,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 50
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 36,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 73,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
                         "line": 52
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 47,
-                        "durationMicroseconds": 79,
+                        "durationMicroseconds": 56,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 55
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 43,
-                        "durationMicroseconds": 433,
+                        "durationMicroseconds": 277,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 59

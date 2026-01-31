@@ -16,8 +16,7 @@ public:
     enum Role {
         Waiter = 0,
         Chef = 1,
-        Manager = 2,
-        Director = 3
+        Manager = 2
     };
     Q_ENUM(Role)
 

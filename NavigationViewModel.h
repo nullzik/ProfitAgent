@@ -17,9 +17,10 @@ public:
     enum Section {
         Dashboard = 0,
         Warehouse = 1,
-        Employees = 2,
-        Finance = 3,
-        Help = 4
+        Menu = 2,
+        Employees = 3,
+        Finance = 4,
+        Help = 5
     };
     Q_ENUM(Section)
 

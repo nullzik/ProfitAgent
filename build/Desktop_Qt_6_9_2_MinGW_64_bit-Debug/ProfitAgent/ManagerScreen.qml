@@ -39,6 +39,7 @@ Rectangle {
                         text: navigationViewModel.currentSection === NavigationViewModel.Dashboard ? 
                               ("Привет " + dashboardViewModel.userName + " 👋") : 
                               (navigationViewModel.currentSection === NavigationViewModel.Warehouse ? "Склад" :
+                              navigationViewModel.currentSection === NavigationViewModel.Menu ? "Меню" :
                               navigationViewModel.currentSection === NavigationViewModel.Employees ? "Сотрудники" :
                               navigationViewModel.currentSection === NavigationViewModel.Finance ? "Доходы и расходы" : "Помощь")
                         font.pixelSize: 28
@@ -80,6 +81,9 @@ Rectangle {
                             break
                         case NavigationViewModel.Warehouse:
                             sourceComponent = warehouseComponent
+                            break
+                        case NavigationViewModel.Menu:
+                            sourceComponent = menuComponent
                             break
                         case NavigationViewModel.Employees:
                             sourceComponent = employeesComponent
@@ -159,6 +163,11 @@ Rectangle {
     Component {
         id: warehouseComponent
         WarehouseScreen {}
+    }
+
+    Component {
+        id: menuComponent
+        MenuScreen {}
     }
 
     Component {

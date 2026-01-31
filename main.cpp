@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQuickStyle>
 #include "DashboardViewModel.h"
 #include "NavigationViewModel.h"
 #include "AuthViewModel.h"
@@ -8,13 +9,18 @@
 #include "WaiterViewModel.h"
 #include "ChefViewModel.h"
 #include "WarehouseViewModel.h"
+#include "MenuViewModel.h"
 
 #include "domain/warehouse/WarehouseService.h"
 #include "domain/warehouse/Product.h"
+#include "domain/menu/MenuService.h"
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
+
+    // Стиль, поддерживающий кастомизацию background/contentItem (Basic, Fusion, Material).
+    QQuickStyle::setStyle("Basic");
 
     // Инициализируем доменный сервис склада с тестовым каталогом продуктов.
     std::vector<domain::Product> initialProducts{
@@ -24,6 +30,9 @@ int main(int argc, char *argv[])
         domain::Product{"flour", "Мука", domain::Unit::Kilogram, false}
     };
     domain::WarehouseService warehouseService{std::move(initialProducts)};
+    
+    // Инициализируем доменный сервис меню
+    domain::MenuService menuService{warehouseService};
 
     // Создаем ViewModels
     DashboardViewModel dashboardViewModel;
@@ -33,6 +42,7 @@ int main(int argc, char *argv[])
     WaiterViewModel waiterViewModel;
     ChefViewModel chefViewModel;
     WarehouseViewModel warehouseViewModel{warehouseService};
+    MenuViewModel menuViewModel{menuService, warehouseService};
 
     QQmlApplicationEngine engine;
     
@@ -44,6 +54,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("waiterViewModel", &waiterViewModel);
     engine.rootContext()->setContextProperty("chefViewModel", &chefViewModel);
     engine.rootContext()->setContextProperty("warehouseViewModel", &warehouseViewModel);
+    engine.rootContext()->setContextProperty("menuViewModel", &menuViewModel);
 
     // Регистрируем типы для использования в QML
     qmlRegisterType<DashboardViewModel>("ProfitAgent", 1, 0, "DashboardViewModel");
@@ -53,6 +64,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<WaiterViewModel>("ProfitAgent", 1, 0, "WaiterViewModel");
     qmlRegisterType<ChefViewModel>("ProfitAgent", 1, 0, "ChefViewModel");
     qmlRegisterType<WarehouseViewModel>("ProfitAgent", 1, 0, "WarehouseViewModel");
+    qmlRegisterType<MenuViewModel>("ProfitAgent", 1, 0, "MenuViewModel");
 
     QObject::connect(
         &engine,

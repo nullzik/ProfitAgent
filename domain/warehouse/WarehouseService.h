@@ -26,6 +26,8 @@ public:
 
     Quantity getAvailableQuantity(const std::string& productId) const override;
 
+    Money getAveragePurchasePrice(const std::string& productId) const override;
+
     std::vector<Product> getAllProducts() const override;
 
     void setStopList(const std::string& productId, bool enabled) override;

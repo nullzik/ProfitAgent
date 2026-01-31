@@ -62,6 +62,35 @@ Quantity WarehouseService::getAvailableQuantity(const std::string& productId) co
     return warehouse_.totalQuantity(productId);
 }
 
+Money WarehouseService::getAveragePurchasePrice(const std::string& productId) const {
+    (void)requireExistingProduct(productId);
+    
+    const auto& batches = warehouse_.batches();
+    Money totalCost = Money::zero("RUB");
+    Quantity totalQuantity = Quantity::zero();
+    
+    for (const auto& batch : batches) {
+        if (batch.productId() == productId && batch.quantity().value() > 0.0) {
+            // Calculate cost: price per unit * quantity
+            // Since Money stores minor units, we need to convert quantity to calculate total
+            const double qty = batch.quantity().value();
+            const std::int64_t pricePerUnit = batch.purchasePrice().minorUnits();
+            const std::int64_t totalBatchCost = static_cast<std::int64_t>(std::llround(pricePerUnit * qty));
+            
+            totalCost = totalCost + Money{totalBatchCost, "RUB"};
+            totalQuantity = totalQuantity + batch.quantity();
+        }
+    }
+    
+    if (totalQuantity.value() == 0.0) {
+        return Money::zero("RUB");
+    }
+    
+    // Calculate average: total cost / total quantity
+    const double avgPrice = static_cast<double>(totalCost.minorUnits()) / totalQuantity.value();
+    return Money{static_cast<std::int64_t>(std::llround(avgPrice)), "RUB"};
+}
+
 std::vector<Product> WarehouseService::getAllProducts() const {
     std::vector<Product> result;
     result.reserve(products_.size());

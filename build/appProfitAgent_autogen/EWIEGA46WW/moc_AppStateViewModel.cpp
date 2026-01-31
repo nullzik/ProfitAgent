@@ -50,8 +50,7 @@ template <> constexpr inline auto AppStateViewModel::qt_create_metaobjectdata<qt
         "Role",
         "Waiter",
         "Chef",
-        "Manager",
-        "Director"
+        "Manager"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -78,7 +77,6 @@ template <> constexpr inline auto AppStateViewModel::qt_create_metaobjectdata<qt
             {   10, Role::Waiter },
             {   11, Role::Chef },
             {   12, Role::Manager },
-            {   13, Role::Director },
         }),
     };
     return QtMocHelpers::metaObjectData<AppStateViewModel, qt_meta_tag_ZN17AppStateViewModelE_t>(QMC::MetaObjectFlag{}, qt_stringData,

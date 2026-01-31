@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 255,
+                        "durationMicroseconds": 336,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 14
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 20,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 163,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 20
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 41,
-                        "durationMicroseconds": 87,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 24
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 24,
-                        "durationMicroseconds": 135,
+                        "durationMicroseconds": 669,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 32
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 36
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 20,
-                        "durationMicroseconds": 56,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 66
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 200,
+                        "durationMicroseconds": 377,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 67
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 948,
+                        "durationMicroseconds": 1494,
                         "errorMessage": "Cannot access value for name dashboardViewModel",
                         "functionName": "model",
                         "line": 75
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 241,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 73
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 90,
                         "errorMessage": "Cannot access value for name listView",
                         "functionName": "width",
                         "line": 79
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 76,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 85
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 179,
+                        "durationMicroseconds": 200,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 89
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 160,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 97
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 136,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 105
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 103,
+                        "durationMicroseconds": 174,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 113
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 158,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 121
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 31,
+                        "durationMicroseconds": 68,
                         "errorMessage": "Cannot access value for name listView",
                         "functionName": "width",
                         "line": 127
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 90,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
                         "line": 129
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 98,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 132
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 239,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 136
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 27,
+                        "durationMicroseconds": 115,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "text",
                         "line": 137
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 61,
+                        "durationMicroseconds": 335,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 140
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 79,
+                        "durationMicroseconds": 326,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 144
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 149,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "text",
                         "line": 145
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 178,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 148
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 78,
+                        "durationMicroseconds": 251,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 152
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 83,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "text",
                         "line": 153
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 44,
+                        "durationMicroseconds": 2066,
                         "errorMessage": "",
                         "functionName": "elide",
                         "line": 156
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 107,
+                        "durationMicroseconds": 501,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 160
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 137,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "text",
                         "line": 161
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 40,
-                        "durationMicroseconds": 30,
+                        "durationMicroseconds": 80,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 172
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 197,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 187
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 229,
+                        "durationMicroseconds": 395,
                         "errorMessage": "Cannot access value for name dashboardViewModel",
                         "functionName": "model",
                         "line": 191
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 301,
+                        "durationMicroseconds": 866,
                         "errorMessage": "Cannot access value for name dashboardViewModel",
                         "functionName": "color",
                         "line": 199
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 39,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 560,
                         "errorMessage": "Cannot access value for name dashboardViewModel",
                         "functionName": "color",
                         "line": 201
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 31,
-                        "durationMicroseconds": 11,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
                         "line": 205
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 487,
+                        "durationMicroseconds": 1019,
                         "errorMessage": "Cannot access value for name dashboardViewModel",
                         "functionName": "color",
                         "line": 207
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 46,
-                        "durationMicroseconds": 150,
+                        "durationMicroseconds": 279,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 208
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 44,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 250,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 209

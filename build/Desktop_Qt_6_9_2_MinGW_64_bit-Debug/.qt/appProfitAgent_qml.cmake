@@ -20,8 +20,6 @@ set(src_and_dest_list
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/ChefScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/ManagerScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/ManagerScreen.qml"
-    "C:/Users/boyko/Documents/ProfitAgent/DirectorScreen.qml"
-    "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/DirectorScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/OrderEntryDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/OrderEntryDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/ProductOperationDialog.qml"
@@ -34,6 +32,8 @@ set(src_and_dest_list
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/FinanceScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/HelpScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/HelpScreen.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/MenuScreen.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/MenuScreen.qml"
 
 )
 set(timestamp_file "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/appProfitAgent_qml.txt")
