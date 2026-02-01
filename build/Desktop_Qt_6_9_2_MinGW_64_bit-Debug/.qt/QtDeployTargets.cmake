@@ -1,5 +1,7 @@
 set(__QT_DEPLOY_TARGET_domain_model_FILE C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/libdomain_model.a)
 set(__QT_DEPLOY_TARGET_domain_model_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_application_services_FILE C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/libapplication_services.a)
+set(__QT_DEPLOY_TARGET_application_services_TYPE STATIC_LIBRARY)
 set(__QT_DEPLOY_TARGET_appProfitAgent_FILE C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent.exe)
 set(__QT_DEPLOY_TARGET_appProfitAgent_TYPE EXECUTABLE)
 set(__QT_DEPLOY_TARGET_appProfitAgent_RUNTIME_DLLS C:/Qt/6.9.2/mingw_64/bin/Qt6QuickControls2.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6QuickTemplates2.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Quick.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6QmlMeta.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6QmlWorkerScript.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6OpenGL.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6QmlModels.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Qml.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Network.dll;C:/Qt/6.9.2/mingw_64/bin/Qt6Core.dll)

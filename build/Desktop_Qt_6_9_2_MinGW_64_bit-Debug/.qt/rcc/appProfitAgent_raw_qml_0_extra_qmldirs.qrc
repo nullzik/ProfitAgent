@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/ProfitAgent/">
+    <file alias="presentation/views/qmldir">C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/qmldir</file>
+    <file alias="presentation/views/components/qmldir">C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/components/qmldir</file>
+    <file alias="presentation/views/dialogs/qmldir">C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/dialogs/qmldir</file>
+    <file alias="presentation/views/screens/qmldir">C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/screens/qmldir</file>
+  </qresource>
+</RCC>
+

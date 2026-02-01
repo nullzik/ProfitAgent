@@ -2,18 +2,19 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickStyle>
-#include "DashboardViewModel.h"
-#include "NavigationViewModel.h"
-#include "AuthViewModel.h"
-#include "AppStateViewModel.h"
-#include "WaiterViewModel.h"
-#include "ChefViewModel.h"
-#include "WarehouseViewModel.h"
-#include "MenuViewModel.h"
 
-#include "domain/warehouse/WarehouseService.h"
+#include "presentation/viewmodels/AppStateViewModel.h"
+#include "presentation/viewmodels/AuthViewModel.h"
+#include "presentation/viewmodels/ChefViewModel.h"
+#include "presentation/viewmodels/DashboardViewModel.h"
+#include "presentation/viewmodels/MenuViewModel.h"
+#include "presentation/viewmodels/NavigationViewModel.h"
+#include "presentation/viewmodels/WaiterViewModel.h"
+#include "presentation/viewmodels/WarehouseViewModel.h"
+
+#include "application/services/MenuService.h"
+#include "application/services/WarehouseService.h"
 #include "domain/warehouse/Product.h"
-#include "domain/menu/MenuService.h"
 
 int main(int argc, char *argv[])
 {

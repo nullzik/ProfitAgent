@@ -1,4 +1,5 @@
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/domain_model.dir
+C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/application_services.dir
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/appProfitAgent.dir
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/appProfitAgent_qmltyperegistration.dir
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/all_qmltyperegistrations.dir

@@ -1,0 +1,94 @@
+{
+    "classes": [
+        {
+            "className": "WaiterViewModel",
+            "lineNumber": 7,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "tableId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "onTableSelected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "tableId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "openOrderEntry",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "closeOrderEntry",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "selectedTableId",
+                    "notify": "selectedTableIdChanged",
+                    "read": "selectedTableId",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "isOrderDialogOpen",
+                    "notify": "isOrderDialogOpenChanged",
+                    "read": "isOrderDialogOpen",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "WaiterViewModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "selectedTableIdChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "isOrderDialogOpenChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "WaiterViewModel.h",
+    "outputRevision": 69
+}

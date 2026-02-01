@@ -1,15 +1,15 @@
 # ninja log v6
 2511	2999	7915453901452338	C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_Main_qml.cpp	3190b723cc7086df
-15	4525	7915456126863304	build.ninja	4dffe17e8993ecbd
+15	4525	7915483175965900	build.ninja	4dffe17e8993ecbd
 2388	2511	7915453896264759	C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/appProfitAgent.qmltypes	26388e061ca7886e
-15	4525	7915456126781942	C:/Users/boyko/Documents/ProfitAgent/build/cmake_install.cmake	4dffe17e8993ecbd
+15	4525	7915483175876635	C:/Users/boyko/Documents/ProfitAgent/build/cmake_install.cmake	4dffe17e8993ecbd
 124	228	7915453346850820	.qt/appProfitAgent_qml.txt	61a89cc52df73bef
 46	84	7909873860311670	.qt/appProfitAgent_res.txt	ecd0c31999c4fa39
-1414	1480	7910528224456280	C:/Users/boyko/Documents/ProfitAgent/build/meta_types/qt6appprofitagent_release_metatypes.json	1fef8e2d8b105ec9
 3112	9017	7915453902777096	CMakeFiles/appProfitAgent.dir/build/.rcc/qmlcache/appProfitAgent_Sidebar_qml.cpp.obj	a3497cea0448d5a5
+1414	1480	7910528224456280	C:/Users/boyko/Documents/ProfitAgent/build/meta_types/qt6appprofitagent_release_metatypes.json	1fef8e2d8b105ec9
 46	84	7909873860311670	C:/Users/boyko/Documents/ProfitAgent/build/.qt/appProfitAgent_res.txt	ecd0c31999c4fa39
-3118	8870	7915453902832470	CMakeFiles/appProfitAgent.dir/build/.rcc/qmlcache/appProfitAgent_KPICard_qml.cpp.obj	30abbf7c72fb188f
 4239	4705	7913093784498383	.rcc/qmlcache/appProfitAgent_DirectorScreen_qml.cpp.aotstats	db21413e76f24d3f
+3118	8870	7915453902832470	CMakeFiles/appProfitAgent.dir/build/.rcc/qmlcache/appProfitAgent_KPICard_qml.cpp.obj	30abbf7c72fb188f
 133	1231	7915453356866773	C:/Users/boyko/Documents/ProfitAgent/build/.qt/qml_imports/appProfitAgent_build.cmake	a21b8c9dd244d5b1
 124	228	7915453346850820	C:/Users/boyko/Documents/ProfitAgent/build/.qt/appProfitAgent_qml.txt	61a89cc52df73bef
 133	1231	7915453356866773	.qt/qml_imports/appProfitAgent_build.cmake	a21b8c9dd244d5b1

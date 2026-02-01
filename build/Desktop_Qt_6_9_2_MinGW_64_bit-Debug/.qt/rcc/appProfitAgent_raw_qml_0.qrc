@@ -1,21 +1,21 @@
 <RCC>
   <qresource prefix="/qt/qml/ProfitAgent/">
-    <file alias="Main.qml">C:/Users/boyko/Documents/ProfitAgent/Main.qml</file>
-    <file alias="Sidebar.qml">C:/Users/boyko/Documents/ProfitAgent/Sidebar.qml</file>
-    <file alias="KPICard.qml">C:/Users/boyko/Documents/ProfitAgent/KPICard.qml</file>
-    <file alias="OperationsTable.qml">C:/Users/boyko/Documents/ProfitAgent/OperationsTable.qml</file>
-    <file alias="OperationDetailsDialog.qml">C:/Users/boyko/Documents/ProfitAgent/OperationDetailsDialog.qml</file>
-    <file alias="LoginScreen.qml">C:/Users/boyko/Documents/ProfitAgent/LoginScreen.qml</file>
-    <file alias="WaiterScreen.qml">C:/Users/boyko/Documents/ProfitAgent/WaiterScreen.qml</file>
-    <file alias="ChefScreen.qml">C:/Users/boyko/Documents/ProfitAgent/ChefScreen.qml</file>
-    <file alias="ManagerScreen.qml">C:/Users/boyko/Documents/ProfitAgent/ManagerScreen.qml</file>
-    <file alias="OrderEntryDialog.qml">C:/Users/boyko/Documents/ProfitAgent/OrderEntryDialog.qml</file>
-    <file alias="ProductOperationDialog.qml">C:/Users/boyko/Documents/ProfitAgent/ProductOperationDialog.qml</file>
-    <file alias="WarehouseScreen.qml">C:/Users/boyko/Documents/ProfitAgent/WarehouseScreen.qml</file>
-    <file alias="EmployeesScreen.qml">C:/Users/boyko/Documents/ProfitAgent/EmployeesScreen.qml</file>
-    <file alias="FinanceScreen.qml">C:/Users/boyko/Documents/ProfitAgent/FinanceScreen.qml</file>
-    <file alias="HelpScreen.qml">C:/Users/boyko/Documents/ProfitAgent/HelpScreen.qml</file>
-    <file alias="MenuScreen.qml">C:/Users/boyko/Documents/ProfitAgent/MenuScreen.qml</file>
+    <file alias="presentation/views/Main.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/Main.qml</file>
+    <file alias="presentation/views/Sidebar.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/Sidebar.qml</file>
+    <file alias="presentation/views/components/KPICard.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/components/KPICard.qml</file>
+    <file alias="presentation/views/components/OperationsTable.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/components/OperationsTable.qml</file>
+    <file alias="presentation/views/dialogs/OperationDetailsDialog.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml</file>
+    <file alias="presentation/views/dialogs/OrderEntryDialog.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml</file>
+    <file alias="presentation/views/dialogs/ProductOperationDialog.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml</file>
+    <file alias="presentation/views/screens/LoginScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/LoginScreen.qml</file>
+    <file alias="presentation/views/screens/WaiterScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/WaiterScreen.qml</file>
+    <file alias="presentation/views/screens/ChefScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/ChefScreen.qml</file>
+    <file alias="presentation/views/screens/ManagerScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/ManagerScreen.qml</file>
+    <file alias="presentation/views/screens/MenuScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/MenuScreen.qml</file>
+    <file alias="presentation/views/screens/WarehouseScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/WarehouseScreen.qml</file>
+    <file alias="presentation/views/screens/EmployeesScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/EmployeesScreen.qml</file>
+    <file alias="presentation/views/screens/FinanceScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/FinanceScreen.qml</file>
+    <file alias="presentation/views/screens/HelpScreen.qml">C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/HelpScreen.qml</file>
   </qresource>
 </RCC>
 

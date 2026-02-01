@@ -1023,23 +1023,7 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-	C:/Users/boyko/Documents/ProfitAgent/AppStateViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/AppStateViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/AuthViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/AuthViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/CMakeLists.txt \
-	C:/Users/boyko/Documents/ProfitAgent/ChefViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/ChefViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/DashboardViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/DashboardViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/MenuViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/MenuViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/NavigationViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/NavigationViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/qml_imports/appProfitAgent_conf.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake \
@@ -1048,4 +1032,20 @@ appProfitAgent_autogen/timestamp: \
 	C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/moc_predefs.h \
 	C:/Users/boyko/Documents/ProfitAgent/main.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AppStateViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AppStateViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AuthViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AuthViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ChefViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ChefViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WarehouseViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WarehouseViewModel.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

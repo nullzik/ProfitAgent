@@ -914,6 +914,11 @@
 		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
 		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake",
 		"C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.qt/qml_imports/appProfitAgent_conf.cmake"
@@ -925,51 +930,51 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/AppStateViewModel.h",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AppStateViewModel.h",
 			"MU",
-			"EWIEGA46WW/moc_AppStateViewModel.cpp",
+			"3CQJ3XQJTM/moc_AppStateViewModel.cpp",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/AuthViewModel.h",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AuthViewModel.h",
 			"MU",
-			"EWIEGA46WW/moc_AuthViewModel.cpp",
+			"3CQJ3XQJTM/moc_AuthViewModel.cpp",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/ChefViewModel.h",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ChefViewModel.h",
 			"MU",
-			"EWIEGA46WW/moc_ChefViewModel.cpp",
+			"3CQJ3XQJTM/moc_ChefViewModel.cpp",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/DashboardViewModel.h",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.h",
 			"MU",
-			"EWIEGA46WW/moc_DashboardViewModel.cpp",
+			"3CQJ3XQJTM/moc_DashboardViewModel.cpp",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/MenuViewModel.h",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.h",
 			"MU",
-			"EWIEGA46WW/moc_MenuViewModel.cpp",
+			"3CQJ3XQJTM/moc_MenuViewModel.cpp",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/NavigationViewModel.h",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.h",
 			"MU",
-			"EWIEGA46WW/moc_NavigationViewModel.cpp",
+			"3CQJ3XQJTM/moc_NavigationViewModel.cpp",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.h",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.h",
 			"MU",
-			"EWIEGA46WW/moc_WaiterViewModel.cpp",
+			"3CQJ3XQJTM/moc_WaiterViewModel.cpp",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.h",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WarehouseViewModel.h",
 			"MU",
-			"EWIEGA46WW/moc_WarehouseViewModel.cpp",
+			"3CQJ3XQJTM/moc_WarehouseViewModel.cpp",
 			null
 		]
 	],
@@ -1057,23 +1062,24 @@
 	"MOC_SKIP" : 
 	[
 		"C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/qrc_appProfitAgent_raw_qml_0.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/qrc_appProfitAgent_raw_qml_0_extra_qmldirs.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/qrc_qmake_ProfitAgent.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_ChefScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_EmployeesScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_FinanceScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_HelpScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_KPICard_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_LoginScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_Main_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_ManagerScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_MenuScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_OperationDetailsDialog_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_OperationsTable_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_OrderEntryDialog_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_ProductOperationDialog_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_Sidebar_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_WaiterScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_WarehouseScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/Main_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/Sidebar_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/KPICard_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/OperationsTable_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OperationDetailsDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OrderEntryDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/ProductOperationDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/ChefScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/EmployeesScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/FinanceScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/HelpScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/LoginScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/ManagerScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/MenuScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/WaiterScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/WarehouseScreen_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_qmlcache_loader.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/appprofitagent_qmltyperegistrations.cpp"
 	],
@@ -1087,58 +1093,71 @@
 	"SETTINGS_FILE" : "C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Users/boyko/Documents/ProfitAgent/main.cpp", "MU", null ],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/AppStateViewModel.cpp",
-			"MU",
-			null
-		],
-		[ "C:/Users/boyko/Documents/ProfitAgent/AuthViewModel.cpp", "MU", null ],
-		[ "C:/Users/boyko/Documents/ProfitAgent/ChefViewModel.cpp", "MU", null ],
-		[
-			"C:/Users/boyko/Documents/ProfitAgent/DashboardViewModel.cpp",
-			"MU",
-			null
-		],
-		[ "C:/Users/boyko/Documents/ProfitAgent/MenuViewModel.cpp", "MU", null ],
-		[
-			"C:/Users/boyko/Documents/ProfitAgent/NavigationViewModel.cpp",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AppStateViewModel.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.cpp",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AuthViewModel.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.cpp",
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ChefViewModel.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/boyko/Documents/ProfitAgent/main.cpp", "MU", null ]
+		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WarehouseViewModel.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
 		"C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/qrc_appProfitAgent_raw_qml_0.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/qrc_appProfitAgent_raw_qml_0_extra_qmldirs.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/qrc_qmake_ProfitAgent.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_ChefScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_EmployeesScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_FinanceScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_HelpScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_KPICard_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_LoginScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_Main_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_ManagerScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_MenuScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_OperationDetailsDialog_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_OperationsTable_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_OrderEntryDialog_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_ProductOperationDialog_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_Sidebar_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_WaiterScreen_qml.cpp",
-		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_WarehouseScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/Main_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/Sidebar_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/KPICard_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/OperationsTable_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OperationDetailsDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OrderEntryDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/ProductOperationDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/ChefScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/EmployeesScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/FinanceScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/HelpScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/LoginScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/ManagerScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/MenuScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/WaiterScreen_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/WarehouseScreen_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_qmlcache_loader.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/appprofitagent_qmltyperegistrations.cpp"
 	],

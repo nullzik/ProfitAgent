@@ -1,21 +1,21 @@
 module ProfitAgent
 typeinfo appProfitAgent.qmltypes
 prefer :/qt/qml/ProfitAgent/
-Main 1.0 Main.qml
-Sidebar 1.0 Sidebar.qml
-KPICard 1.0 KPICard.qml
-OperationsTable 1.0 OperationsTable.qml
-OperationDetailsDialog 1.0 OperationDetailsDialog.qml
-LoginScreen 1.0 LoginScreen.qml
-WaiterScreen 1.0 WaiterScreen.qml
-ChefScreen 1.0 ChefScreen.qml
-ManagerScreen 1.0 ManagerScreen.qml
-OrderEntryDialog 1.0 OrderEntryDialog.qml
-ProductOperationDialog 1.0 ProductOperationDialog.qml
-WarehouseScreen 1.0 WarehouseScreen.qml
-EmployeesScreen 1.0 EmployeesScreen.qml
-FinanceScreen 1.0 FinanceScreen.qml
-HelpScreen 1.0 HelpScreen.qml
-MenuScreen 1.0 MenuScreen.qml
+Main 1.0 presentation/views/Main.qml
+Sidebar 1.0 presentation/views/Sidebar.qml
+KPICard 1.0 presentation/views/components/KPICard.qml
+OperationsTable 1.0 presentation/views/components/OperationsTable.qml
+OperationDetailsDialog 1.0 presentation/views/dialogs/OperationDetailsDialog.qml
+OrderEntryDialog 1.0 presentation/views/dialogs/OrderEntryDialog.qml
+ProductOperationDialog 1.0 presentation/views/dialogs/ProductOperationDialog.qml
+LoginScreen 1.0 presentation/views/screens/LoginScreen.qml
+WaiterScreen 1.0 presentation/views/screens/WaiterScreen.qml
+ChefScreen 1.0 presentation/views/screens/ChefScreen.qml
+ManagerScreen 1.0 presentation/views/screens/ManagerScreen.qml
+MenuScreen 1.0 presentation/views/screens/MenuScreen.qml
+WarehouseScreen 1.0 presentation/views/screens/WarehouseScreen.qml
+EmployeesScreen 1.0 presentation/views/screens/EmployeesScreen.qml
+FinanceScreen 1.0 presentation/views/screens/FinanceScreen.qml
+HelpScreen 1.0 presentation/views/screens/HelpScreen.qml
 depends QtQuick
 

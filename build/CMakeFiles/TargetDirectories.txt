@@ -1,4 +1,5 @@
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/domain_model.dir
+C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/application_services.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/appProfitAgent_qmltyperegistration.dir
 C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/all_qmltyperegistrations.dir

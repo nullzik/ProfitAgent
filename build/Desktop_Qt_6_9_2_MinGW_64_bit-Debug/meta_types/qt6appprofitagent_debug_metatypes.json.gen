@@ -537,7 +537,7 @@
         "classes": [
             {
                 "className": "MenuViewModel",
-                "lineNumber": 14,
+                "lineNumber": 12,
                 "methods": [
                     {
                         "access": "public",
@@ -927,7 +927,7 @@
         "classes": [
             {
                 "className": "WarehouseViewModel",
-                "lineNumber": 13,
+                "lineNumber": 11,
                 "methods": [
                     {
                         "access": "public",
