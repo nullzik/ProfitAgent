@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 309,
+                        "durationMicroseconds": 347,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 115,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 16
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 20,
-                        "durationMicroseconds": 222,
+                        "durationMicroseconds": 306,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 21
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 67,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 22
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 71,
+                        "durationMicroseconds": 50,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 26
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 31,
-                        "durationMicroseconds": 5544,
+                        "durationMicroseconds": 3973,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "text",
                         "line": 39
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 36,
-                        "durationMicroseconds": 79,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 58
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 17,
+                        "durationMicroseconds": 8,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
                         "line": 62
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 50,
-                        "durationMicroseconds": 300,
+                        "durationMicroseconds": 171,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 64
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 48,
-                        "durationMicroseconds": 261,
+                        "durationMicroseconds": 144,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 65
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 21,
-                        "durationMicroseconds": 2302,
+                        "durationMicroseconds": 1403,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "updateSource",
                         "line": 77
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 44,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 102
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 29,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 50,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "target",
                         "line": 106
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "onCurrentSectionChanged",
                         "line": 107
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 49,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 118

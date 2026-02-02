@@ -87,6 +87,12 @@
                     "index": 6,
                     "name": "setStopList",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "reloadProducts",
+                    "returnType": "void"
                 }
             ],
             "object": true,

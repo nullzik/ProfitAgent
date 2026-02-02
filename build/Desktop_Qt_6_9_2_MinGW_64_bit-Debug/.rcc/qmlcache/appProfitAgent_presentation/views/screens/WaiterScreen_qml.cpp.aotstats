@@ -5,11 +5,59 @@
                 "entries": [
                     {
                         "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 215,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "Cannot access value for name waiterViewModel",
+                        "functionName": "target",
+                        "line": 31
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 9,
+                        "durationMicroseconds": 104,
+                        "errorMessage": "",
+                        "functionName": "onOrderPlacedSuccess",
+                        "line": 32
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 42
+                    },
+                    {
+                        "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 336,
+                        "durationMicroseconds": 30,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 10
+                        "line": 46
                     },
                     {
                         "codegenSuccessful": false,
@@ -17,127 +65,127 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 31
+                        "line": 67
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 112,
+                        "durationMicroseconds": 33,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 33
+                        "line": 69
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 15,
+                        "durationMicroseconds": 6,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
-                        "line": 37
+                        "line": 73
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 42,
-                        "durationMicroseconds": 368,
+                        "durationMicroseconds": 160,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
-                        "line": 39
+                        "line": 75
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 40,
-                        "durationMicroseconds": 238,
+                        "durationMicroseconds": 111,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
-                        "line": 40
+                        "line": 76
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 38,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 55
+                        "line": 91
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 36,
-                        "durationMicroseconds": 96,
+                        "durationMicroseconds": 42,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
-                        "line": 78
+                        "line": 114
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 51,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 37,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 84
+                        "line": 120
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 43,
-                        "durationMicroseconds": 375,
+                        "durationMicroseconds": 159,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "text",
-                        "line": 88
+                        "line": 124
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 63,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
-                        "line": 92
+                        "line": 128
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 43,
-                        "durationMicroseconds": 353,
+                        "durationMicroseconds": 196,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "text",
-                        "line": 96
+                        "line": 132
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 44,
-                        "durationMicroseconds": 291,
+                        "durationMicroseconds": 136,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
-                        "line": 98
+                        "line": 134
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 63,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 64,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
-                        "line": 99
+                        "line": 135
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 44,
-                        "durationMicroseconds": 581,
+                        "durationMicroseconds": 273,
                         "errorMessage": "Cannot access value for name waiterViewModel",
                         "functionName": "onClicked",
-                        "line": 105
+                        "line": 141
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 46,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "cursorShape",
-                        "line": 106
+                        "line": 142
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 47,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 34,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 104
+                        "line": 140
                     },
                     {
                         "codegenSuccessful": false,
@@ -145,23 +193,23 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"parent\".",
                         "functionName": "parent",
-                        "line": 117
+                        "line": 153
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 17,
-                        "durationMicroseconds": 79,
+                        "durationMicroseconds": 35,
                         "errorMessage": "Cannot access value for name waiterViewModel",
                         "functionName": "target",
-                        "line": 121
+                        "line": 157
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 9,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 69,
                         "errorMessage": "Cannot access value for name waiterViewModel",
                         "functionName": "onIsOrderDialogOpenChanged",
-                        "line": 122
+                        "line": 158
                     }
                 ],
                 "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/WaiterScreen.qml"

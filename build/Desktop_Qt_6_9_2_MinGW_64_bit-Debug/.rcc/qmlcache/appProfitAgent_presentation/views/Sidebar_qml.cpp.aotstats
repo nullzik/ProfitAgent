@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 385,
+                        "durationMicroseconds": 261,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 11
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 75,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 21
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 428,
+                        "durationMicroseconds": 684,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "model",
                         "line": 36
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 28,
-                        "durationMicroseconds": 182,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 39
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 577,
+                        "durationMicroseconds": 679,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "color",
                         "line": 41
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 31,
-                        "durationMicroseconds": 445,
+                        "durationMicroseconds": 490,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 48
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 830,
+                        "durationMicroseconds": 914,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "color",
                         "line": 50
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 190,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 45
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 49,
-                        "durationMicroseconds": 120,
+                        "durationMicroseconds": 112,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 47
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 36,
-                        "durationMicroseconds": 691,
+                        "durationMicroseconds": 695,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "onClicked",
                         "line": 55
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 38,
-                        "durationMicroseconds": 144,
+                        "durationMicroseconds": 133,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 56
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 68,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 54
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 60,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 69
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 53,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 75
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 1203,
+                        "durationMicroseconds": 1355,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "text",
                         "line": 87
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 47,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 201,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 86
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 49,
-                        "durationMicroseconds": 144,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 95
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 568,
+                        "durationMicroseconds": 611,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "text",
                         "line": 99
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 512,
+                        "durationMicroseconds": 516,
                         "errorMessage": "Cannot access value for name navigationViewModel",
                         "functionName": "text",
                         "line": 106

@@ -32,13 +32,13 @@ public:
     Q_INVOKABLE void writeOffProduct(const QString &productId,
                                      double quantity);
     Q_INVOKABLE void setStopList(const QString &productId, bool enabled);
+    Q_INVOKABLE void reloadProducts();
 
 signals:
     void productsChanged();
     void lastErrorChanged();
 
 private:
-    void reloadProducts();
     void setLastError(const QString &message);
 
     domain::IWarehouseService &m_service;

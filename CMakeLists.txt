@@ -46,6 +46,8 @@ add_library(domain_model STATIC
 add_library(application_services STATIC
     application/services/MenuService.h
     application/services/MenuService.cpp
+    application/services/OrderService.h
+    application/services/OrderService.cpp
     application/services/WarehouseService.h
     application/services/WarehouseService.cpp
 )

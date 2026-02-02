@@ -13,6 +13,7 @@
 #include "presentation/viewmodels/WarehouseViewModel.h"
 
 #include "application/services/MenuService.h"
+#include "application/services/OrderService.h"
 #include "application/services/WarehouseService.h"
 #include "domain/warehouse/Product.h"
 
@@ -35,15 +36,22 @@ int main(int argc, char *argv[])
     // Инициализируем доменный сервис меню
     domain::MenuService menuService{warehouseService};
 
+    // Инициализируем сервис заказов
+    application::OrderService orderService{menuService, warehouseService};
+
     // Создаем ViewModels
     DashboardViewModel dashboardViewModel;
     NavigationViewModel navigationViewModel;
     AuthViewModel authViewModel;
     AppStateViewModel appStateViewModel;
-    WaiterViewModel waiterViewModel;
-    ChefViewModel chefViewModel;
     WarehouseViewModel warehouseViewModel{warehouseService};
     MenuViewModel menuViewModel{menuService, warehouseService};
+
+    WaiterViewModel waiterViewModel;
+    waiterViewModel.setOrderService(&orderService);
+    waiterViewModel.setWarehouseViewModel(&warehouseViewModel);
+
+    ChefViewModel chefViewModel;
 
     QQmlApplicationEngine engine;
     

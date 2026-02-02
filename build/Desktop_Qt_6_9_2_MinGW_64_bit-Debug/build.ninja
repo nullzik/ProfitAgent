@@ -151,6 +151,13 @@ build CMakeFiles/application_services.dir/application/services/MenuService.cpp.o
   OBJECT_DIR = CMakeFiles\application_services.dir
   OBJECT_FILE_DIR = CMakeFiles\application_services.dir\application\services
 
+build CMakeFiles/application_services.dir/application/services/OrderService.cpp.obj: CXX_COMPILER__application_services_unscanned_Debug C$:/Users/boyko/Documents/ProfitAgent/application/services/OrderService.cpp || cmake_object_order_depends_target_application_services
+  DEP_FILE = CMakeFiles\application_services.dir\application\services\OrderService.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/boyko/Documents/ProfitAgent
+  OBJECT_DIR = CMakeFiles\application_services.dir
+  OBJECT_FILE_DIR = CMakeFiles\application_services.dir\application\services
+
 build CMakeFiles/application_services.dir/application/services/WarehouseService.cpp.obj: CXX_COMPILER__application_services_unscanned_Debug C$:/Users/boyko/Documents/ProfitAgent/application/services/WarehouseService.cpp || cmake_object_order_depends_target_application_services
   DEP_FILE = CMakeFiles\application_services.dir\application\services\WarehouseService.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
@@ -166,7 +173,7 @@ build CMakeFiles/application_services.dir/application/services/WarehouseService.
 #############################################
 # Link the static library libapplication_services.a
 
-build libapplication_services.a: CXX_STATIC_LIBRARY_LINKER__application_services_Debug CMakeFiles/application_services.dir/application/services/MenuService.cpp.obj CMakeFiles/application_services.dir/application/services/WarehouseService.cpp.obj || libdomain_model.a
+build libapplication_services.a: CXX_STATIC_LIBRARY_LINKER__application_services_Debug CMakeFiles/application_services.dir/application/services/MenuService.cpp.obj CMakeFiles/application_services.dir/application/services/OrderService.cpp.obj CMakeFiles/application_services.dir/application/services/WarehouseService.cpp.obj || libdomain_model.a
   LANGUAGE_COMPILE_FLAGS = -DQT_QML_DEBUG -g
   OBJECT_DIR = CMakeFiles\application_services.dir
   POST_BUILD = cd .

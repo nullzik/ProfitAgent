@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "WaiterViewModel",
-            "lineNumber": 7,
+            "lineNumber": 13,
             "methods": [
                 {
                     "access": "public",
@@ -12,7 +12,7 @@
                             "type": "int"
                         }
                     ],
-                    "index": 2,
+                    "index": 5,
                     "name": "onTableSelected",
                     "returnType": "void"
                 },
@@ -24,15 +24,27 @@
                             "type": "int"
                         }
                     ],
-                    "index": 3,
+                    "index": 6,
                     "name": "openOrderEntry",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 4,
+                    "index": 7,
                     "name": "closeOrderEntry",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "orderItems",
+                            "type": "QVariantList"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "placeOrder",
+                    "returnType": "bool"
                 }
             ],
             "object": true,
@@ -64,6 +76,20 @@
                     "stored": true,
                     "type": "bool",
                     "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "orderMessage",
+                    "notify": "orderMessageChanged",
+                    "read": "orderMessage",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
                 }
             ],
             "qualifiedClassName": "WaiterViewModel",
@@ -78,6 +104,30 @@
                     "access": "public",
                     "index": 1,
                     "name": "isOrderDialogOpenChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "orderMessageChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "orderPlacedSuccess",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "reason",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "orderPlacedFailed",
                     "returnType": "void"
                 }
             ],

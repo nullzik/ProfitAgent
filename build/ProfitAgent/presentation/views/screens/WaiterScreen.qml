@@ -6,6 +6,42 @@ Rectangle {
     id: waiterScreen
     color: "#F5F5F5"
 
+    // Toast при успешном заказе
+    Rectangle {
+        id: orderToast
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 32
+        width: 200
+        height: 48
+        radius: 8
+        color: "#4CAF50"
+        visible: false
+        z: 1000
+
+        Text {
+            anchors.centerIn: parent
+            text: "Заказ принят"
+            font.pixelSize: 14
+            color: "#FFFFFF"
+        }
+    }
+
+    Connections {
+        target: waiterViewModel
+        function onOrderPlacedSuccess() {
+            orderToast.visible = true
+            toastHideTimer.restart()
+        }
+    }
+
+    Timer {
+        id: toastHideTimer
+        interval: 3000
+        repeat: false
+        onTriggered: orderToast.visible = false
+    }
+
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 24
