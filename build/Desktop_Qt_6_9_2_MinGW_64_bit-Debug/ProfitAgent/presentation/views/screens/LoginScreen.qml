@@ -88,32 +88,14 @@ Rectangle {
                     }
                 }
             }
+        }
 
-            ColumnLayout {
-                Layout.fillWidth: true
-                spacing: 8
-
-                Text {
-                    text: "Роль"
-                    font.pixelSize: 14
-                    color: "#666666"
-                }
-
-                ComboBox {
-                    id: roleComboBox
-                    Layout.fillWidth: true
-                    height: 48
-                    model: ["Официант", "Повар", "Менеджер"]
-                    currentIndex: authViewModel.selectedRole
-                    onCurrentIndexChanged: authViewModel.selectedRole = currentIndex
-                    background: Rectangle {
-                        radius: 8
-                        border.color: "#E0E0E0"
-                        border.width: 1
-                        color: "#FFFFFF"
-                    }
-                }
-            }
+        Text {
+            visible: authErrorVisible
+            text: "Неверный логин или пароль"
+            font.pixelSize: 12
+            color: "#F44336"
+            Layout.alignment: Qt.AlignHCenter
         }
 
         Button {
@@ -137,13 +119,16 @@ Rectangle {
             }
         }
     }
+
+    property bool authErrorVisible: false
+
+    Connections {
+        target: authViewModel
+        function onLoginFailed() {
+            authErrorVisible = true
+        }
+        function onLoginSuccess() {
+            authErrorVisible = false
+        }
+    }
 }
-
-
-
-
-
-
-
-
-

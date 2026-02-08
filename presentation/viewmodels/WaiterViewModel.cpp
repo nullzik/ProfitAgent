@@ -16,6 +16,7 @@ WaiterViewModel::WaiterViewModel(QObject *parent)
 void WaiterViewModel::setOrderService(application::OrderService* orderService)
 {
     m_orderService = orderService;
+    refreshTables();
 }
 
 void WaiterViewModel::setWarehouseViewModel(WarehouseViewModel* warehouseViewModel)
@@ -85,6 +86,7 @@ bool WaiterViewModel::placeOrder(const QVariantList& orderItems)
         if (m_warehouseViewModel) {
             m_warehouseViewModel->reloadProducts();
         }
+        refreshTables();
         setOrderMessage(tr("Заказ принят"));
         emit orderPlacedSuccess();
     } else {
@@ -108,3 +110,29 @@ void WaiterViewModel::clearOrderMessage()
     setOrderMessage(QString{});
 }
 
+void WaiterViewModel::refreshTables()
+{
+    if (!m_orderService) return;
+
+    m_tables.clear();
+    constexpr int tableCount = 12;
+    for (int i = 0; i < tableCount; ++i) {
+        const auto summary = m_orderService->getTableSummary(i);
+
+        QVariantList dishesList;
+        for (const auto& d : summary.dishes) {
+            QVariantMap dm;
+            dm.insert(QStringLiteral("name"), QString::fromStdString(d.dishName));
+            dm.insert(QStringLiteral("quantity"), d.quantity);
+            dishesList.append(dm);
+        }
+
+        QVariantMap tableMap;
+        tableMap.insert(QStringLiteral("tableIndex"), i);
+        tableMap.insert(QStringLiteral("hasOrders"), summary.hasOrders);
+        tableMap.insert(QStringLiteral("dishes"), dishesList);
+        m_tables.append(tableMap);
+    }
+
+    emit tablesChanged();
+}

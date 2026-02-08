@@ -8,6 +8,8 @@ OperationsTable 1.0 presentation/views/components/OperationsTable.qml
 OperationDetailsDialog 1.0 presentation/views/dialogs/OperationDetailsDialog.qml
 OrderEntryDialog 1.0 presentation/views/dialogs/OrderEntryDialog.qml
 ProductOperationDialog 1.0 presentation/views/dialogs/ProductOperationDialog.qml
+CreateEmployeeDialog 1.0 presentation/views/dialogs/CreateEmployeeDialog.qml
+EditEmployeeDialog 1.0 presentation/views/dialogs/EditEmployeeDialog.qml
 LoginScreen 1.0 presentation/views/screens/LoginScreen.qml
 WaiterScreen 1.0 presentation/views/screens/WaiterScreen.qml
 ChefScreen 1.0 presentation/views/screens/ChefScreen.qml

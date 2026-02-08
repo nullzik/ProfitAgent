@@ -52,7 +52,7 @@ private:
 class DashboardViewModel : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QString userName READ userName CONSTANT)
+    Q_PROPERTY(QString userName READ userName NOTIFY userNameChanged)
     Q_PROPERTY(QString revenue READ revenue CONSTANT)
     Q_PROPERTY(QString revenueChange READ revenueChange CONSTANT)
     Q_PROPERTY(QString netProfit READ netProfit CONSTANT)
@@ -78,9 +78,11 @@ public:
     int totalPages() const { return m_totalPages; }
 
     Q_INVOKABLE void setCurrentPage(int page);
+    Q_INVOKABLE void setUserName(const QString& name);
 
 signals:
     void currentPageChanged();
+    void userNameChanged();
 
 private:
     QString m_userName;

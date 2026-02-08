@@ -25,13 +25,29 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 2,
+                        "index": 3,
                         "name": "loginAs",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 3,
+                        "arguments": [
+                            {
+                                "name": "login",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "setCurrentUser",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
                         "name": "logout",
                         "returnType": "void"
                     }
@@ -65,6 +81,20 @@
                         "stored": true,
                         "type": "bool",
                         "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "currentUserName",
+                        "notify": "currentUserNameChanged",
+                        "read": "currentUserName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
                     }
                 ],
                 "qualifiedClassName": "AppStateViewModel",
@@ -79,6 +109,12 @@
                         "access": "public",
                         "index": 1,
                         "name": "isAuthenticatedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "currentUserNameChanged",
                         "returnType": "void"
                     }
                 ],
@@ -113,13 +149,13 @@
                 "methods": [
                     {
                         "access": "public",
-                        "index": 6,
+                        "index": 5,
                         "name": "performLogin",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 7,
+                        "index": 6,
                         "name": "logout",
                         "returnType": "void"
                     }
@@ -161,21 +197,6 @@
                         "designable": true,
                         "final": false,
                         "index": 2,
-                        "name": "selectedRole",
-                        "notify": "selectedRoleChanged",
-                        "read": "selectedRole",
-                        "required": false,
-                        "scriptable": true,
-                        "stored": true,
-                        "type": "int",
-                        "user": false,
-                        "write": "setSelectedRole"
-                    },
-                    {
-                        "constant": false,
-                        "designable": true,
-                        "final": false,
-                        "index": 3,
                         "name": "isAuthenticated",
                         "notify": "isAuthenticatedChanged",
                         "read": "isAuthenticated",
@@ -203,12 +224,6 @@
                     {
                         "access": "public",
                         "index": 2,
-                        "name": "selectedRoleChanged",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 3,
                         "name": "isAuthenticatedChanged",
                         "returnType": "void"
                     },
@@ -218,15 +233,19 @@
                             {
                                 "name": "role",
                                 "type": "int"
+                            },
+                            {
+                                "name": "login",
+                                "type": "QString"
                             }
                         ],
-                        "index": 4,
+                        "index": 3,
                         "name": "loginSuccess",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 5,
+                        "index": 4,
                         "name": "loginFailed",
                         "returnType": "void"
                     }
@@ -374,19 +393,32 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 1,
+                        "index": 2,
                         "name": "setCurrentPage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "setUserName",
                         "returnType": "void"
                     }
                 ],
                 "object": true,
                 "properties": [
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 0,
                         "name": "userName",
+                        "notify": "userNameChanged",
                         "read": "userName",
                         "required": false,
                         "scriptable": true,
@@ -520,6 +552,12 @@
                         "index": 0,
                         "name": "currentPageChanged",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "userNameChanged",
+                        "returnType": "void"
                     }
                 ],
                 "superClasses": [
@@ -531,6 +569,321 @@
             }
         ],
         "inputFile": "DashboardViewModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "EmployeeViewModel",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "reloadEmployees",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "isConst": true,
+                        "name": "getEmployeeById",
+                        "returnType": "QVariantMap"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fullName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "age",
+                                "type": "int"
+                            },
+                            {
+                                "name": "phone",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "address",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            },
+                            {
+                                "name": "hourlyRate",
+                                "type": "double"
+                            },
+                            {
+                                "name": "login",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "createEmployee",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fullName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "age",
+                                "type": "int"
+                            },
+                            {
+                                "name": "phone",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "address",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            },
+                            {
+                                "name": "hourlyRate",
+                                "type": "double"
+                            },
+                            {
+                                "name": "login",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "isCloned": true,
+                        "name": "createEmployee",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fullName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "age",
+                                "type": "int"
+                            },
+                            {
+                                "name": "phone",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "address",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            },
+                            {
+                                "name": "hourlyRate",
+                                "type": "double"
+                            }
+                        ],
+                        "index": 6,
+                        "isCloned": true,
+                        "name": "createEmployee",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "fullName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "age",
+                                "type": "int"
+                            },
+                            {
+                                "name": "phone",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "address",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            },
+                            {
+                                "name": "hourlyRate",
+                                "type": "double"
+                            },
+                            {
+                                "name": "login",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "name": "updateEmployee",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "fullName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "age",
+                                "type": "int"
+                            },
+                            {
+                                "name": "phone",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "address",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            },
+                            {
+                                "name": "hourlyRate",
+                                "type": "double"
+                            },
+                            {
+                                "name": "login",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "isCloned": true,
+                        "name": "updateEmployee",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "fullName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "age",
+                                "type": "int"
+                            },
+                            {
+                                "name": "phone",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "address",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            },
+                            {
+                                "name": "hourlyRate",
+                                "type": "double"
+                            }
+                        ],
+                        "index": 9,
+                        "isCloned": true,
+                        "name": "updateEmployee",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "employees",
+                        "notify": "employeesChanged",
+                        "read": "employees",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "lastError",
+                        "notify": "lastErrorChanged",
+                        "read": "lastError",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "EmployeeViewModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "employeesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "lastErrorChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "EmployeeViewModel.h",
         "outputRevision": 69
     },
     {
@@ -710,7 +1063,7 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 2,
+                        "index": 4,
                         "name": "setActiveMenuItem",
                         "returnType": "void"
                     },
@@ -722,19 +1075,36 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 3,
+                        "index": 5,
                         "name": "setCurrentSection",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "login",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "setCurrentUser",
                         "returnType": "void"
                     }
                 ],
                 "object": true,
                 "properties": [
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 0,
                         "name": "userName",
+                        "notify": "userNameChanged",
                         "read": "userName",
                         "required": false,
                         "scriptable": true,
@@ -743,11 +1113,12 @@
                         "user": false
                     },
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 1,
                         "name": "userRole",
+                        "notify": "userRoleChanged",
                         "read": "userRole",
                         "required": false,
                         "scriptable": true,
@@ -816,6 +1187,18 @@
                         "index": 1,
                         "name": "currentSectionChanged",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "userNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "userRoleChanged",
+                        "returnType": "void"
                     }
                 ],
                 "superClasses": [
@@ -843,7 +1226,7 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 5,
+                        "index": 6,
                         "name": "onTableSelected",
                         "returnType": "void"
                     },
@@ -855,13 +1238,13 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 6,
+                        "index": 7,
                         "name": "openOrderEntry",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 7,
+                        "index": 8,
                         "name": "closeOrderEntry",
                         "returnType": "void"
                     },
@@ -873,7 +1256,7 @@
                                 "type": "QVariantList"
                             }
                         ],
-                        "index": 8,
+                        "index": 9,
                         "name": "placeOrder",
                         "returnType": "bool"
                     }
@@ -921,6 +1304,20 @@
                         "stored": true,
                         "type": "QString",
                         "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "tables",
+                        "notify": "tablesChanged",
+                        "read": "tables",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
                     }
                 ],
                 "qualifiedClassName": "WaiterViewModel",
@@ -959,6 +1356,12 @@
                         ],
                         "index": 4,
                         "name": "orderPlacedFailed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "tablesChanged",
                         "returnType": "void"
                     }
                 ],

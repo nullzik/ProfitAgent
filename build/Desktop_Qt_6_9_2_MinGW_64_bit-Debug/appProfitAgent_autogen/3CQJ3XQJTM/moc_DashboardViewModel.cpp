@@ -98,8 +98,11 @@ template <> constexpr inline auto DashboardViewModel::qt_create_metaobjectdata<q
         "DashboardViewModel",
         "currentPageChanged",
         "",
+        "userNameChanged",
         "setCurrentPage",
         "page",
+        "setUserName",
+        "name",
         "userName",
         "revenue",
         "revenueChange",
@@ -116,32 +119,38 @@ template <> constexpr inline auto DashboardViewModel::qt_create_metaobjectdata<q
     QtMocHelpers::UintData qt_methods {
         // Signal 'currentPageChanged'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'userNameChanged'
+        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'setCurrentPage'
-        QtMocHelpers::MethodData<void(int)>(3, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 4 },
+        QtMocHelpers::MethodData<void(int)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 5 },
+        }}),
+        // Method 'setUserName'
+        QtMocHelpers::MethodData<void(const QString &)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 7 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'userName'
-        QtMocHelpers::PropertyData<QString>(5, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
+        QtMocHelpers::PropertyData<QString>(8, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
         // property 'revenue'
-        QtMocHelpers::PropertyData<QString>(6, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
-        // property 'revenueChange'
-        QtMocHelpers::PropertyData<QString>(7, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
-        // property 'netProfit'
-        QtMocHelpers::PropertyData<QString>(8, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
-        // property 'netProfitChange'
         QtMocHelpers::PropertyData<QString>(9, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
-        // property 'salesCount'
+        // property 'revenueChange'
         QtMocHelpers::PropertyData<QString>(10, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
-        // property 'salesCountChange'
+        // property 'netProfit'
         QtMocHelpers::PropertyData<QString>(11, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
+        // property 'netProfitChange'
+        QtMocHelpers::PropertyData<QString>(12, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
+        // property 'salesCount'
+        QtMocHelpers::PropertyData<QString>(13, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
+        // property 'salesCountChange'
+        QtMocHelpers::PropertyData<QString>(14, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Constant),
         // property 'operationsModel'
-        QtMocHelpers::PropertyData<OperationsModel*>(12, 0x80000000 | 13, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
+        QtMocHelpers::PropertyData<OperationsModel*>(15, 0x80000000 | 16, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Constant),
         // property 'currentPage'
-        QtMocHelpers::PropertyData<int>(14, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
+        QtMocHelpers::PropertyData<int>(17, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
         // property 'totalPages'
-        QtMocHelpers::PropertyData<int>(15, QMetaType::Int, QMC::DefaultPropertyFlags | QMC::Constant),
+        QtMocHelpers::PropertyData<int>(18, QMetaType::Int, QMC::DefaultPropertyFlags | QMC::Constant),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -164,12 +173,16 @@ void DashboardViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->currentPageChanged(); break;
-        case 1: _t->setCurrentPage((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 1: _t->userNameChanged(); break;
+        case 2: _t->setCurrentPage((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 3: _t->setUserName((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (DashboardViewModel::*)()>(_a, &DashboardViewModel::currentPageChanged, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (DashboardViewModel::*)()>(_a, &DashboardViewModel::userNameChanged, 1))
             return;
     }
     if (_c == QMetaObject::RegisterPropertyMetaType) {
@@ -216,14 +229,14 @@ int DashboardViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 4;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
@@ -238,5 +251,11 @@ int DashboardViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void DashboardViewModel::currentPageChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void DashboardViewModel::userNameChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP

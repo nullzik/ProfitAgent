@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 4605,
+                        "durationMicroseconds": 266,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 19
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 20,
-                        "durationMicroseconds": 509,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 25
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 148,
+                        "durationMicroseconds": 107,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 28
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 41,
-                        "durationMicroseconds": 189,
+                        "durationMicroseconds": 133,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 33
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 37
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 133,
+                        "durationMicroseconds": 101,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 43
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 209,
+                        "durationMicroseconds": 113,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 55
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 975,
+                        "durationMicroseconds": 666,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "color",
                         "line": 57

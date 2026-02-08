@@ -7,8 +7,8 @@
 class NavigationViewModel : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QString userName READ userName CONSTANT)
-    Q_PROPERTY(QString userRole READ userRole CONSTANT)
+    Q_PROPERTY(QString userName READ userName NOTIFY userNameChanged)
+    Q_PROPERTY(QString userRole READ userRole NOTIFY userRoleChanged)
     Q_PROPERTY(QString avatarUrl READ avatarUrl CONSTANT)
     Q_PROPERTY(int activeMenuItem READ activeMenuItem NOTIFY activeMenuItemChanged)
     Q_PROPERTY(int currentSection READ currentSection NOTIFY currentSectionChanged)
@@ -34,10 +34,13 @@ public:
 
     Q_INVOKABLE void setActiveMenuItem(int index);
     Q_INVOKABLE void setCurrentSection(int section);
+    Q_INVOKABLE void setCurrentUser(const QString& login, int role);
 
 signals:
     void activeMenuItemChanged(int index);
     void currentSectionChanged();
+    void userNameChanged();
+    void userRoleChanged();
 
 private:
     QString m_userName;

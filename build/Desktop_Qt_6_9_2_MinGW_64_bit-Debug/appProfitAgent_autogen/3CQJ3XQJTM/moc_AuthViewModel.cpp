@@ -42,16 +42,14 @@ template <> constexpr inline auto AuthViewModel::qt_create_metaobjectdata<qt_met
         "loginChanged",
         "",
         "passwordChanged",
-        "selectedRoleChanged",
         "isAuthenticatedChanged",
         "loginSuccess",
         "role",
+        "login",
         "loginFailed",
         "performLogin",
         "logout",
-        "login",
         "password",
-        "selectedRole",
         "isAuthenticated",
         "Role",
         "Waiter",
@@ -64,13 +62,11 @@ template <> constexpr inline auto AuthViewModel::qt_create_metaobjectdata<qt_met
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'passwordChanged'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
-        // Signal 'selectedRoleChanged'
-        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'isAuthenticatedChanged'
-        QtMocHelpers::SignalData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'loginSuccess'
-        QtMocHelpers::SignalData<void(int)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 7 },
+        QtMocHelpers::SignalData<void(int, const QString &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 6 }, { QMetaType::QString, 7 },
         }}),
         // Signal 'loginFailed'
         QtMocHelpers::SignalData<void()>(8, 2, QMC::AccessPublic, QMetaType::Void),
@@ -81,20 +77,18 @@ template <> constexpr inline auto AuthViewModel::qt_create_metaobjectdata<qt_met
     };
     QtMocHelpers::UintData qt_properties {
         // property 'login'
-        QtMocHelpers::PropertyData<QString>(11, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
+        QtMocHelpers::PropertyData<QString>(7, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
         // property 'password'
-        QtMocHelpers::PropertyData<QString>(12, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 1),
-        // property 'selectedRole'
-        QtMocHelpers::PropertyData<int>(13, QMetaType::Int, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 2),
+        QtMocHelpers::PropertyData<QString>(11, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 1),
         // property 'isAuthenticated'
-        QtMocHelpers::PropertyData<bool>(14, QMetaType::Bool, QMC::DefaultPropertyFlags, 3),
+        QtMocHelpers::PropertyData<bool>(12, QMetaType::Bool, QMC::DefaultPropertyFlags, 2),
     };
     QtMocHelpers::UintData qt_enums {
         // enum 'Role'
-        QtMocHelpers::EnumData<enum Role>(15, 15, QMC::EnumFlags{}).add({
-            {   16, Role::Waiter },
-            {   17, Role::Chef },
-            {   18, Role::Manager },
+        QtMocHelpers::EnumData<enum Role>(13, 13, QMC::EnumFlags{}).add({
+            {   14, Role::Waiter },
+            {   15, Role::Chef },
+            {   16, Role::Manager },
         }),
     };
     return QtMocHelpers::metaObjectData<AuthViewModel, qt_meta_tag_ZN13AuthViewModelE_t>(QMC::MetaObjectFlag{}, qt_stringData,
@@ -117,12 +111,11 @@ void AuthViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         switch (_id) {
         case 0: _t->loginChanged(); break;
         case 1: _t->passwordChanged(); break;
-        case 2: _t->selectedRoleChanged(); break;
-        case 3: _t->isAuthenticatedChanged(); break;
-        case 4: _t->loginSuccess((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 5: _t->loginFailed(); break;
-        case 6: _t->performLogin(); break;
-        case 7: _t->logout(); break;
+        case 2: _t->isAuthenticatedChanged(); break;
+        case 3: _t->loginSuccess((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 4: _t->loginFailed(); break;
+        case 5: _t->performLogin(); break;
+        case 6: _t->logout(); break;
         default: ;
         }
     }
@@ -131,13 +124,11 @@ void AuthViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             return;
         if (QtMocHelpers::indexOfMethod<void (AuthViewModel::*)()>(_a, &AuthViewModel::passwordChanged, 1))
             return;
-        if (QtMocHelpers::indexOfMethod<void (AuthViewModel::*)()>(_a, &AuthViewModel::selectedRoleChanged, 2))
+        if (QtMocHelpers::indexOfMethod<void (AuthViewModel::*)()>(_a, &AuthViewModel::isAuthenticatedChanged, 2))
             return;
-        if (QtMocHelpers::indexOfMethod<void (AuthViewModel::*)()>(_a, &AuthViewModel::isAuthenticatedChanged, 3))
+        if (QtMocHelpers::indexOfMethod<void (AuthViewModel::*)(int , const QString & )>(_a, &AuthViewModel::loginSuccess, 3))
             return;
-        if (QtMocHelpers::indexOfMethod<void (AuthViewModel::*)(int )>(_a, &AuthViewModel::loginSuccess, 4))
-            return;
-        if (QtMocHelpers::indexOfMethod<void (AuthViewModel::*)()>(_a, &AuthViewModel::loginFailed, 5))
+        if (QtMocHelpers::indexOfMethod<void (AuthViewModel::*)()>(_a, &AuthViewModel::loginFailed, 4))
             return;
     }
     if (_c == QMetaObject::ReadProperty) {
@@ -145,8 +136,7 @@ void AuthViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         switch (_id) {
         case 0: *reinterpret_cast<QString*>(_v) = _t->login(); break;
         case 1: *reinterpret_cast<QString*>(_v) = _t->password(); break;
-        case 2: *reinterpret_cast<int*>(_v) = _t->selectedRole(); break;
-        case 3: *reinterpret_cast<bool*>(_v) = _t->isAuthenticated(); break;
+        case 2: *reinterpret_cast<bool*>(_v) = _t->isAuthenticated(); break;
         default: break;
         }
     }
@@ -155,7 +145,6 @@ void AuthViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         switch (_id) {
         case 0: _t->setLogin(*reinterpret_cast<QString*>(_v)); break;
         case 1: _t->setPassword(*reinterpret_cast<QString*>(_v)); break;
-        case 2: _t->setSelectedRole(*reinterpret_cast<int*>(_v)); break;
         default: break;
         }
     }
@@ -180,20 +169,20 @@ int AuthViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 7;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 7;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 3;
     }
     return _id;
 }
@@ -211,26 +200,20 @@ void AuthViewModel::passwordChanged()
 }
 
 // SIGNAL 2
-void AuthViewModel::selectedRoleChanged()
+void AuthViewModel::isAuthenticatedChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 
 // SIGNAL 3
-void AuthViewModel::isAuthenticatedChanged()
+void AuthViewModel::loginSuccess(int _t1, const QString & _t2)
 {
-    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1, _t2);
 }
 
 // SIGNAL 4
-void AuthViewModel::loginSuccess(int _t1)
-{
-    QMetaObject::activate<void>(this, &staticMetaObject, 4, nullptr, _t1);
-}
-
-// SIGNAL 5
 void AuthViewModel::loginFailed()
 {
-    QMetaObject::activate(this, &staticMetaObject, 5, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
 }
 QT_WARNING_POP

@@ -50,13 +50,19 @@ add_library(application_services STATIC
     application/services/OrderService.cpp
     application/services/WarehouseService.h
     application/services/WarehouseService.cpp
+    application/services/AuthService.h
+    application/services/AuthService.cpp
+    application/services/EmployeeService.h
+    application/services/EmployeeService.cpp
+    application/database/Database.h
+    application/database/Database.cpp
 )
-target_link_libraries(application_services PUBLIC domain_model)
+target_link_libraries(application_services PUBLIC domain_model Qt6::Core Qt6::Sql)
 target_include_directories(application_services PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_include_directories(domain_model PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2)
+find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2 Sql)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
@@ -78,6 +84,8 @@ qt_add_executable(appProfitAgent
     presentation/viewmodels/WaiterViewModel.h
     presentation/viewmodels/WarehouseViewModel.cpp
     presentation/viewmodels/WarehouseViewModel.h
+    presentation/viewmodels/EmployeeViewModel.cpp
+    presentation/viewmodels/EmployeeViewModel.h
 )
 
 qt_add_qml_module(appProfitAgent
@@ -91,6 +99,8 @@ qt_add_qml_module(appProfitAgent
         presentation/views/dialogs/OperationDetailsDialog.qml
         presentation/views/dialogs/OrderEntryDialog.qml
         presentation/views/dialogs/ProductOperationDialog.qml
+        presentation/views/dialogs/CreateEmployeeDialog.qml
+        presentation/views/dialogs/EditEmployeeDialog.qml
         presentation/views/screens/LoginScreen.qml
         presentation/views/screens/WaiterScreen.qml
         presentation/views/screens/ChefScreen.qml
@@ -117,6 +127,7 @@ target_include_directories(appProfitAgent PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(appProfitAgent
     PRIVATE Qt6::Quick
     PRIVATE Qt6::QuickControls2
+    PRIVATE Qt6::Sql
     PRIVATE domain_model
     PRIVATE application_services
 )

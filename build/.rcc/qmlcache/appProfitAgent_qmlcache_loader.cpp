@@ -5,112 +5,119 @@
 #include <QtCore/qstring.h>
 
 namespace QmlCacheGeneratedCode {
-namespace _qt_qml_ProfitAgent_Main_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_Main_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_Sidebar_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_Sidebar_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_KPICard_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_components_KPICard_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_OperationsTable_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_components_OperationsTable_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_OperationDetailsDialog_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_dialogs_OperationDetailsDialog_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_LoginScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_dialogs_OrderEntryDialog_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_WaiterScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_dialogs_ProductOperationDialog_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_ChefScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_dialogs_CreateEmployeeDialog_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_ManagerScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_screens_LoginScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_OrderEntryDialog_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_screens_WaiterScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_ProductOperationDialog_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_screens_ChefScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_WarehouseScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_screens_ManagerScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_EmployeesScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_screens_MenuScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_FinanceScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_screens_WarehouseScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_HelpScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_screens_EmployeesScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_ProfitAgent_MenuScreen_qml { 
+namespace _qt_qml_ProfitAgent_presentation_views_screens_FinanceScreen_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_ProfitAgent_presentation_views_screens_HelpScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -131,22 +138,23 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 
 Registry::Registry() {
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_Main_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/Sidebar.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_Sidebar_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/KPICard.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_KPICard_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/OperationsTable.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_OperationsTable_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/OperationDetailsDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_OperationDetailsDialog_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/LoginScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_LoginScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/WaiterScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_WaiterScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/ChefScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_ChefScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/ManagerScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_ManagerScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/OrderEntryDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_OrderEntryDialog_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/ProductOperationDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_ProductOperationDialog_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/WarehouseScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_WarehouseScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/EmployeesScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_EmployeesScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/FinanceScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_FinanceScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/HelpScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_HelpScreen_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/MenuScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_MenuScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_Main_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/Sidebar.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_Sidebar_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/components/KPICard.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_components_KPICard_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/components/OperationsTable.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_components_OperationsTable_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_OperationDetailsDialog_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_OrderEntryDialog_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_ProductOperationDialog_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/CreateEmployeeDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_CreateEmployeeDialog_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/LoginScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_LoginScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/WaiterScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_WaiterScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/ChefScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_ChefScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/ManagerScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_ManagerScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/MenuScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_MenuScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/WarehouseScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_WarehouseScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/EmployeesScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_EmployeesScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/FinanceScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_FinanceScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/HelpScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_HelpScreen_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

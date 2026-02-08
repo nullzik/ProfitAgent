@@ -11,6 +11,8 @@ C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.
 /qt/qml/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml
 /qt/qml/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml
 /qt/qml/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml
+/qt/qml/ProfitAgent/presentation/views/dialogs/CreateEmployeeDialog.qml
+/qt/qml/ProfitAgent/presentation/views/dialogs/EditEmployeeDialog.qml
 /qt/qml/ProfitAgent/presentation/views/screens/LoginScreen.qml
 /qt/qml/ProfitAgent/presentation/views/screens/WaiterScreen.qml
 /qt/qml/ProfitAgent/presentation/views/screens/ChefScreen.qml

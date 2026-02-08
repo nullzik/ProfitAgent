@@ -73,3 +73,11 @@ void DashboardViewModel::setCurrentPage(int page)
         emit currentPageChanged();
     }
 }
+
+void DashboardViewModel::setUserName(const QString& name)
+{
+    if (m_userName != name) {
+        m_userName = name;
+        emit userNameChanged();
+    }
+}

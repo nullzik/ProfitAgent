@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 318,
+                        "durationMicroseconds": 216,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 150,
+                        "durationMicroseconds": 97,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 19
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 26
@@ -69,27 +69,19 @@
                     },
                     {
                         "codegenSuccessful": false,
-                        "column": 28,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Could not find property \"model\".",
-                        "functionName": "model",
-                        "line": 106
+                        "column": 22,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot access value for name authErrorVisible",
+                        "functionName": "visible",
+                        "line": 94
                     },
                     {
-                        "codegenSuccessful": false,
-                        "column": 35,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Could not find property \"currentIndex\".",
-                        "functionName": "currentIndex",
-                        "line": 107
-                    },
-                    {
-                        "codegenSuccessful": false,
-                        "column": 44,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Could not find signal \"currentIndexChanged\".",
-                        "functionName": "onCurrentIndexChanged",
-                        "line": 108
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 72,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 98
                     },
                     {
                         "codegenSuccessful": false,
@@ -97,39 +89,63 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 123
+                        "line": 105
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 47,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 127
+                        "line": 109
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 14,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
-                        "line": 131
+                        "line": 113
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 339,
+                        "durationMicroseconds": 219,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
-                        "line": 135
+                        "line": 117
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 36,
-                        "durationMicroseconds": 255,
+                        "durationMicroseconds": 158,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
-                        "line": 136
+                        "line": 118
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "Cannot access value for name authViewModel",
+                        "functionName": "target",
+                        "line": 126
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 13,
+                        "errorMessage": "Cannot find name authErrorVisible",
+                        "functionName": "onLoginFailed",
+                        "line": 127
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 11,
+                        "errorMessage": "Cannot find name authErrorVisible",
+                        "functionName": "onLoginSuccess",
+                        "line": 130
                     }
                 ],
                 "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/LoginScreen.qml"

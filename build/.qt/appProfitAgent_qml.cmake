@@ -16,6 +16,8 @@ set(src_and_dest_list
     "C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/CreateEmployeeDialog.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/presentation/views/dialogs/CreateEmployeeDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/LoginScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/presentation/views/screens/LoginScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/WaiterScreen.qml"

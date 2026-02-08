@@ -42,11 +42,15 @@ template <> constexpr inline auto AppStateViewModel::qt_create_metaobjectdata<qt
         "currentRoleChanged",
         "",
         "isAuthenticatedChanged",
+        "currentUserNameChanged",
         "loginAs",
         "role",
+        "setCurrentUser",
+        "login",
         "logout",
         "currentRole",
         "isAuthenticated",
+        "currentUserName",
         "Role",
         "Waiter",
         "Chef",
@@ -58,25 +62,33 @@ template <> constexpr inline auto AppStateViewModel::qt_create_metaobjectdata<qt
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'isAuthenticatedChanged'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'currentUserNameChanged'
+        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'loginAs'
-        QtMocHelpers::MethodData<void(int)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Int, 5 },
+        QtMocHelpers::MethodData<void(int)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 6 },
+        }}),
+        // Method 'setCurrentUser'
+        QtMocHelpers::MethodData<void(const QString &, int)>(7, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 8 }, { QMetaType::Int, 6 },
         }}),
         // Method 'logout'
-        QtMocHelpers::MethodData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(9, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'currentRole'
-        QtMocHelpers::PropertyData<int>(7, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
+        QtMocHelpers::PropertyData<int>(10, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
         // property 'isAuthenticated'
-        QtMocHelpers::PropertyData<bool>(8, QMetaType::Bool, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<bool>(11, QMetaType::Bool, QMC::DefaultPropertyFlags, 1),
+        // property 'currentUserName'
+        QtMocHelpers::PropertyData<QString>(12, QMetaType::QString, QMC::DefaultPropertyFlags, 2),
     };
     QtMocHelpers::UintData qt_enums {
         // enum 'Role'
-        QtMocHelpers::EnumData<enum Role>(9, 9, QMC::EnumFlags{}).add({
-            {   10, Role::Waiter },
-            {   11, Role::Chef },
-            {   12, Role::Manager },
+        QtMocHelpers::EnumData<enum Role>(13, 13, QMC::EnumFlags{}).add({
+            {   14, Role::Waiter },
+            {   15, Role::Chef },
+            {   16, Role::Manager },
         }),
     };
     return QtMocHelpers::metaObjectData<AppStateViewModel, qt_meta_tag_ZN17AppStateViewModelE_t>(QMC::MetaObjectFlag{}, qt_stringData,
@@ -99,8 +111,10 @@ void AppStateViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         switch (_id) {
         case 0: _t->currentRoleChanged(); break;
         case 1: _t->isAuthenticatedChanged(); break;
-        case 2: _t->loginAs((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 3: _t->logout(); break;
+        case 2: _t->currentUserNameChanged(); break;
+        case 3: _t->loginAs((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 4: _t->setCurrentUser((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 5: _t->logout(); break;
         default: ;
         }
     }
@@ -109,12 +123,15 @@ void AppStateViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
             return;
         if (QtMocHelpers::indexOfMethod<void (AppStateViewModel::*)()>(_a, &AppStateViewModel::isAuthenticatedChanged, 1))
             return;
+        if (QtMocHelpers::indexOfMethod<void (AppStateViewModel::*)()>(_a, &AppStateViewModel::currentUserNameChanged, 2))
+            return;
     }
     if (_c == QMetaObject::ReadProperty) {
         void *_v = _a[0];
         switch (_id) {
         case 0: *reinterpret_cast<int*>(_v) = _t->currentRole(); break;
         case 1: *reinterpret_cast<bool*>(_v) = _t->isAuthenticated(); break;
+        case 2: *reinterpret_cast<QString*>(_v) = _t->currentUserName(); break;
         default: break;
         }
     }
@@ -139,20 +156,20 @@ int AppStateViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 6;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -167,5 +184,11 @@ void AppStateViewModel::currentRoleChanged()
 void AppStateViewModel::isAuthenticatedChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void AppStateViewModel::currentUserNameChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 QT_WARNING_POP

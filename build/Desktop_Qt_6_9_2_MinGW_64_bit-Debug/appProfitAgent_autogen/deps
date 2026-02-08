@@ -2,11 +2,13 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QAbstractListModel \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QHash \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QList \
+	C:/Qt/6.9.2/mingw_64/include/QtCore/QMap \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QModelIndex \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QObject \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QString \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QVariant \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/QVariantList \
+	C:/Qt/6.9.2/mingw_64/include/QtCore/QVariantMap \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/q20memory.h \
@@ -122,6 +124,7 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qutf8stringview.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qvariant.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qvariantlist.h \
+	C:/Qt/6.9.2/mingw_64/include/QtCore/qvariantmap.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qvarlengtharray.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.9.2/mingw_64/include/QtCore/qxptype_traits.h \
@@ -773,6 +776,46 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets-relwithdebinfo.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessAliasTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateConfigVersion.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateConfigVersionImpl.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateDependencies.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateVersionlessAliasTargets.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateAdditionalTargetInfo.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfig.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersion.cmake \
@@ -1040,6 +1083,8 @@ appProfitAgent_autogen/timestamp: \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ChefViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.cpp \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/EmployeeViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/EmployeeViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.cpp \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.cpp \

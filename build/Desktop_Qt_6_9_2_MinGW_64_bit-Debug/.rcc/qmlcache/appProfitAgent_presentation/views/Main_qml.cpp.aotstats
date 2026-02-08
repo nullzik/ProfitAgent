@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 9,
-                        "durationMicroseconds": 979,
+                        "durationMicroseconds": 838,
                         "errorMessage": "Cannot access value for name appStateViewModel",
                         "functionName": "updateSource",
                         "line": 16
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 227,
+                        "durationMicroseconds": 109,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 14
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 32,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 49,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 36
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 17,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 38,
                         "errorMessage": "Cannot access value for name appStateViewModel",
                         "functionName": "target",
                         "line": 40
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 9,
-                        "durationMicroseconds": 154,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "onIsAuthenticatedChanged",
                         "line": 41
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 9,
-                        "durationMicroseconds": 58,
+                        "durationMicroseconds": 42,
                         "errorMessage": "",
                         "functionName": "onCurrentRoleChanged",
                         "line": 44
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 17,
-                        "durationMicroseconds": 35,
+                        "durationMicroseconds": 29,
                         "errorMessage": "Cannot access value for name authViewModel",
                         "functionName": "target",
                         "line": 71

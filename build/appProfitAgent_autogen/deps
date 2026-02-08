@@ -766,6 +766,21 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Quick/Qt6QuickTargets-relwithdebinfo.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Quick/Qt6QuickVersionlessAliasTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2AdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Config.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2ConfigVersion.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2ConfigVersionImpl.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Dependencies.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Targets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Targets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2VersionlessAliasTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2Private/Qt6QuickControls2PrivateAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2Private/Qt6QuickControls2PrivateConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2Private/Qt6QuickControls2PrivateConfigVersion.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2Private/Qt6QuickControls2PrivateConfigVersionImpl.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2Private/Qt6QuickControls2PrivateDependencies.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2Private/Qt6QuickControls2PrivateTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickControls2Private/Qt6QuickControls2PrivateVersionlessAliasTargets.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickPrivate/Qt6QuickPrivateAdditionalTargetInfo.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickPrivate/Qt6QuickPrivateConfig.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickPrivate/Qt6QuickPrivateConfigVersion.cmake \
@@ -773,6 +788,21 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickPrivate/Qt6QuickPrivateDependencies.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickPrivate/Qt6QuickPrivateTargets.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickPrivate/Qt6QuickPrivateVersionlessAliasTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2AdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Config.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2ConfigVersion.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2ConfigVersionImpl.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Dependencies.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2VersionlessAliasTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2Private/Qt6QuickTemplates2PrivateAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2Private/Qt6QuickTemplates2PrivateConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2Private/Qt6QuickTemplates2PrivateConfigVersion.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2Private/Qt6QuickTemplates2PrivateConfigVersionImpl.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2Private/Qt6QuickTemplates2PrivateDependencies.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2Private/Qt6QuickTemplates2PrivateTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTemplates2Private/Qt6QuickTemplates2PrivateVersionlessAliasTargets.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsAdditionalTargetInfo.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfig.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfigVersion.cmake \
@@ -781,6 +811,46 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets-relwithdebinfo.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QOCIDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessAliasTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateAdditionalTargetInfo.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateConfig.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateConfigVersion.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateConfigVersionImpl.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateDependencies.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateTargets.cmake \
+	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6SqlPrivate/Qt6SqlPrivateVersionlessAliasTargets.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateAdditionalTargetInfo.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfig.cmake \
 	C:/Qt/6.9.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersion.cmake \
@@ -999,27 +1069,29 @@ appProfitAgent_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-	C:/Users/boyko/Documents/ProfitAgent/AppStateViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/AppStateViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/AuthViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/AuthViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/CMakeLists.txt \
-	C:/Users/boyko/Documents/ProfitAgent/ChefViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/ChefViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/DashboardViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/DashboardViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/MenuViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/MenuViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/NavigationViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/NavigationViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/WaiterViewModel.h \
-	C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.cpp \
-	C:/Users/boyko/Documents/ProfitAgent/WarehouseViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/build/.qt/qml_imports/appProfitAgent_conf.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/4.2.1/CMakeCXXCompiler.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/4.2.1/CMakeRCCompiler.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/4.2.1/CMakeSystem.cmake \
 	C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/moc_predefs.h \
 	C:/Users/boyko/Documents/ProfitAgent/main.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AppStateViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AppStateViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AuthViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/AuthViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ChefViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ChefViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/EmployeeViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/EmployeeViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WarehouseViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WarehouseViewModel.h \
 	C:/Program\ Files/CMake/bin/cmake.exe

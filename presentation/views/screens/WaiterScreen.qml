@@ -106,22 +106,23 @@ Rectangle {
                     spacing: 16
 
                     Repeater {
-                        model: 12
+                        model: waiterViewModel.tables
 
                         Rectangle {
-                            width: 120
-                            height: 80
-                            color: index % 3 === 0 ? "#E8F5E9" : "#FFF3E0"
+                            width: 140
+                            height: 120
+                            color: modelData.hasOrders ? "#FFF3E0" : "#E8F5E9"
                             radius: 8
-                            border.color: "#E0E0E0"
+                            border.color: modelData.hasOrders ? "#FFB74D" : "#A5D6A7"
                             border.width: 1
 
                             Column {
-                                anchors.centerIn: parent
+                                anchors.fill: parent
+                                anchors.margins: 8
                                 spacing: 4
 
                                 Text {
-                                    text: "Стол " + (index + 1)
+                                    text: "Стол " + (modelData.tableIndex + 1)
                                     font.pixelSize: 14
                                     font.bold: true
                                     color: "#1E1E2E"
@@ -129,16 +130,27 @@ Rectangle {
                                 }
 
                                 Text {
-                                    text: index % 3 === 0 ? "Свободен" : "Занят"
+                                    text: modelData.hasOrders ? "Занят" : "Свободен"
                                     font.pixelSize: 12
-                                    color: index % 3 === 0 ? "#4CAF50" : "#FF9800"
+                                    color: modelData.hasOrders ? "#F57C00" : "#4CAF50"
                                     anchors.horizontalCenter: parent.horizontalCenter
+                                }
+
+                                Repeater {
+                                    model: modelData.dishes || []
+                                    delegate: Text {
+                                        width: 120
+                                        text: modelData.name + " × " + modelData.quantity
+                                        font.pixelSize: 11
+                                        color: "#424242"
+                                        elide: Text.ElideRight
+                                    }
                                 }
                             }
 
                             MouseArea {
                                 anchors.fill: parent
-                                onClicked: waiterViewModel.onTableSelected(index)
+                                onClicked: waiterViewModel.onTableSelected(modelData.tableIndex)
                                 cursorShape: Qt.PointingHandCursor
                             }
                         }

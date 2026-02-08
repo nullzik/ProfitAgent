@@ -9,7 +9,6 @@ class AuthViewModel : public QObject
     Q_OBJECT
     Q_PROPERTY(QString login READ login WRITE setLogin NOTIFY loginChanged)
     Q_PROPERTY(QString password READ password WRITE setPassword NOTIFY passwordChanged)
-    Q_PROPERTY(int selectedRole READ selectedRole WRITE setSelectedRole NOTIFY selectedRoleChanged)
     Q_PROPERTY(bool isAuthenticated READ isAuthenticated NOTIFY isAuthenticatedChanged)
 
 public:
@@ -28,9 +27,6 @@ public:
     QString password() const { return m_password; }
     void setPassword(const QString &password);
 
-    int selectedRole() const { return m_selectedRole; }
-    void setSelectedRole(int role);
-
     bool isAuthenticated() const { return m_isAuthenticated; }
 
     Q_INVOKABLE void performLogin();
@@ -39,15 +35,13 @@ public:
 signals:
     void loginChanged();
     void passwordChanged();
-    void selectedRoleChanged();
     void isAuthenticatedChanged();
-    void loginSuccess(int role);
+    void loginSuccess(int role, const QString& login);
     void loginFailed();
 
 private:
     QString m_login;
     QString m_password;
-    int m_selectedRole;
     bool m_isAuthenticated;
 };
 

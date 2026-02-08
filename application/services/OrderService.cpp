@@ -3,6 +3,7 @@
 #include <chrono>
 #include <stdexcept>
 #include <unordered_map>
+#include <utility>
 
 #include "domain/menu/Dish.h"
 #include "domain/menu/IMenuService.h"
@@ -117,10 +118,41 @@ bool OrderService::placeOrder(
         orderItems.push_back(std::move(item));
     }
 
-    (void)Order{orderId, tableIdStr, waiterId, std::move(orderItems),
-                OrderStatus::Open, now};
+    orders_.emplace_back(orderId, tableIdStr, waiterId, std::move(orderItems),
+                         OrderStatus::Open, now);
 
     return true;
+}
+
+TableSummary OrderService::getTableSummary(int tableIndex) const
+{
+    TableSummary result;
+    const std::string tableIdStr = "table_" + std::to_string(tableIndex);
+
+    std::unordered_map<std::string, int> dishQuantities;  // dishId -> total qty
+
+    for (const auto& order : orders_) {
+        if (order.tableId() != tableIdStr) continue;
+        result.hasOrders = true;
+        for (const auto& item : order.items()) {
+            const int qty = static_cast<int>(item.quantity.value());
+            dishQuantities[item.dishId] += qty;
+        }
+    }
+
+    const auto allDishes = menuService_.getAllDishes();
+    for (const auto& [dishId, qty] : dishQuantities) {
+        std::string name = dishId;
+        for (const auto& d : allDishes) {
+            if (d.id() == dishId) {
+                name = d.name();
+                break;
+            }
+        }
+        result.dishes.push_back({std::move(name), qty});
+    }
+
+    return result;
 }
 
 } // namespace application
