@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 276,
+                        "durationMicroseconds": 302,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 94,
+                        "durationMicroseconds": 90,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 30
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 32,
-                        "durationMicroseconds": 147,
+                        "durationMicroseconds": 126,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 46
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 383,
+                        "durationMicroseconds": 405,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 57

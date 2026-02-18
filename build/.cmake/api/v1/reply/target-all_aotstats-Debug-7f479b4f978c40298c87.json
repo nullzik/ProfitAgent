@@ -7,10 +7,10 @@
 			"add_custom_target",
 			"_qt_internal_deferred_aotstats_setup",
 			"add_custom_command",
-			"_qt_internal_qml_type_registration",
+			"qt6_target_qml_sources",
 			"qt6_add_qml_module",
 			"qt_add_qml_module",
-			"qt6_target_qml_sources"
+			"_qt_internal_qml_type_registration"
 		],
 		"files" : 
 		[
@@ -61,18 +61,6 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 833,
-				"parent" : 6
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 3919,
-				"parent" : 7
-			},
-			{
-				"command" : 6,
-				"file" : 0,
 				"line" : 951,
 				"parent" : 6
 			},
@@ -80,6 +68,18 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 3491,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 833,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3919,
 				"parent" : 9
 			}
 		]
@@ -105,11 +105,11 @@
 		},
 		{
 			"backtrace" : 8,
-			"id" : "Qt6::qmltyperegistrar::@6890427a1f51a3e7e1df"
+			"id" : "Qt6::qmlcachegen::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 10,
-			"id" : "Qt6::qmlcachegen::@6890427a1f51a3e7e1df"
+			"id" : "Qt6::qmltyperegistrar::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "module_appProfitAgent_aotstats_target::@6890427a1f51a3e7e1df"
@@ -153,7 +153,8 @@
 				18,
 				19,
 				20,
-				21
+				21,
+				22
 			]
 		}
 	],
@@ -211,6 +212,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/CreateEmployeeDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{

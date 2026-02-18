@@ -22,6 +22,8 @@ Dialog {
         addressField.text = ""
         roleComboBox.currentIndex = 0
         hourlyRateField.value = 0
+        loginField.text = ""
+        passwordField.text = ""
     }
 
     contentItem: Rectangle {
@@ -105,9 +107,31 @@ Dialog {
                     value: 0
                     editable: true
                     Layout.fillWidth: true
-                    property int decimals: 2
-                    property real realValue: value / 100
-                    validator: DoubleValidator { bottom: 0; top: 10000; decimals: 2 }
+                }
+            }
+
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 6
+                Text { text: "Логин для входа (необязательно)"; font.pixelSize: 14; color: "#666666" }
+                TextField {
+                    id: loginField
+                    Layout.fillWidth: true
+                    placeholderText: "Логин сотрудника"
+                    background: Rectangle { radius: 6; border.color: "#E0E0E0"; border.width: 1; color: "#FFFFFF" }
+                }
+            }
+
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 6
+                Text { text: "Пароль для входа (необязательно)"; font.pixelSize: 14; color: "#666666" }
+                TextField {
+                    id: passwordField
+                    Layout.fillWidth: true
+                    placeholderText: "Пароль"
+                    echoMode: TextField.Password
+                    background: Rectangle { radius: 6; border.color: "#E0E0E0"; border.width: 1; color: "#FFFFFF" }
                 }
             }
 
@@ -135,11 +159,10 @@ Dialog {
                     onClicked: {
                         const name = fullNameField.text.trim()
                         if (name.length === 0) return
-                        createRequested(name, ageField.value, phoneField.text.trim(), addressField.text.trim(),
-                                        roleComboBox.currentIndex, hourlyRateField.value / 100.0)
                         const ok = employeeViewModel.createEmployee(name, ageField.value, phoneField.text.trim(),
                                                                     addressField.text.trim(), roleComboBox.currentIndex,
-                                                                    hourlyRateField.value / 100.0)
+                                                                    hourlyRateField.value,
+                                                                    loginField.text.trim(), passwordField.text)
                         if (ok) createEmployeeDialog.close()
                     }
                     background: Rectangle { color: parent.hovered ? "#2E7D32" : "#4CAF50"; radius: 8 }

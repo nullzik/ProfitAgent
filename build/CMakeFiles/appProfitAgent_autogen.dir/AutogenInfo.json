@@ -9,6 +9,7 @@
 	[
 		"C:/Users/boyko/Documents/ProfitAgent/CMakeLists.txt",
 		"C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/4.2.1/CMakeSystem.cmake",
+		"c:/qt/6.9.2/mingw_64/lib/cmake/Qt6/qt.toolchain.cmake",
 		"C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-Initialize.cmake",
 		"C:/Users/boyko/Documents/ProfitAgent/build/CMakeFiles/4.2.1/CMakeCXXCompiler.cmake",
@@ -1125,6 +1126,7 @@
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/KPICard_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/OperationsTable_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/CreateEmployeeDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OperationDetailsDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OrderEntryDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/ProductOperationDialog_qml.cpp",
@@ -1209,6 +1211,7 @@
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/KPICard_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/OperationsTable_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/CreateEmployeeDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OperationDetailsDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OrderEntryDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/ProductOperationDialog_qml.cpp",

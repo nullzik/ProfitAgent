@@ -43,6 +43,9 @@ template <> constexpr inline auto EmployeeViewModel::qt_create_metaobjectdata<qt
         "",
         "lastErrorChanged",
         "reloadEmployees",
+        "getEmployeeById",
+        "QVariantMap",
+        "id",
         "createEmployee",
         "fullName",
         "age",
@@ -50,6 +53,9 @@ template <> constexpr inline auto EmployeeViewModel::qt_create_metaobjectdata<qt
         "address",
         "role",
         "hourlyRate",
+        "login",
+        "password",
+        "updateEmployee",
         "employees",
         "QVariantList",
         "lastError"
@@ -62,17 +68,47 @@ template <> constexpr inline auto EmployeeViewModel::qt_create_metaobjectdata<qt
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'reloadEmployees'
         QtMocHelpers::MethodData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        // Method 'getEmployeeById'
+        QtMocHelpers::MethodData<QVariantMap(const QString &) const>(5, 2, QMC::AccessPublic, 0x80000000 | 6, {{
+            { QMetaType::QString, 7 },
+        }}),
         // Method 'createEmployee'
-        QtMocHelpers::MethodData<bool(const QString &, int, const QString &, const QString &, int, double)>(5, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::QString, 6 }, { QMetaType::Int, 7 }, { QMetaType::QString, 8 }, { QMetaType::QString, 9 },
-            { QMetaType::Int, 10 }, { QMetaType::Double, 11 },
+        QtMocHelpers::MethodData<bool(const QString &, int, const QString &, const QString &, int, double, const QString &, const QString &)>(8, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 9 }, { QMetaType::Int, 10 }, { QMetaType::QString, 11 }, { QMetaType::QString, 12 },
+            { QMetaType::Int, 13 }, { QMetaType::Double, 14 }, { QMetaType::QString, 15 }, { QMetaType::QString, 16 },
+        }}),
+        // Method 'createEmployee'
+        QtMocHelpers::MethodData<bool(const QString &, int, const QString &, const QString &, int, double, const QString &)>(8, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Bool, {{
+            { QMetaType::QString, 9 }, { QMetaType::Int, 10 }, { QMetaType::QString, 11 }, { QMetaType::QString, 12 },
+            { QMetaType::Int, 13 }, { QMetaType::Double, 14 }, { QMetaType::QString, 15 },
+        }}),
+        // Method 'createEmployee'
+        QtMocHelpers::MethodData<bool(const QString &, int, const QString &, const QString &, int, double)>(8, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Bool, {{
+            { QMetaType::QString, 9 }, { QMetaType::Int, 10 }, { QMetaType::QString, 11 }, { QMetaType::QString, 12 },
+            { QMetaType::Int, 13 }, { QMetaType::Double, 14 },
+        }}),
+        // Method 'updateEmployee'
+        QtMocHelpers::MethodData<bool(const QString &, const QString &, int, const QString &, const QString &, int, double, const QString &, const QString &)>(17, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 7 }, { QMetaType::QString, 9 }, { QMetaType::Int, 10 }, { QMetaType::QString, 11 },
+            { QMetaType::QString, 12 }, { QMetaType::Int, 13 }, { QMetaType::Double, 14 }, { QMetaType::QString, 15 },
+            { QMetaType::QString, 16 },
+        }}),
+        // Method 'updateEmployee'
+        QtMocHelpers::MethodData<bool(const QString &, const QString &, int, const QString &, const QString &, int, double, const QString &)>(17, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Bool, {{
+            { QMetaType::QString, 7 }, { QMetaType::QString, 9 }, { QMetaType::Int, 10 }, { QMetaType::QString, 11 },
+            { QMetaType::QString, 12 }, { QMetaType::Int, 13 }, { QMetaType::Double, 14 }, { QMetaType::QString, 15 },
+        }}),
+        // Method 'updateEmployee'
+        QtMocHelpers::MethodData<bool(const QString &, const QString &, int, const QString &, const QString &, int, double)>(17, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Bool, {{
+            { QMetaType::QString, 7 }, { QMetaType::QString, 9 }, { QMetaType::Int, 10 }, { QMetaType::QString, 11 },
+            { QMetaType::QString, 12 }, { QMetaType::Int, 13 }, { QMetaType::Double, 14 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'employees'
-        QtMocHelpers::PropertyData<QVariantList>(12, 0x80000000 | 13, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
+        QtMocHelpers::PropertyData<QVariantList>(18, 0x80000000 | 19, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
         // property 'lastError'
-        QtMocHelpers::PropertyData<QString>(14, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<QString>(20, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -97,7 +133,19 @@ void EmployeeViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         case 0: _t->employeesChanged(); break;
         case 1: _t->lastErrorChanged(); break;
         case 2: _t->reloadEmployees(); break;
-        case 3: { bool _r = _t->createEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[6])));
+        case 3: { QVariantMap _r = _t->getEmployeeById((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QVariantMap*>(_a[0]) = std::move(_r); }  break;
+        case 4: { bool _r = _t->createEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[6])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[7])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[8])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 5: { bool _r = _t->createEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[6])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[7])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 6: { bool _r = _t->createEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[6])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 7: { bool _r = _t->updateEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[6])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[7])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[8])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[9])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 8: { bool _r = _t->updateEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[6])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[7])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[8])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 9: { bool _r = _t->updateEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[6])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[7])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -137,14 +185,14 @@ int EmployeeViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 10;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 10)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 10;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

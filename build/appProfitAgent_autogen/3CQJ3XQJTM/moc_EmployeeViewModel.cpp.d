@@ -1,10 +1,12 @@
 C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/3CQJ3XQJTM/moc_EmployeeViewModel.cpp: C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/EmployeeViewModel.h \
   C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/moc_predefs.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QList \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/QMap \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QString \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QVariant \
   C:/Qt/6.9.2/mingw_64/include/QtCore/QVariantList \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/QVariantMap \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/q20memory.h \
@@ -119,6 +121,7 @@ C:/Users/boyko/Documents/ProfitAgent/build/appProfitAgent_autogen/3CQJ3XQJTM/moc
   C:/Qt/6.9.2/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qvariant.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qvariantlist.h \
+  C:/Qt/6.9.2/mingw_64/include/QtCore/qvariantmap.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.9.2/mingw_64/include/QtCore/qxptype_traits.h \

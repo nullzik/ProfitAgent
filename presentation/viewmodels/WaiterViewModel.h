@@ -33,6 +33,8 @@ public:
     Q_INVOKABLE void openOrderEntry(int tableId);
     Q_INVOKABLE void closeOrderEntry();
     Q_INVOKABLE bool placeOrder(const QVariantList& orderItems);
+    Q_INVOKABLE QVariantList getTableOrderItems(int tableId) const;
+    Q_INVOKABLE bool closeSelectedTable();
 
 signals:
     void selectedTableIdChanged();

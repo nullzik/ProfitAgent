@@ -9,6 +9,10 @@
 			"path" : "build/CMakeFiles/4.2.1/CMakeSystem.cmake"
 		},
 		{
+			"isExternal" : true,
+			"path" : "c:/qt/6.9.2/mingw_64/lib/cmake/Qt6/qt.toolchain.cmake"
+		},
+		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake"

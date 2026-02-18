@@ -54,6 +54,8 @@ template <> constexpr inline auto WaiterViewModel::qt_create_metaobjectdata<qt_m
         "placeOrder",
         "QVariantList",
         "orderItems",
+        "getTableOrderItems",
+        "closeSelectedTable",
         "selectedTableId",
         "isOrderDialogOpen",
         "orderMessage",
@@ -89,16 +91,22 @@ template <> constexpr inline auto WaiterViewModel::qt_create_metaobjectdata<qt_m
         QtMocHelpers::MethodData<bool(const QVariantList &)>(13, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { 0x80000000 | 14, 15 },
         }}),
+        // Method 'getTableOrderItems'
+        QtMocHelpers::MethodData<QVariantList(int) const>(16, 2, QMC::AccessPublic, 0x80000000 | 14, {{
+            { QMetaType::Int, 10 },
+        }}),
+        // Method 'closeSelectedTable'
+        QtMocHelpers::MethodData<bool()>(17, 2, QMC::AccessPublic, QMetaType::Bool),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'selectedTableId'
-        QtMocHelpers::PropertyData<int>(16, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
+        QtMocHelpers::PropertyData<int>(18, QMetaType::Int, QMC::DefaultPropertyFlags, 0),
         // property 'isOrderDialogOpen'
-        QtMocHelpers::PropertyData<bool>(17, QMetaType::Bool, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<bool>(19, QMetaType::Bool, QMC::DefaultPropertyFlags, 1),
         // property 'orderMessage'
-        QtMocHelpers::PropertyData<QString>(18, QMetaType::QString, QMC::DefaultPropertyFlags, 2),
+        QtMocHelpers::PropertyData<QString>(20, QMetaType::QString, QMC::DefaultPropertyFlags, 2),
         // property 'tables'
-        QtMocHelpers::PropertyData<QVariantList>(19, 0x80000000 | 14, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 5),
+        QtMocHelpers::PropertyData<QVariantList>(21, 0x80000000 | 14, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 5),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -130,6 +138,10 @@ void WaiterViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 7: _t->openOrderEntry((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 8: _t->closeOrderEntry(); break;
         case 9: { bool _r = _t->placeOrder((*reinterpret_cast< std::add_pointer_t<QVariantList>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 10: { QVariantList _r = _t->getTableOrderItems((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 11: { bool _r = _t->closeSelectedTable();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -179,14 +191,14 @@ int WaiterViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 12;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 10)
+        if (_id < 12)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 10;
+        _id -= 12;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

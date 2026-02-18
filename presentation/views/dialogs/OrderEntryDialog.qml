@@ -10,9 +10,21 @@ Dialog {
     height: 600
 
     property ListModel orderItemsModel: ListModel {}
+    property ListModel existingItemsModel: ListModel {}
 
     onOpened: {
         orderItemsModel.clear()
+        existingItemsModel.clear()
+
+        const existing = waiterViewModel.getTableOrderItems(waiterViewModel.selectedTableId)
+        for (let i = 0; i < existing.length; i++) {
+            const item = existing[i]
+            existingItemsModel.append({
+                dishId: item.dishId,
+                name: item.name,
+                quantity: item.quantity
+            })
+        }
     }
 
     contentItem: Rectangle {
@@ -140,9 +152,44 @@ Dialog {
                         spacing: 12
 
                         Text {
-                            text: "Позиции заказа"
+                            text: "Уже заказано по столу"
                             font.pixelSize: 18
                             font.bold: true
+                            color: "#1E1E2E"
+                        }
+
+                        ScrollView {
+                            Layout.fillWidth: true
+                            Layout.fillHeight: false
+                            visible: existingItemsModel.count > 0
+
+                            ListView {
+                                model: existingItemsModel
+                                implicitHeight: contentHeight
+                                delegate: Rectangle {
+                                    width: parent.width - 20
+                                    height: 40
+                                    color: "#FFFFFF"
+
+                                    RowLayout {
+                                        anchors.fill: parent
+                                        anchors.margins: 12
+
+                                        Text {
+                                            text: model.name + " × " + model.quantity
+                                            font.pixelSize: 14
+                                            color: "#1E1E2E"
+                                            Layout.fillWidth: true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        Text {
+                            text: existingItemsModel.count === 0 ? "По этому столу еще нет заказов" : "Новый заказ"
+                            font.pixelSize: 16
+                            font.bold: existingItemsModel.count > 0
                             color: "#1E1E2E"
                         }
 
@@ -251,6 +298,27 @@ Dialog {
                 }
 
                 Button {
+                        text: "Закрыть стол"
+                        enabled: existingItemsModel.count > 0
+                        onClicked: {
+                            const ok = waiterViewModel.closeSelectedTable()
+                            if (ok) {
+                                waiterViewModel.closeOrderEntry()
+                            }
+                        }
+                        background: Rectangle {
+                            color: parent.enabled && parent.hovered ? "#C62828" : (parent.enabled ? "#E53935" : "#CCCCCC")
+                            radius: 8
+                        }
+                        contentItem: Text {
+                            text: parent.text
+                            color: "#FFFFFF"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                        }
+                    }
+
+                    Button {
                     text: "Закрыть"
                     onClicked: waiterViewModel.closeOrderEntry()
                     background: Rectangle {

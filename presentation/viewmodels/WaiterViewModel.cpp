@@ -118,10 +118,10 @@ void WaiterViewModel::refreshTables()
     constexpr int tableCount = 12;
     for (int i = 0; i < tableCount; ++i) {
         const auto summary = m_orderService->getTableSummary(i);
-
         QVariantList dishesList;
         for (const auto& d : summary.dishes) {
             QVariantMap dm;
+            dm.insert(QStringLiteral("id"), QString::fromStdString(d.dishId));
             dm.insert(QStringLiteral("name"), QString::fromStdString(d.dishName));
             dm.insert(QStringLiteral("quantity"), d.quantity);
             dishesList.append(dm);
@@ -135,4 +135,36 @@ void WaiterViewModel::refreshTables()
     }
 
     emit tablesChanged();
+}
+
+QVariantList WaiterViewModel::getTableOrderItems(int tableId) const
+{
+    QVariantList result;
+    if (!m_orderService || tableId < 0) {
+        return result;
+    }
+
+    const auto summary = m_orderService->getTableSummary(tableId);
+    for (const auto& d : summary.dishes) {
+        QVariantMap map;
+        map.insert(QStringLiteral("dishId"), QString::fromStdString(d.dishId));
+        map.insert(QStringLiteral("name"), QString::fromStdString(d.dishName));
+        map.insert(QStringLiteral("quantity"), d.quantity);
+        result.append(map);
+    }
+
+    return result;
+}
+
+bool WaiterViewModel::closeSelectedTable()
+{
+    if (!m_orderService || m_selectedTableId < 0) {
+        return false;
+    }
+
+    const bool ok = m_orderService->closeTable(m_selectedTableId);
+    if (ok) {
+        refreshTables();
+    }
+    return ok;
 }

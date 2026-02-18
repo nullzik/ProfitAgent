@@ -38,9 +38,9 @@
 			"_qt_internal_target_enable_qmlcachegen",
 			"add_custom_command",
 			"_qt_internal_qml_type_registration",
+			"qt6_extract_metatypes",
 			"_qt_internal_process_resource",
 			"qt6_add_resources",
-			"qt6_extract_metatypes",
 			"_qt_internal_ensure_tooling_target",
 			"target_include_directories",
 			"target_sources",
@@ -107,13 +107,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 135,
+				"line" : 136,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 126,
+				"line" : 127,
 				"parent" : 0
 			},
 			{
@@ -471,6 +471,47 @@
 				"parent" : 70
 			},
 			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 21,
+				"file" : 23,
+				"line" : 1,
+				"parent" : 72
+			},
+			{
+				"command" : 20,
+				"file" : 0,
+				"line" : 844,
+				"parent" : 73
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 766,
+				"parent" : 74
+			},
+			{
+				"command" : 18,
+				"file" : 0,
+				"line" : 766,
+				"parent" : 75
+			},
+			{
+				"command" : 17,
+				"file" : 12,
+				"line" : 4516,
+				"parent" : 76
+			},
+			{
+				"command" : 14,
+				"file" : 12,
+				"line" : 4291,
+				"parent" : 77
+			},
+			{
 				"command" : 15,
 				"file" : 12,
 				"line" : 3613,
@@ -480,47 +521,6 @@
 				"command" : 14,
 				"file" : 12,
 				"line" : 2976,
-				"parent" : 72
-			},
-			{
-				"file" : 1,
-				"line" : -1,
-				"parent" : 0
-			},
-			{
-				"command" : 21,
-				"file" : 23,
-				"line" : 1,
-				"parent" : 74
-			},
-			{
-				"command" : 20,
-				"file" : 0,
-				"line" : 844,
-				"parent" : 75
-			},
-			{
-				"command" : 19,
-				"file" : 0,
-				"line" : 766,
-				"parent" : 76
-			},
-			{
-				"command" : 18,
-				"file" : 0,
-				"line" : 766,
-				"parent" : 77
-			},
-			{
-				"command" : 17,
-				"file" : 12,
-				"line" : 4516,
-				"parent" : 78
-			},
-			{
-				"command" : 14,
-				"file" : 12,
-				"line" : 4291,
 				"parent" : 79
 			},
 			{
@@ -536,6 +536,12 @@
 				"parent" : 81
 			},
 			{
+				"command" : 23,
+				"file" : 12,
+				"line" : 1712,
+				"parent" : 81
+			},
+			{
 				"command" : 24,
 				"file" : 12,
 				"line" : 833,
@@ -545,49 +551,43 @@
 				"command" : 23,
 				"file" : 12,
 				"line" : 3919,
-				"parent" : 83
-			},
-			{
-				"command" : 23,
-				"file" : 12,
-				"line" : 1712,
-				"parent" : 81
-			},
-			{
-				"command" : 26,
-				"file" : 12,
-				"line" : 885,
-				"parent" : 32
+				"parent" : 84
 			},
 			{
 				"command" : 25,
-				"file" : 0,
-				"line" : 400,
-				"parent" : 86
-			},
-			{
-				"command" : 23,
-				"file" : 0,
-				"line" : 2499,
-				"parent" : 87
-			},
-			{
-				"command" : 27,
 				"file" : 12,
 				"line" : 3814,
-				"parent" : 83
+				"parent" : 84
 			},
 			{
 				"command" : 23,
 				"file" : 0,
 				"line" : 1481,
+				"parent" : 86
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 885,
+				"parent" : 32
+			},
+			{
+				"command" : 26,
+				"file" : 0,
+				"line" : 400,
+				"parent" : 88
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2499,
 				"parent" : 89
 			},
 			{
 				"command" : 23,
 				"file" : 0,
 				"line" : 1418,
-				"parent" : 89
+				"parent" : 86
 			},
 			{
 				"command" : 28,
@@ -605,37 +605,37 @@
 				"command" : 29,
 				"file" : 12,
 				"line" : 3989,
-				"parent" : 83
+				"parent" : 84
 			},
 			{
 				"command" : 29,
 				"file" : 12,
 				"line" : 4019,
-				"parent" : 83
+				"parent" : 84
 			},
 			{
 				"command" : 30,
 				"file" : 0,
 				"line" : 1518,
-				"parent" : 89
+				"parent" : 86
 			},
 			{
 				"command" : 30,
 				"file" : 12,
 				"line" : 3980,
-				"parent" : 83
+				"parent" : 84
 			},
 			{
 				"command" : 31,
 				"file" : 12,
 				"line" : 4011,
-				"parent" : 83
+				"parent" : 84
 			},
 			{
 				"command" : 32,
 				"file" : 0,
 				"line" : 2560,
-				"parent" : 87
+				"parent" : 89
 			},
 			{
 				"command" : 30,
@@ -854,64 +854,76 @@
 				"parent" : 69
 			},
 			{
-				"command" : 26,
+				"command" : 30,
+				"file" : 12,
+				"line" : 3321,
+				"parent" : 69
+			},
+			{
+				"command" : 30,
+				"file" : 12,
+				"line" : 3514,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
 				"file" : 12,
 				"line" : 3629,
 				"parent" : 69
 			},
 			{
-				"command" : 25,
+				"command" : 26,
 				"file" : 0,
 				"line" : 400,
-				"parent" : 136
+				"parent" : 138
 			},
 			{
 				"command" : 32,
 				"file" : 0,
 				"line" : 2560,
-				"parent" : 137
+				"parent" : 139
 			},
 			{
 				"command" : 30,
 				"file" : 0,
 				"line" : 2104,
-				"parent" : 138
+				"parent" : 140
 			},
 			{
-				"command" : 26,
+				"command" : 27,
 				"file" : 12,
 				"line" : 3665,
 				"parent" : 69
 			},
 			{
-				"command" : 25,
+				"command" : 26,
 				"file" : 0,
 				"line" : 400,
-				"parent" : 140
+				"parent" : 142
 			},
 			{
 				"command" : 32,
 				"file" : 0,
 				"line" : 2560,
-				"parent" : 141
+				"parent" : 143
 			},
 			{
 				"command" : 30,
 				"file" : 0,
 				"line" : 2104,
-				"parent" : 142
+				"parent" : 144
 			},
 			{
 				"command" : 33,
 				"file" : 0,
 				"line" : 838,
-				"parent" : 75
+				"parent" : 73
 			},
 			{
 				"command" : 30,
 				"file" : 0,
 				"line" : 2229,
-				"parent" : 144
+				"parent" : 146
 			}
 		]
 	},
@@ -1194,8 +1206,9 @@
 				53,
 				55,
 				57,
-				58,
-				59
+				59,
+				60,
+				61
 			]
 		},
 		{
@@ -1424,12 +1437,12 @@
 			"id" : "appProfitAgent_copy_qml::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 73,
-			"id" : "appProfitAgent_copy_res::@6890427a1f51a3e7e1df"
+			"backtrace" : 78,
+			"id" : "appProfitAgent_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 80,
-			"id" : "appProfitAgent_qmlimportscan::@6890427a1f51a3e7e1df"
+			"id" : "appProfitAgent_copy_res::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "appProfitAgent_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
@@ -1642,20 +1655,20 @@
 	"orderDependencies" : 
 	[
 		{
-			"backtrace" : 84,
-			"id" : "Qt6::qmltyperegistrar::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 85,
+			"backtrace" : 83,
 			"id" : "Qt6::qmlcachegen::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 88,
-			"id" : "Qt6::rcc::@6890427a1f51a3e7e1df"
+			"backtrace" : 85,
+			"id" : "Qt6::qmltyperegistrar::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 87,
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 90,
-			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+			"id" : "Qt6::rcc::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 91,
@@ -1666,7 +1679,7 @@
 			"id" : "appProfitAgent_tooling::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 80,
+			"backtrace" : 78,
 			"id" : "appProfitAgent_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
@@ -1710,7 +1723,6 @@
 				53,
 				55,
 				57,
-				58,
 				59,
 				60,
 				61,
@@ -1721,9 +1733,8 @@
 				66,
 				67,
 				68,
-				94,
-				95,
-				96,
+				69,
+				70,
 				97,
 				98,
 				99,
@@ -1731,7 +1742,10 @@
 				101,
 				102,
 				103,
-				104
+				104,
+				105,
+				106,
+				107
 			]
 		},
 		{
@@ -1764,7 +1778,8 @@
 				50,
 				52,
 				54,
-				56
+				56,
+				58
 			]
 		},
 		{
@@ -1786,8 +1801,6 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				69,
-				70,
 				71,
 				72,
 				73,
@@ -1810,7 +1823,10 @@
 				90,
 				91,
 				92,
-				93
+				93,
+				94,
+				95,
+				96
 			]
 		}
 	],
@@ -2053,170 +2069,182 @@
 		},
 		{
 			"backtrace" : 118,
-			"path" : "presentation/views/screens/LoginScreen.qml",
+			"path" : "presentation/views/dialogs/EditEmployeeDialog.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 119,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/LoginScreen_qml.cpp",
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 120,
-			"path" : "presentation/views/screens/WaiterScreen.qml",
+			"path" : "presentation/views/screens/LoginScreen.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 121,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/WaiterScreen_qml.cpp",
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/LoginScreen_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 122,
-			"path" : "presentation/views/screens/ChefScreen.qml",
+			"path" : "presentation/views/screens/WaiterScreen.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 123,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/ChefScreen_qml.cpp",
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/WaiterScreen_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 124,
-			"path" : "presentation/views/screens/ManagerScreen.qml",
+			"path" : "presentation/views/screens/ChefScreen.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 125,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/ManagerScreen_qml.cpp",
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/ChefScreen_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 126,
-			"path" : "presentation/views/screens/MenuScreen.qml",
+			"path" : "presentation/views/screens/ManagerScreen.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 127,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/MenuScreen_qml.cpp",
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/ManagerScreen_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 128,
-			"path" : "presentation/views/screens/WarehouseScreen.qml",
+			"path" : "presentation/views/screens/MenuScreen.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 129,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/WarehouseScreen_qml.cpp",
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/MenuScreen_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 130,
-			"path" : "presentation/views/screens/EmployeesScreen.qml",
+			"path" : "presentation/views/screens/WarehouseScreen.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 131,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/EmployeesScreen_qml.cpp",
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/WarehouseScreen_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 132,
-			"path" : "presentation/views/screens/FinanceScreen.qml",
+			"path" : "presentation/views/screens/EmployeesScreen.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 133,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/FinanceScreen_qml.cpp",
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/EmployeesScreen_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 134,
-			"path" : "presentation/views/screens/HelpScreen.qml",
+			"path" : "presentation/views/screens/FinanceScreen.qml",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 135,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/FinanceScreen_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 136,
+			"path" : "presentation/views/screens/HelpScreen.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 137,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
 			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/screens/HelpScreen_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 139,
+			"backtrace" : 141,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/.qt/rcc/qrc_appProfitAgent_raw_qml_0.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 143,
+			"backtrace" : 145,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/.qt/rcc/qrc_appProfitAgent_raw_qml_0_extra_qmldirs.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 147,
 			"isGenerated" : true,
 			"path" : "build/.qt/rcc/qmake_ProfitAgent.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 147,
 			"isGenerated" : true,
 			"path" : "build/ProfitAgent/qmldir",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 147,
 			"isGenerated" : true,
 			"path" : "build/.qt/rcc/appProfitAgent_raw_qml_0.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 147,
 			"isGenerated" : true,
 			"path" : "build/.qt/rcc/appProfitAgent_raw_qml_0_extra_qmldirs.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 147,
 			"isGenerated" : true,
 			"path" : "build/ProfitAgent/presentation/views/qmldir",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 147,
 			"isGenerated" : true,
 			"path" : "build/ProfitAgent/presentation/views/components/qmldir",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 147,
 			"isGenerated" : true,
 			"path" : "build/ProfitAgent/presentation/views/dialogs/qmldir",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 145,
+			"backtrace" : 147,
 			"isGenerated" : true,
 			"path" : "build/ProfitAgent/presentation/views/screens/qmldir",
 			"sourceGroupIndex" : 0
@@ -2297,6 +2325,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/CreateEmployeeDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{

@@ -10,6 +10,10 @@ Rectangle {
         id: createEmployeeDialog
     }
 
+    EditEmployeeDialog {
+        id: editEmployeeDialog
+    }
+
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 24
@@ -111,9 +115,30 @@ Rectangle {
                                 }
 
                                 Text {
-                                    text: "Активен"
+                                    visible: (modelData.login || "").length > 0
+                                    text: "Логин: " + (modelData.login || "")
                                     font.pixelSize: 12
-                                    color: "#4CAF50"
+                                    color: "#666666"
+                                }
+
+                                Button {
+                                    text: "Изменить"
+                                    Layout.alignment: Qt.AlignLeft
+                                    onClicked: {
+                                        editEmployeeDialog.employeeId = modelData.id
+                                        editEmployeeDialog.open()
+                                    }
+                                    background: Rectangle {
+                                        color: parent.hovered ? "#1976D2" : "#2196F3"
+                                        radius: 6
+                                    }
+                                    contentItem: Text {
+                                        text: parent.text
+                                        color: "#FFFFFF"
+                                        font.pixelSize: 12
+                                        horizontalAlignment: Text.AlignHCenter
+                                        verticalAlignment: Text.AlignVCenter
+                                    }
                                 }
                             }
                         }

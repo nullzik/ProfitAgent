@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 116,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "fill",
                         "line": 34
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 26,
-                        "durationMicroseconds": 422,
+                        "durationMicroseconds": 597,
                         "errorMessage": "Cannot access value for name employeeViewModel",
                         "functionName": "visible",
                         "line": 139
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 304,
+                        "durationMicroseconds": 607,
                         "errorMessage": "Cannot access value for name employeeViewModel",
                         "functionName": "text",
                         "line": 140
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 52,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 95,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 154
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 47,
-                        "durationMicroseconds": 9,
+                        "durationMicroseconds": 25,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
                         "line": 155
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 99,
-                        "durationMicroseconds": 166,
+                        "durationMicroseconds": 324,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 155
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 137,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 270,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 155
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 52,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 60,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 168
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 47,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
                         "line": 169
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 99,
-                        "durationMicroseconds": 387,
+                        "durationMicroseconds": 316,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 169
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 137,
-                        "durationMicroseconds": 275,
+                        "durationMicroseconds": 260,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 169

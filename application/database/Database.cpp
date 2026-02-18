@@ -26,8 +26,8 @@ bool Database::initialize(const QString& path)
         return false;
     }
 
-    // users: login, password_hash, role (0=Waiter, 1=Chef, 2=Manager), employee_id (link to employees)
     QSqlQuery q;
+    // users: login, password_hash, role (0=Waiter, 1=Chef, 2=Manager), employee_id (link to employees)
     if (!q.exec(QStringLiteral(
         "CREATE TABLE IF NOT EXISTS users ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -56,6 +56,58 @@ bool Database::initialize(const QString& path)
         "salary_balance INTEGER DEFAULT 0"
         ")"))) {
         qWarning() << "Create employees table failed:" << q.lastError().text();
+        return false;
+    }
+
+    // warehouse_products: reference data for products
+    if (!q.exec(QStringLiteral(
+        "CREATE TABLE IF NOT EXISTS warehouse_products ("
+        "id TEXT PRIMARY KEY,"
+        "name TEXT NOT NULL,"
+        "unit INTEGER NOT NULL,"
+        "is_in_stop_list INTEGER NOT NULL DEFAULT 0"
+        ")"))) {
+        qWarning() << "Create warehouse_products table failed:" << q.lastError().text();
+        return false;
+    }
+
+    // warehouse_batches: stock batches for FIFO and cost
+    if (!q.exec(QStringLiteral(
+        "CREATE TABLE IF NOT EXISTS warehouse_batches ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+        "product_id TEXT NOT NULL,"
+        "quantity REAL NOT NULL,"
+        "purchase_price_minor_units INTEGER NOT NULL,"
+        "created_at INTEGER NOT NULL,"
+        "FOREIGN KEY(product_id) REFERENCES warehouse_products(id)"
+        ")"))) {
+        qWarning() << "Create warehouse_batches table failed:" << q.lastError().text();
+        return false;
+    }
+
+    // menu_dishes: menu items
+    if (!q.exec(QStringLiteral(
+        "CREATE TABLE IF NOT EXISTS menu_dishes ("
+        "id TEXT PRIMARY KEY,"
+        "name TEXT NOT NULL,"
+        "sale_price_minor_units INTEGER NOT NULL,"
+        "recipe_id TEXT NOT NULL,"
+        "is_available INTEGER NOT NULL DEFAULT 1"
+        ")"))) {
+        qWarning() << "Create menu_dishes table failed:" << q.lastError().text();
+        return false;
+    }
+
+    // menu_recipe_ingredients: many-to-one recipe -> ingredients
+    if (!q.exec(QStringLiteral(
+        "CREATE TABLE IF NOT EXISTS menu_recipe_ingredients ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+        "recipe_id TEXT NOT NULL,"
+        "product_id TEXT NOT NULL,"
+        "quantity REAL NOT NULL,"
+        "FOREIGN KEY(product_id) REFERENCES warehouse_products(id)"
+        ")"))) {
+        qWarning() << "Create menu_recipe_ingredients table failed:" << q.lastError().text();
         return false;
     }
 

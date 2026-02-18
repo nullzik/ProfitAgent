@@ -14,6 +14,7 @@ class IWarehouseService;
 namespace application {
 
 struct TableDishSummary {
+    std::string dishId;
     std::string dishName;
     int quantity;
 };
@@ -37,6 +38,10 @@ public:
 
     // Returns summary for a table (index 0..N): has orders and list of dishes.
     TableSummary getTableSummary(int tableIndex) const;
+
+    // Closes all open orders for the given table.
+    // Returns true if there was at least one open order to close.
+    bool closeTable(int tableIndex);
 
 private:
     domain::IMenuService& menuService_;

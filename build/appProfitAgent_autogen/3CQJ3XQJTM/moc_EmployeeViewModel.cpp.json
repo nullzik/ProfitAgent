@@ -2,13 +2,103 @@
     "classes": [
         {
             "className": "EmployeeViewModel",
-            "lineNumber": 7,
+            "lineNumber": 8,
             "methods": [
                 {
                     "access": "public",
                     "index": 2,
                     "name": "reloadEmployees",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "isConst": true,
+                    "name": "getEmployeeById",
+                    "returnType": "QVariantMap"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "fullName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "age",
+                            "type": "int"
+                        },
+                        {
+                            "name": "phone",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "address",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "role",
+                            "type": "int"
+                        },
+                        {
+                            "name": "hourlyRate",
+                            "type": "double"
+                        },
+                        {
+                            "name": "login",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "password",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "createEmployee",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "fullName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "age",
+                            "type": "int"
+                        },
+                        {
+                            "name": "phone",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "address",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "role",
+                            "type": "int"
+                        },
+                        {
+                            "name": "hourlyRate",
+                            "type": "double"
+                        },
+                        {
+                            "name": "login",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "isCloned": true,
+                    "name": "createEmployee",
+                    "returnType": "bool"
                 },
                 {
                     "access": "public",
@@ -38,8 +128,131 @@
                             "type": "double"
                         }
                     ],
-                    "index": 3,
+                    "index": 6,
+                    "isCloned": true,
                     "name": "createEmployee",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "fullName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "age",
+                            "type": "int"
+                        },
+                        {
+                            "name": "phone",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "address",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "role",
+                            "type": "int"
+                        },
+                        {
+                            "name": "hourlyRate",
+                            "type": "double"
+                        },
+                        {
+                            "name": "login",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "password",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "updateEmployee",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "fullName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "age",
+                            "type": "int"
+                        },
+                        {
+                            "name": "phone",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "address",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "role",
+                            "type": "int"
+                        },
+                        {
+                            "name": "hourlyRate",
+                            "type": "double"
+                        },
+                        {
+                            "name": "login",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 8,
+                    "isCloned": true,
+                    "name": "updateEmployee",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "fullName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "age",
+                            "type": "int"
+                        },
+                        {
+                            "name": "phone",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "address",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "role",
+                            "type": "int"
+                        },
+                        {
+                            "name": "hourlyRate",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 9,
+                    "isCloned": true,
+                    "name": "updateEmployee",
                     "returnType": "bool"
                 }
             ],

@@ -123,6 +123,7 @@ Rectangle {
 
                                 Button {
                                     text: "Изменить"
+                                    Layout.alignment: Qt.AlignLeft
                                     onClicked: {
                                         editEmployeeDialog.employeeId = modelData.id
                                         editEmployeeDialog.open()

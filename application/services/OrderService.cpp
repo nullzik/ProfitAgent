@@ -133,6 +133,7 @@ TableSummary OrderService::getTableSummary(int tableIndex) const
 
     for (const auto& order : orders_) {
         if (order.tableId() != tableIdStr) continue;
+        if (order.status() != OrderStatus::Open) continue;
         result.hasOrders = true;
         for (const auto& item : order.items()) {
             const int qty = static_cast<int>(item.quantity.value());
@@ -149,10 +150,28 @@ TableSummary OrderService::getTableSummary(int tableIndex) const
                 break;
             }
         }
-        result.dishes.push_back({std::move(name), qty});
+        result.dishes.push_back({dishId, std::move(name), qty});
     }
 
     return result;
+}
+
+bool OrderService::closeTable(int tableIndex)
+{
+    const std::string tableIdStr = "table_" + std::to_string(tableIndex);
+    bool closedAny = false;
+
+    for (auto& order : orders_) {
+        if (order.tableId() != tableIdStr) {
+            continue;
+        }
+        if (order.status() == OrderStatus::Open) {
+            order.setStatus(OrderStatus::Closed);
+            closedAny = true;
+        }
+    }
+
+    return closedAny;
 }
 
 } // namespace application

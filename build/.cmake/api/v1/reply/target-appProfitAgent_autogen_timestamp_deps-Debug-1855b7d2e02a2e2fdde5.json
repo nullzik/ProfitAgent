@@ -84,12 +84,12 @@
 			"id" : "appProfitAgent_copy_qml::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 7,
-			"id" : "appProfitAgent_copy_res::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "appProfitAgent_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "appProfitAgent_copy_res::@6890427a1f51a3e7e1df"
 		}
 	],
 	"folder" : 
@@ -111,15 +111,11 @@
 		},
 		{
 			"backtrace" : 0,
-			"id" : "Qt6::QmlPrivate::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 0,
 			"id" : "Qt6::Qml::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "Qt6::Quick::@6890427a1f51a3e7e1df"
+			"id" : "Qt6::QmlPrivate::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
@@ -128,6 +124,10 @@
 		{
 			"backtrace" : 0,
 			"id" : "Qt6::QuickControls2::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::Quick::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,

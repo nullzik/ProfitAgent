@@ -1259,6 +1259,25 @@
                         "index": 9,
                         "name": "placeOrder",
                         "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "tableId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 10,
+                        "isConst": true,
+                        "name": "getTableOrderItems",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "name": "closeSelectedTable",
+                        "returnType": "bool"
                     }
                 ],
                 "object": true,
