@@ -1021,6 +1021,12 @@
 			null
 		],
 		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ShiftViewModel.h",
+			"MU",
+			"3CQJ3XQJTM/moc_ShiftViewModel.cpp",
+			null
+		],
+		[
 			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.h",
 			"MU",
 			"3CQJ3XQJTM/moc_WaiterViewModel.cpp",
@@ -1125,6 +1131,7 @@
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/Sidebar_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/KPICard_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/OperationsTable_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/ShiftPanel_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/CreateEmployeeDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OperationDetailsDialog_qml.cpp",
@@ -1189,6 +1196,11 @@
 			null
 		],
 		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ShiftViewModel.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.cpp",
 			"MU",
 			null
@@ -1210,6 +1222,7 @@
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/Sidebar_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/KPICard_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/OperationsTable_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/components/ShiftPanel_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/CreateEmployeeDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OperationDetailsDialog_qml.cpp",

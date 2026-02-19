@@ -98,6 +98,19 @@ bool Database::initialize(const QString& path)
         return false;
     }
 
+    // shifts: employee shifts (opened_at/closed_at in milliseconds since epoch)
+    if (!q.exec(QStringLiteral(
+        "CREATE TABLE IF NOT EXISTS shifts ("
+        "id TEXT PRIMARY KEY,"
+        "employee_id TEXT NOT NULL,"
+        "opened_at INTEGER NOT NULL,"
+        "closed_at INTEGER,"
+        "FOREIGN KEY(employee_id) REFERENCES employees(id)"
+        ")"))) {
+        qWarning() << "Create shifts table failed:" << q.lastError().text();
+        return false;
+    }
+
     // menu_recipe_ingredients: many-to-one recipe -> ingredients
     if (!q.exec(QStringLiteral(
         "CREATE TABLE IF NOT EXISTS menu_recipe_ingredients ("

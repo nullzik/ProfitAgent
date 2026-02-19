@@ -22,6 +22,9 @@ public:
     static bool updateEmployee(const QString& id, const QString& fullName, int age, const QString& phone,
                                const QString& address, int role, double hourlyRate,
                                const QString& login = QString(), const QString& password = QString());
+
+    // Adjusts salary balance for employee (positive = премия, negative = штраф), in rubles.
+    static bool adjustSalaryBalance(const QString& id, double deltaRubles);
 };
 
 } // namespace application

@@ -25,6 +25,7 @@ public:
     Q_INVOKABLE bool updateEmployee(const QString& id, const QString& fullName, int age, const QString& phone,
                                     const QString& address, int role, double hourlyRate,
                                     const QString& login = QString(), const QString& password = QString());
+    Q_INVOKABLE bool adjustSalaryBalance(const QString& id, double deltaRubles);
 
 signals:
     void employeesChanged();

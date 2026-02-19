@@ -26,11 +26,11 @@ void AuthViewModel::setPassword(const QString &password)
 
 void AuthViewModel::performLogin()
 {
-    const int role = application::AuthService::validate(m_login, m_password);
-    if (role >= 0) {
+    const application::AuthResult res = application::AuthService::validate(m_login, m_password);
+    if (res.role >= 0) {
         m_isAuthenticated = true;
         emit isAuthenticatedChanged();
-        emit loginSuccess(role, m_login);
+        emit loginSuccess(res.role, m_login, res.employeeId);
     } else {
         emit loginFailed();
     }

@@ -5,5 +5,6 @@ C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/a
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../3CQJ3XQJTM/moc_EmployeeViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../3CQJ3XQJTM/moc_MenuViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../3CQJ3XQJTM/moc_NavigationViewModel.cpp.json
+C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../3CQJ3XQJTM/moc_ShiftViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../3CQJ3XQJTM/moc_WaiterViewModel.cpp.json
 C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/appProfitAgent_autogen/include/../3CQJ3XQJTM/moc_WarehouseViewModel.cpp.json

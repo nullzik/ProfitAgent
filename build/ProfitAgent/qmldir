@@ -5,6 +5,7 @@ Main 1.0 presentation/views/Main.qml
 Sidebar 1.0 presentation/views/Sidebar.qml
 KPICard 1.0 presentation/views/components/KPICard.qml
 OperationsTable 1.0 presentation/views/components/OperationsTable.qml
+ShiftPanel 1.0 presentation/views/components/ShiftPanel.qml
 OperationDetailsDialog 1.0 presentation/views/dialogs/OperationDetailsDialog.qml
 OrderEntryDialog 1.0 presentation/views/dialogs/OrderEntryDialog.qml
 ProductOperationDialog 1.0 presentation/views/dialogs/ProductOperationDialog.qml

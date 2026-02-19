@@ -26,6 +26,16 @@ Rectangle {
                 anchors.fill: parent
                 spacing: 0
 
+                ShiftPanel {
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: 100
+                    Layout.leftMargin: 24
+                    Layout.rightMargin: 24
+                    Layout.topMargin: 24
+                    isEmployeeView: true
+                    visible: appStateViewModel.currentEmployeeId.length > 0
+                }
+
                 // Header с кнопкой выхода
                 RowLayout {
                     Layout.fillWidth: true

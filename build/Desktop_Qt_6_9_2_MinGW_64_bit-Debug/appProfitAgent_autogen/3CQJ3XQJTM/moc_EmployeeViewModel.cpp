@@ -56,6 +56,8 @@ template <> constexpr inline auto EmployeeViewModel::qt_create_metaobjectdata<qt
         "login",
         "password",
         "updateEmployee",
+        "adjustSalaryBalance",
+        "deltaRubles",
         "employees",
         "QVariantList",
         "lastError"
@@ -103,12 +105,16 @@ template <> constexpr inline auto EmployeeViewModel::qt_create_metaobjectdata<qt
             { QMetaType::QString, 7 }, { QMetaType::QString, 9 }, { QMetaType::Int, 10 }, { QMetaType::QString, 11 },
             { QMetaType::QString, 12 }, { QMetaType::Int, 13 }, { QMetaType::Double, 14 },
         }}),
+        // Method 'adjustSalaryBalance'
+        QtMocHelpers::MethodData<bool(const QString &, double)>(18, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 7 }, { QMetaType::Double, 19 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'employees'
-        QtMocHelpers::PropertyData<QVariantList>(18, 0x80000000 | 19, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
+        QtMocHelpers::PropertyData<QVariantList>(20, 0x80000000 | 21, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
         // property 'lastError'
-        QtMocHelpers::PropertyData<QString>(20, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<QString>(22, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -146,6 +152,8 @@ void EmployeeViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         case 8: { bool _r = _t->updateEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[6])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[7])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[8])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         case 9: { bool _r = _t->updateEmployee((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[6])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[7])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 10: { bool _r = _t->adjustSalaryBalance((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[2])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -185,14 +193,14 @@ int EmployeeViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 11;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 10)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 10;
+        _id -= 11;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

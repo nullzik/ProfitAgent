@@ -17,13 +17,15 @@ void AppStateViewModel::loginAs(int role)
     }
 }
 
-void AppStateViewModel::setCurrentUser(const QString& login, int role)
+void AppStateViewModel::setCurrentUser(const QString& login, int role, const QString& employeeId)
 {
     m_currentUserName = login;
     m_currentRole = role;
+    m_currentEmployeeId = employeeId;
     m_isAuthenticated = true;
     emit currentUserNameChanged();
     emit currentRoleChanged();
+    emit currentEmployeeIdChanged();
     emit isAuthenticatedChanged();
 }
 
@@ -33,8 +35,10 @@ void AppStateViewModel::logout()
         m_isAuthenticated = false;
         m_currentRole = Waiter;
         m_currentUserName.clear();
+        m_currentEmployeeId.clear();
         emit isAuthenticatedChanged();
         emit currentRoleChanged();
         emit currentUserNameChanged();
+        emit currentEmployeeIdChanged();
     }
 }

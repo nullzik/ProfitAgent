@@ -9,6 +9,7 @@ class AppStateViewModel : public QObject
     Q_PROPERTY(int currentRole READ currentRole NOTIFY currentRoleChanged)
     Q_PROPERTY(bool isAuthenticated READ isAuthenticated NOTIFY isAuthenticatedChanged)
     Q_PROPERTY(QString currentUserName READ currentUserName NOTIFY currentUserNameChanged)
+    Q_PROPERTY(QString currentEmployeeId READ currentEmployeeId NOTIFY currentEmployeeIdChanged)
 
 public:
     enum Role {
@@ -23,20 +24,23 @@ public:
     int currentRole() const { return m_currentRole; }
     bool isAuthenticated() const { return m_isAuthenticated; }
     QString currentUserName() const { return m_currentUserName; }
+    QString currentEmployeeId() const { return m_currentEmployeeId; }
 
     Q_INVOKABLE void loginAs(int role);
-    Q_INVOKABLE void setCurrentUser(const QString& login, int role);
+    Q_INVOKABLE void setCurrentUser(const QString& login, int role, const QString& employeeId = QString());
     Q_INVOKABLE void logout();
 
 signals:
     void currentRoleChanged();
     void isAuthenticatedChanged();
     void currentUserNameChanged();
+    void currentEmployeeIdChanged();
 
 private:
     int m_currentRole;
     bool m_isAuthenticated;
     QString m_currentUserName;
+    QString m_currentEmployeeId;
 };
 
 #endif // APPSTATEVIEWMODEL_H

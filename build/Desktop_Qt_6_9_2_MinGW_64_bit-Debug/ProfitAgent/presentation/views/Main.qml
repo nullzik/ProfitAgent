@@ -69,8 +69,8 @@ ApplicationWindow {
     // Обработка успешного входа
     Connections {
         target: authViewModel
-        function onLoginSuccess(role, login) {
-            appStateViewModel.setCurrentUser(login, role)
+        function onLoginSuccess(role, login, employeeId) {
+            appStateViewModel.setCurrentUser(login, role, employeeId || "")
             navigationViewModel.setCurrentUser(login, role)
             dashboardViewModel.setUserName(login)
         }

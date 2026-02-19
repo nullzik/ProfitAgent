@@ -25,8 +25,28 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 3,
+                        "index": 4,
                         "name": "loginAs",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "login",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "int"
+                            },
+                            {
+                                "name": "employeeId",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "setCurrentUser",
                         "returnType": "void"
                     },
                     {
@@ -41,13 +61,14 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 4,
+                        "index": 6,
+                        "isCloned": true,
                         "name": "setCurrentUser",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 5,
+                        "index": 7,
                         "name": "logout",
                         "returnType": "void"
                     }
@@ -95,6 +116,20 @@
                         "stored": true,
                         "type": "QString",
                         "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "currentEmployeeId",
+                        "notify": "currentEmployeeIdChanged",
+                        "read": "currentEmployeeId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
                     }
                 ],
                 "qualifiedClassName": "AppStateViewModel",
@@ -115,6 +150,12 @@
                         "access": "public",
                         "index": 2,
                         "name": "currentUserNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "currentEmployeeIdChanged",
                         "returnType": "void"
                     }
                 ],
@@ -149,13 +190,13 @@
                 "methods": [
                     {
                         "access": "public",
-                        "index": 5,
+                        "index": 6,
                         "name": "performLogin",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 6,
+                        "index": 7,
                         "name": "logout",
                         "returnType": "void"
                     }
@@ -237,6 +278,10 @@
                             {
                                 "name": "login",
                                 "type": "QString"
+                            },
+                            {
+                                "name": "employeeId",
+                                "type": "QString"
                             }
                         ],
                         "index": 3,
@@ -245,7 +290,24 @@
                     },
                     {
                         "access": "public",
+                        "arguments": [
+                            {
+                                "name": "role",
+                                "type": "int"
+                            },
+                            {
+                                "name": "login",
+                                "type": "QString"
+                            }
+                        ],
                         "index": 4,
+                        "isCloned": true,
+                        "name": "loginSuccess",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
                         "name": "loginFailed",
                         "returnType": "void"
                     }
@@ -827,6 +889,22 @@
                         "isCloned": true,
                         "name": "updateEmployee",
                         "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "deltaRubles",
+                                "type": "double"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "adjustSalaryBalance",
+                        "returnType": "bool"
                     }
                 ],
                 "object": true,
@@ -1210,6 +1288,174 @@
             }
         ],
         "inputFile": "NavigationViewModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ShiftViewModel",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "setCurrentEmployeeId",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "refresh",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "openShift",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "closeTimeStr",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 9,
+                        "name": "closeMyShift",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "shiftId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "closeTimeStr",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "closeShiftForEmployee",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "hasOpenShift",
+                        "notify": "hasOpenShiftChanged",
+                        "read": "hasOpenShift",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "myOpenShift",
+                        "notify": "myOpenShiftChanged",
+                        "read": "myOpenShift",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantMap",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "openShifts",
+                        "notify": "openShiftsChanged",
+                        "read": "openShifts",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "lastError",
+                        "notify": "lastErrorChanged",
+                        "read": "lastError",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "ShiftViewModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "hasOpenShiftChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "myOpenShiftChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "openShiftsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "lastErrorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "shiftOpened",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "shiftClosed",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ShiftViewModel.h",
         "outputRevision": 69
     },
     {

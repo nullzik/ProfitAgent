@@ -10,6 +10,8 @@ set(src_and_dest_list
     "C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/presentation/views/components/KPICard.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/components/OperationsTable.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/presentation/views/components/OperationsTable.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/presentation/views/components/ShiftPanel.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/presentation/views/components/ShiftPanel.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml"

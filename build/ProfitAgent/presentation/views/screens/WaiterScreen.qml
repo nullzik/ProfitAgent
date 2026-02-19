@@ -47,6 +47,13 @@ Rectangle {
         anchors.margins: 24
         spacing: 20
 
+        ShiftPanel {
+            Layout.fillWidth: true
+            Layout.preferredHeight: 100
+            isEmployeeView: true
+            visible: appStateViewModel.currentEmployeeId.length > 0
+        }
+
         // Header с кнопкой выхода
         RowLayout {
             Layout.fillWidth: true

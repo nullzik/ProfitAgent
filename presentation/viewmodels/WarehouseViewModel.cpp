@@ -30,7 +30,9 @@ void WarehouseViewModel::createProduct(const QString &productId,
         const std::string nameStr = name.toStdString();
 
         Unit unitEnum = Unit::Kilogram;
-        if (unit == "Gram" || unit == "gram" || unit == "г" || unit == "Грамм") {
+        if (unit == "кг" || unit == "Кг" || unit == "Килограмм" || unit == "Kilogram") {
+            unitEnum = Unit::Kilogram;
+        } else if (unit == "Gram" || unit == "gram" || unit == "г" || unit == "Грамм") {
             unitEnum = Unit::Gram;
         } else if (unit == "Liter" || unit == "liter" || unit == "л" || unit == "Литр") {
             unitEnum = Unit::Liter;

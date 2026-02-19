@@ -249,7 +249,7 @@ Rectangle {
                         id: unitComboBox
                         Layout.fillWidth: true
                         height: 48
-                        model: ["Kilogram", "Gram", "Liter"]
+                        model: ["кг", "г", "л"]
                         background: Rectangle {
                             radius: 8
                             border.color: "#E0E0E0"

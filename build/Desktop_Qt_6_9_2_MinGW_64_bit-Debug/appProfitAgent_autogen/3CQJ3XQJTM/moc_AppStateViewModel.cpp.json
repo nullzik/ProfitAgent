@@ -24,8 +24,28 @@
                             "type": "int"
                         }
                     ],
-                    "index": 3,
+                    "index": 4,
                     "name": "loginAs",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "login",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "role",
+                            "type": "int"
+                        },
+                        {
+                            "name": "employeeId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "setCurrentUser",
                     "returnType": "void"
                 },
                 {
@@ -40,13 +60,14 @@
                             "type": "int"
                         }
                     ],
-                    "index": 4,
+                    "index": 6,
+                    "isCloned": true,
                     "name": "setCurrentUser",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 5,
+                    "index": 7,
                     "name": "logout",
                     "returnType": "void"
                 }
@@ -94,6 +115,20 @@
                     "stored": true,
                     "type": "QString",
                     "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "currentEmployeeId",
+                    "notify": "currentEmployeeIdChanged",
+                    "read": "currentEmployeeId",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
                 }
             ],
             "qualifiedClassName": "AppStateViewModel",
@@ -114,6 +149,12 @@
                     "access": "public",
                     "index": 2,
                     "name": "currentUserNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "currentEmployeeIdChanged",
                     "returnType": "void"
                 }
             ],

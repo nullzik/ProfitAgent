@@ -68,6 +68,28 @@ bool EmployeeViewModel::updateEmployee(const QString& id, const QString& fullNam
     }
 }
 
+bool EmployeeViewModel::adjustSalaryBalance(const QString& id, double deltaRubles)
+{
+    try {
+        const bool ok = application::EmployeeService::adjustSalaryBalance(id, deltaRubles);
+        if (ok) {
+            reloadEmployees();
+            setLastError(QString{});
+            return true;
+        }
+        setLastError(tr("Не удалось изменить баланс зарплаты"));
+        return false;
+    } catch (const std::exception& e) {
+        const auto msg = QString::fromUtf8(e.what());
+        qWarning() << "EmployeeViewModel::adjustSalaryBalance failed:" << msg;
+        setLastError(msg);
+        return false;
+    } catch (...) {
+        setLastError(tr("Неизвестная ошибка"));
+        return false;
+    }
+}
+
 void EmployeeViewModel::setLastError(const QString& message)
 {
     if (m_lastError != message) {

@@ -36,7 +36,7 @@ signals:
     void loginChanged();
     void passwordChanged();
     void isAuthenticatedChanged();
-    void loginSuccess(int role, const QString& login);
+    void loginSuccess(int role, const QString& login, const QString& employeeId = QString());
     void loginFailed();
 
 private:

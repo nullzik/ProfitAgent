@@ -8,6 +8,7 @@ C:/Users/boyko/Documents/ProfitAgent/build/.qt/rcc/appProfitAgent_raw_qml_0_extr
 /qt/qml/ProfitAgent/presentation/views/Sidebar.qml
 /qt/qml/ProfitAgent/presentation/views/components/KPICard.qml
 /qt/qml/ProfitAgent/presentation/views/components/OperationsTable.qml
+/qt/qml/ProfitAgent/presentation/views/components/ShiftPanel.qml
 /qt/qml/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml
 /qt/qml/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml
 /qt/qml/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml

@@ -211,4 +211,24 @@ bool EmployeeService::updateEmployee(const QString& id, const QString& fullName,
     return true;
 }
 
+bool EmployeeService::adjustSalaryBalance(const QString& id, double deltaRubles)
+{
+    QSqlQuery q(Database::connection());
+    const int deltaMinor = static_cast<int>(std::llround(deltaRubles * 100.0));
+
+    q.prepare(QStringLiteral(
+        "UPDATE employees "
+        "SET salary_balance = salary_balance + :delta "
+        "WHERE id = :id"));
+    q.bindValue(QStringLiteral(":delta"), deltaMinor);
+    q.bindValue(QStringLiteral(":id"), id);
+
+    if (!q.exec()) {
+        qWarning() << "adjustSalaryBalance failed:" << q.lastError().text();
+        return false;
+    }
+
+    return q.numRowsAffected() > 0;
+}
+
 } // namespace application

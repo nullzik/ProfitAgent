@@ -14,6 +14,7 @@
 #include "presentation/viewmodels/WaiterViewModel.h"
 #include "presentation/viewmodels/WarehouseViewModel.h"
 #include "presentation/viewmodels/EmployeeViewModel.h"
+#include "presentation/viewmodels/ShiftViewModel.h"
 
 #include "application/database/Database.h"
 #include "application/services/MenuService.h"
@@ -64,6 +65,7 @@ int main(int argc, char *argv[])
 
     ChefViewModel chefViewModel;
     EmployeeViewModel employeeViewModel;
+    ShiftViewModel shiftViewModel;
 
     QQmlApplicationEngine engine;
     
@@ -77,6 +79,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("warehouseViewModel", &warehouseViewModel);
     engine.rootContext()->setContextProperty("menuViewModel", &menuViewModel);
     engine.rootContext()->setContextProperty("employeeViewModel", &employeeViewModel);
+    engine.rootContext()->setContextProperty("shiftViewModel", &shiftViewModel);
 
     // Регистрируем типы для использования в QML
     qmlRegisterType<DashboardViewModel>("ProfitAgent", 1, 0, "DashboardViewModel");
@@ -88,6 +91,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<WarehouseViewModel>("ProfitAgent", 1, 0, "WarehouseViewModel");
     qmlRegisterType<MenuViewModel>("ProfitAgent", 1, 0, "MenuViewModel");
     qmlRegisterType<EmployeeViewModel>("ProfitAgent", 1, 0, "EmployeeViewModel");
+    qmlRegisterType<ShiftViewModel>("ProfitAgent", 1, 0, "ShiftViewModel");
 
     QObject::connect(
         &engine,

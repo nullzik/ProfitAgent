@@ -7,6 +7,7 @@ Rectangle {
     color: "#F5F5F5"
 
     property var selectedDish: null
+    property var currentRecipeIngredients: []
 
     ColumnLayout {
         anchors.fill: parent
@@ -100,6 +101,7 @@ Rectangle {
                                     cursorShape: Qt.PointingHandCursor
                                     onClicked: {
                                         selectedDish = modelData
+                                        currentRecipeIngredients = menuViewModel.getRecipe(selectedDish.id)
                                         dishDialog.open()
                                     }
 
@@ -375,7 +377,7 @@ Rectangle {
                     ListView {
                         id: recipeList
                         width: parent.width
-                        model: selectedDish ? menuViewModel.getRecipe(selectedDish.id) : []
+                        model: currentRecipeIngredients
 
                         delegate: Rectangle {
                             width: ListView.view.width
@@ -401,7 +403,23 @@ Rectangle {
                                 }
 
                                 Text {
-                                    text: modelData.quantity + " г"
+                                text: {
+                                    var unitStr = "г"
+                                    for (var i = 0; i < warehouseViewModel.products.length; i++) {
+                                        if (warehouseViewModel.products[i].id === modelData.productId) {
+                                            var u = warehouseViewModel.products[i].unit
+                                            if (u === "Kilogram") {
+                                                unitStr = "кг"
+                                            } else if (u === "Gram") {
+                                                unitStr = "г"
+                                            } else if (u === "Liter") {
+                                                unitStr = "л"
+                                            }
+                                            break
+                                        }
+                                    }
+                                    return modelData.quantity + " " + unitStr
+                                }
                                     font.pixelSize: 13
                                     color: "#666666"
                                 }
@@ -414,7 +432,10 @@ Rectangle {
                     Layout.fillWidth: true
                     text: "Редактировать рецепт"
                     onClicked: {
-                        recipeEditDialog.open()
+                        if (selectedDish) {
+                            currentRecipeIngredients = menuViewModel.getRecipe(selectedDish.id)
+                            recipeEditDialog.open()
+                        }
                     }
                     background: Rectangle {
                         color: parent.hovered ? "#2196F3" : "#1976D2"
@@ -532,7 +553,10 @@ Rectangle {
                                 const product = warehouseViewModel.products[productComboBox.currentIndex]
                                 const quantity = Number(quantityField.text)
                                 
-                                var ingredients = menuViewModel.getRecipe(selectedDish.id)
+                                if (!selectedDish)
+                                    return
+
+                                var ingredients = currentRecipeIngredients.slice(0)
                                 var found = false
                                 for (var i = 0; i < ingredients.length; i++) {
                                     if (ingredients[i].productId === product.id) {
@@ -549,6 +573,7 @@ Rectangle {
                                 }
                                 
                                 menuViewModel.setRecipe(selectedDish.id, ingredients)
+                                currentRecipeIngredients = ingredients
                                 quantityField.text = ""
                             }
                         }
@@ -579,7 +604,7 @@ Rectangle {
                     ListView {
                         id: currentRecipeList
                         width: parent.width
-                        model: selectedDish ? menuViewModel.getRecipe(selectedDish.id) : []
+                        model: currentRecipeIngredients
 
                         delegate: Rectangle {
                             width: ListView.view.width
@@ -604,7 +629,23 @@ Rectangle {
                                 }
 
                                 Text {
-                                    text: modelData.quantity + " г"
+                                text: {
+                                    var unitStr = "г"
+                                    for (var i = 0; i < warehouseViewModel.products.length; i++) {
+                                        if (warehouseViewModel.products[i].id === modelData.productId) {
+                                            var u = warehouseViewModel.products[i].unit
+                                            if (u === "Kilogram") {
+                                                unitStr = "кг"
+                                            } else if (u === "Gram") {
+                                                unitStr = "г"
+                                            } else if (u === "Liter") {
+                                                unitStr = "л"
+                                            }
+                                            break
+                                        }
+                                    }
+                                    return modelData.quantity + " " + unitStr
+                                }
                                     font.pixelSize: 13
                                     color: "#666666"
                                 }
@@ -612,8 +653,11 @@ Rectangle {
                                 Button {
                                     text: "Удалить"
                                     onClicked: {
-                                        var ingredients = menuViewModel.getRecipe(selectedDish.id)
+                                        if (!selectedDish)
+                                            return
+                                        var ingredients = currentRecipeIngredients.slice(0)
                                         ingredients.splice(index, 1)
+                                        currentRecipeIngredients = ingredients
                                         menuViewModel.setRecipe(selectedDish.id, ingredients)
                                     }
                                     background: Rectangle {

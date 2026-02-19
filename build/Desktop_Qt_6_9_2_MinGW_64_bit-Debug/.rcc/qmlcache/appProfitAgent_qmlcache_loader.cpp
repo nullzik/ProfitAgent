@@ -33,6 +33,13 @@ namespace _qt_qml_ProfitAgent_presentation_views_components_OperationsTable_qml 
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_ProfitAgent_presentation_views_components_ShiftPanel_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _qt_qml_ProfitAgent_presentation_views_dialogs_OperationDetailsDialog_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -149,6 +156,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/Sidebar.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_Sidebar_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/components/KPICard.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_components_KPICard_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/components/OperationsTable.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_components_OperationsTable_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/components/ShiftPanel.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_components_ShiftPanel_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_OperationDetailsDialog_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_OrderEntryDialog_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_ProductOperationDialog_qml::unit);
