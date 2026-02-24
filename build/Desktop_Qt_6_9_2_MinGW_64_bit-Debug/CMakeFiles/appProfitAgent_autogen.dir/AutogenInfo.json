@@ -1071,6 +1071,12 @@
 			null
 		],
 		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/FinanceViewModel.h",
+			"MU",
+			"3CQJ3XQJTM/moc_FinanceViewModel.cpp",
+			null
+		],
+		[
 			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.h",
 			"MU",
 			"3CQJ3XQJTM/moc_MenuViewModel.cpp",
@@ -1196,6 +1202,7 @@
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/components/ShiftPanel_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/CreateEmployeeDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/FinanceTransactionDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OperationDetailsDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OrderEntryDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/ProductOperationDialog_qml.cpp",
@@ -1248,6 +1255,11 @@
 			null
 		],
 		[
+			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/FinanceViewModel.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.cpp",
 			"MU",
 			null
@@ -1287,6 +1299,7 @@
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/components/ShiftPanel_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/CreateEmployeeDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/EditEmployeeDialog_qml.cpp",
+		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/FinanceTransactionDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OperationDetailsDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/OrderEntryDialog_qml.cpp",
 		"C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.rcc/qmlcache/appProfitAgent_presentation/views/dialogs/ProductOperationDialog_qml.cpp",

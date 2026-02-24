@@ -4,12 +4,14 @@
 #include <vector>
 
 #include "domain/value_objects/Quantity.h"
+#include "domain/warehouse/Product.h"
 
 namespace domain {
 
 struct RecipeIngredient final {
     std::string productId;
     Quantity quantityRequired;
+    Unit quantityUnit{Unit::Gram};  // единица, в которой указано количество в рецепте
 };
 
 class Recipe final {

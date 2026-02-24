@@ -967,6 +967,279 @@
     {
         "classes": [
             {
+                "className": "FinanceViewModel",
+                "lineNumber": 7,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "reload",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "amountRubles",
+                                "type": "double"
+                            },
+                            {
+                                "name": "category",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "description",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "addIncome",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "amountRubles",
+                                "type": "double"
+                            },
+                            {
+                                "name": "category",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "isCloned": true,
+                        "name": "addIncome",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "amountRubles",
+                                "type": "double"
+                            },
+                            {
+                                "name": "category",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "description",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "addExpense",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "amountRubles",
+                                "type": "double"
+                            },
+                            {
+                                "name": "category",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "isCloned": true,
+                        "name": "addExpense",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "int"
+                            },
+                            {
+                                "name": "type",
+                                "type": "int"
+                            },
+                            {
+                                "name": "amountRubles",
+                                "type": "double"
+                            },
+                            {
+                                "name": "category",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "description",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "name": "updateTransaction",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 9,
+                        "name": "deleteTransaction",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "rubles",
+                                "type": "double"
+                            }
+                        ],
+                        "index": 10,
+                        "isConst": true,
+                        "name": "formatMoney",
+                        "returnType": "QString"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "totalIncome",
+                        "notify": "totalsChanged",
+                        "read": "totalIncome",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "totalExpenses",
+                        "notify": "totalsChanged",
+                        "read": "totalExpenses",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "profit",
+                        "notify": "totalsChanged",
+                        "read": "profit",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "transactions",
+                        "notify": "transactionsChanged",
+                        "read": "transactions",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "incomeTransactions",
+                        "notify": "transactionsChanged",
+                        "read": "incomeTransactions",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "expenseTransactions",
+                        "notify": "transactionsChanged",
+                        "read": "expenseTransactions",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "lastError",
+                        "notify": "lastErrorChanged",
+                        "read": "lastError",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FinanceViewModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "totalsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "transactionsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "lastErrorChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FinanceViewModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
                 "className": "MenuViewModel",
                 "lineNumber": 12,
                 "methods": [

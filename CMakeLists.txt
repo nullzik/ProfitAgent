@@ -48,6 +48,8 @@ add_library(application_services STATIC
     application/services/MenuService.cpp
     application/services/OrderService.h
     application/services/OrderService.cpp
+    application/services/FinanceService.h
+    application/services/FinanceService.cpp
     application/services/WarehouseService.h
     application/services/WarehouseService.cpp
     application/services/AuthService.h
@@ -90,6 +92,8 @@ qt_add_executable(appProfitAgent
     presentation/viewmodels/EmployeeViewModel.h
     presentation/viewmodels/ShiftViewModel.cpp
     presentation/viewmodels/ShiftViewModel.h
+    presentation/viewmodels/FinanceViewModel.cpp
+    presentation/viewmodels/FinanceViewModel.h
 )
 
 qt_add_qml_module(appProfitAgent
@@ -106,6 +110,7 @@ qt_add_qml_module(appProfitAgent
         presentation/views/dialogs/ProductOperationDialog.qml
         presentation/views/dialogs/CreateEmployeeDialog.qml
         presentation/views/dialogs/EditEmployeeDialog.qml
+        presentation/views/dialogs/FinanceTransactionDialog.qml
         presentation/views/screens/LoginScreen.qml
         presentation/views/screens/WaiterScreen.qml
         presentation/views/screens/ChefScreen.qml

@@ -75,6 +75,13 @@ namespace _qt_qml_ProfitAgent_presentation_views_dialogs_EditEmployeeDialog_qml 
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_ProfitAgent_presentation_views_dialogs_FinanceTransactionDialog_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _qt_qml_ProfitAgent_presentation_views_screens_LoginScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -162,6 +169,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_ProductOperationDialog_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/CreateEmployeeDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_CreateEmployeeDialog_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/EditEmployeeDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_EditEmployeeDialog_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/dialogs/FinanceTransactionDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_dialogs_FinanceTransactionDialog_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/LoginScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_LoginScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/WaiterScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_WaiterScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/ProfitAgent/presentation/views/screens/ChefScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_ProfitAgent_presentation_views_screens_ChefScreen_qml::unit);

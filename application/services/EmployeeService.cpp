@@ -1,5 +1,6 @@
 #include "application/services/EmployeeService.h"
 #include "application/database/Database.h"
+#include "application/services/FinanceService.h"
 
 #include <QSqlQuery>
 #include <QCryptographicHash>
@@ -228,7 +229,30 @@ bool EmployeeService::adjustSalaryBalance(const QString& id, double deltaRubles)
         return false;
     }
 
-    return q.numRowsAffected() > 0;
+    if (q.numRowsAffected() <= 0) {
+        return false;
+    }
+
+    // Финансовый учёт: премии и штрафы
+    if (deltaRubles != 0.0) {
+        const QVariantMap emp = EmployeeService::getEmployeeById(id);
+        const QString fullName = emp.value(QStringLiteral("fullName")).toString();
+        const double amount = std::abs(deltaRubles);
+
+        if (deltaRubles > 0.0) {
+            // Премия сотруднику — расход
+            const QString category = QStringLiteral("Премия: %1").arg(fullName);
+            const QString description = QStringLiteral("Премия сотруднику %1").arg(fullName);
+            FinanceService::addTransaction(FinanceService::Expense, amount, category, description);
+        } else {
+            // Штраф сотруднику — учитываем как доход
+            const QString category = QStringLiteral("Штраф: %1").arg(fullName);
+            const QString description = QStringLiteral("Штраф сотруднику %1").arg(fullName);
+            FinanceService::addTransaction(FinanceService::Income, amount, category, description);
+        }
+    }
+
+    return true;
 }
 
 } // namespace application

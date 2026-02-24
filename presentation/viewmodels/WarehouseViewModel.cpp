@@ -11,6 +11,7 @@
 #include "domain/warehouse/Product.h"
 #include "domain/value_objects/Quantity.h"
 #include "domain/value_objects/Money.h"
+#include "application/services/FinanceService.h"
 
 using namespace domain;
 
@@ -86,6 +87,29 @@ void WarehouseViewModel::addProductBatch(const QString &productId,
         Money price{minorUnits, "RUB"};
 
         m_service.addProductBatch(id, qty, price);
+
+        // Финансовый учёт поставки: расход = количество * закупочная цена
+        const double totalCostRubles = quantity * purchasePrice;
+        if (totalCostRubles > 0.0) {
+            // Найдём читаемое имя продукта, если оно есть в кэше
+            QString productName = productId;
+            for (const auto &v : m_products) {
+                const auto map = v.toMap();
+                if (map.value(QStringLiteral("id")).toString() == productId) {
+                    productName = map.value(QStringLiteral("name")).toString();
+                    break;
+                }
+            }
+            const QString category = QStringLiteral("Поставка: %1").arg(productName);
+            const QString description = QStringLiteral("%1 ед. по %2 ₽")
+                .arg(QString::number(quantity, 'f', 2))
+                .arg(QString::number(purchasePrice, 'f', 2));
+            application::FinanceService::addTransaction(
+                application::FinanceService::Expense,
+                totalCostRubles,
+                category,
+                description);
+        }
 
         reloadProducts();
         setLastError(QString{});

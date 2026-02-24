@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 470,
+                        "durationMicroseconds": 318,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 167,
+                        "durationMicroseconds": 168,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 19
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 26
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 22,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 57,
                         "errorMessage": "Cannot access value for name authErrorVisible",
                         "functionName": "visible",
                         "line": 94
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 137,
+                        "durationMicroseconds": 149,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 98
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 97,
+                        "durationMicroseconds": 99,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 109
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
                         "line": 113
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 422,
+                        "durationMicroseconds": 392,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 117
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 36,
-                        "durationMicroseconds": 436,
+                        "durationMicroseconds": 288,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 118
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 17,
-                        "durationMicroseconds": 101,
+                        "durationMicroseconds": 84,
                         "errorMessage": "Cannot access value for name authViewModel",
                         "functionName": "target",
                         "line": 126
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 9,
-                        "durationMicroseconds": 28,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Cannot find name authErrorVisible",
                         "functionName": "onLoginFailed",
                         "line": 127
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 9,
-                        "durationMicroseconds": 21,
+                        "durationMicroseconds": 25,
                         "errorMessage": "Cannot find name authErrorVisible",
                         "functionName": "onLoginSuccess",
                         "line": 130

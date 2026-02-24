@@ -1,6 +1,7 @@
 #include "application/services/OrderService.h"
 
 #include <chrono>
+#include <cmath>
 #include <stdexcept>
 #include <unordered_map>
 #include <utility>
@@ -9,10 +10,12 @@
 #include "domain/menu/IMenuService.h"
 #include "domain/menu/Recipe.h"
 #include "domain/orders/Order.h"
+#include "application/services/UnitConversion.h"
 #include "domain/value_objects/Money.h"
 #include "domain/value_objects/Quantity.h"
 #include "domain/warehouse/IWarehouseService.h"
 #include "domain/warehouse/Product.h"
+#include "application/services/FinanceService.h"
 
 using namespace domain;
 
@@ -33,7 +36,13 @@ bool OrderService::placeOrder(
         return false;
     }
 
-    // 1. Aggregate required ingredients (productId -> total quantity)
+    // productId -> unit (на складе)
+    std::unordered_map<std::string, domain::Unit> productUnits;
+    for (const auto& p : warehouseService_.getAllProducts()) {
+        productUnits[p.id()] = p.unit();
+    }
+
+    // 1. Aggregate required ingredients (productId -> total quantity in product unit)
     std::unordered_map<std::string, double> requiredByProduct;
 
     for (const auto& [dishId, count] : dishes) {
@@ -42,8 +51,12 @@ bool OrderService::placeOrder(
         try {
             const Recipe recipe = menuService_.getRecipe(dishId);
             for (const auto& ing : recipe.ingredients()) {
-                const double totalQty = ing.quantityRequired.value() * static_cast<double>(count);
-                requiredByProduct[ing.productId] += totalQty;
+                auto unitIt = productUnits.find(ing.productId);
+                if (unitIt == productUnits.end()) continue;
+                const double qtyInRecipe = ing.quantityRequired.value() * static_cast<double>(count);
+                const double qtyInProductUnit = application::convertToProductUnit(
+                    qtyInRecipe, ing.quantityUnit, unitIt->second);
+                requiredByProduct[ing.productId] += qtyInProductUnit;
             }
         } catch (const std::exception&) {
             return false; // dish not found or invalid
@@ -160,15 +173,28 @@ bool OrderService::closeTable(int tableIndex)
 {
     const std::string tableIdStr = "table_" + std::to_string(tableIndex);
     bool closedAny = false;
+    std::int64_t totalMinorUnits = 0;
 
     for (auto& order : orders_) {
         if (order.tableId() != tableIdStr) {
             continue;
         }
         if (order.status() == OrderStatus::Open) {
+            for (const auto& item : order.items()) {
+                const double qty = item.quantity.value();
+                const std::int64_t priceMinor = item.priceAtSale.minorUnits();
+                totalMinorUnits += static_cast<std::int64_t>(std::llround(qty * static_cast<double>(priceMinor)));
+            }
             order.setStatus(OrderStatus::Closed);
             closedAny = true;
         }
+    }
+
+    if (closedAny && totalMinorUnits > 0) {
+        const double rubles = static_cast<double>(totalMinorUnits) / 100.0;
+        const QString category = QStringLiteral("Продажи стол %1").arg(tableIndex + 1);
+        const QString description = QStringLiteral("Выручка по закрытию стола %1").arg(tableIndex + 1);
+        FinanceService::addTransaction(FinanceService::Income, rubles, category, description);
     }
 
     return closedAny;

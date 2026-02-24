@@ -1093,6 +1093,8 @@ appProfitAgent_autogen/timestamp: \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.cpp \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ShiftViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/ShiftViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.cpp \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WaiterViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/WarehouseViewModel.cpp \

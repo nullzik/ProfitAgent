@@ -22,6 +22,8 @@ set(src_and_dest_list
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/dialogs/CreateEmployeeDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/EditEmployeeDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/dialogs/EditEmployeeDialog.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/FinanceTransactionDialog.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/dialogs/FinanceTransactionDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/LoginScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/screens/LoginScreen.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/WaiterScreen.qml"

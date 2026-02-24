@@ -11,6 +11,7 @@ OrderEntryDialog 1.0 presentation/views/dialogs/OrderEntryDialog.qml
 ProductOperationDialog 1.0 presentation/views/dialogs/ProductOperationDialog.qml
 CreateEmployeeDialog 1.0 presentation/views/dialogs/CreateEmployeeDialog.qml
 EditEmployeeDialog 1.0 presentation/views/dialogs/EditEmployeeDialog.qml
+FinanceTransactionDialog 1.0 presentation/views/dialogs/FinanceTransactionDialog.qml
 LoginScreen 1.0 presentation/views/screens/LoginScreen.qml
 WaiterScreen 1.0 presentation/views/screens/WaiterScreen.qml
 ChefScreen 1.0 presentation/views/screens/ChefScreen.qml

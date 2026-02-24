@@ -254,6 +254,22 @@
                     "isCloned": true,
                     "name": "updateEmployee",
                     "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "id",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "deltaRubles",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "adjustSalaryBalance",
+                    "returnType": "bool"
                 }
             ],
             "object": true,

@@ -118,9 +118,32 @@ bool Database::initialize(const QString& path)
         "recipe_id TEXT NOT NULL,"
         "product_id TEXT NOT NULL,"
         "quantity REAL NOT NULL,"
+        "quantity_unit INTEGER NOT NULL DEFAULT 1,"
         "FOREIGN KEY(product_id) REFERENCES warehouse_products(id)"
         ")"))) {
         qWarning() << "Create menu_recipe_ingredients table failed:" << q.lastError().text();
+        return false;
+    }
+    // Migration: add quantity_unit for old DBs (0=kg, 1=g, 2=L)
+    QSqlQuery checkCol;
+    if (checkCol.exec(QStringLiteral(
+            "SELECT COUNT(*) FROM pragma_table_info('menu_recipe_ingredients') WHERE name='quantity_unit'"))) {
+        if (checkCol.next() && checkCol.value(0).toInt() == 0) {
+            q.exec(QStringLiteral("ALTER TABLE menu_recipe_ingredients ADD COLUMN quantity_unit INTEGER DEFAULT 1"));
+        }
+    }
+
+    // financial_transactions: income/expense entries (type: 1=income, 2=expense)
+    if (!q.exec(QStringLiteral(
+        "CREATE TABLE IF NOT EXISTS financial_transactions ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+        "type INTEGER NOT NULL,"
+        "amount_minor_units INTEGER NOT NULL,"
+        "category TEXT NOT NULL,"
+        "description TEXT,"
+        "created_at INTEGER NOT NULL"
+        ")"))) {
+        qWarning() << "Create financial_transactions table failed:" << q.lastError().text();
         return false;
     }
 

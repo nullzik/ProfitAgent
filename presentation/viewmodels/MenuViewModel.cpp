@@ -13,8 +13,25 @@
 #include "domain/menu/Recipe.h"
 #include "domain/value_objects/Money.h"
 #include "domain/value_objects/Quantity.h"
+#include "domain/warehouse/Product.h"
 
 using namespace domain;
+
+namespace {
+QString unitToQString(Unit u) {
+    switch (u) {
+        case Unit::Kilogram: return QStringLiteral("Kilogram");
+        case Unit::Gram: return QStringLiteral("Gram");
+        case Unit::Liter: return QStringLiteral("Liter");
+    }
+    return QStringLiteral("Gram");
+}
+Unit unitFromQString(const QString& s) {
+    if (s == QStringLiteral("Kilogram") || s == QStringLiteral("кг")) return Unit::Kilogram;
+    if (s == QStringLiteral("Liter") || s == QStringLiteral("л")) return Unit::Liter;
+    return Unit::Gram;
+}
+} // namespace
 
 MenuViewModel::MenuViewModel(IMenuService &menuService,
                              IWarehouseService &warehouseService,
@@ -110,6 +127,7 @@ QVariantList MenuViewModel::getRecipe(const QString &dishId)
             QVariantMap item;
             item.insert(QStringLiteral("productId"), QString::fromStdString(ingredient.productId));
             item.insert(QStringLiteral("quantity"), ingredient.quantityRequired.value());
+            item.insert(QStringLiteral("unit"), unitToQString(ingredient.quantityUnit));
             result.append(item);
         }
     } catch (const std::exception &e) {
@@ -138,10 +156,12 @@ void MenuViewModel::setRecipe(const QString &dishId,
             const auto map = variant.toMap();
             const QString productIdStr = map.value(QStringLiteral("productId")).toString();
             const double quantity = map.value(QStringLiteral("quantity")).toDouble();
+            const QString unitStr = map.value(QStringLiteral("unit")).toString();
 
             RecipeIngredient ingredient;
             ingredient.productId = productIdStr.toStdString();
             ingredient.quantityRequired = Quantity{quantity};
+            ingredient.quantityUnit = unitFromQString(unitStr);
 
             recipeIngredients.push_back(ingredient);
         }

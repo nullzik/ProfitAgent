@@ -1085,6 +1085,8 @@ appProfitAgent_autogen/timestamp: \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/DashboardViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/EmployeeViewModel.cpp \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/EmployeeViewModel.h \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/FinanceViewModel.cpp \
+	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/FinanceViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.cpp \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/MenuViewModel.h \
 	C:/Users/boyko/Documents/ProfitAgent/presentation/viewmodels/NavigationViewModel.cpp \

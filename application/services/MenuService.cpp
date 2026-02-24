@@ -3,12 +3,17 @@
 #include <stdexcept>
 #include <utility>
 #include <unordered_map>
+#include <cmath>
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QSqlRecord>
 #include <QSqlError>
 #include <QVariant>
 #include <QDebug>
+
+#include "domain/warehouse/Product.h"
+#include "application/services/UnitConversion.h"
 
 namespace domain {
 
@@ -43,7 +48,7 @@ MenuService::MenuService(IWarehouseService& warehouseService)
     // Load recipes
     QSqlQuery qr(db);
     if (qr.exec(QStringLiteral(
-            "SELECT recipe_id, product_id, quantity "
+            "SELECT recipe_id, product_id, quantity, quantity_unit "
             "FROM menu_recipe_ingredients "
             "ORDER BY id ASC"))) {
         std::unordered_map<std::string, std::vector<RecipeIngredient>> grouped;
@@ -51,10 +56,14 @@ MenuService::MenuService(IWarehouseService& warehouseService)
             const auto recipeId = qr.value(0).toString().toStdString();
             const auto productId = qr.value(1).toString().toStdString();
             const double quantity = qr.value(2).toDouble();
+            const int unitInt = (qr.record().count() > 3 && qr.value(3).isValid())
+            ? qr.value(3).toInt() : 1;  // 1 = Gram по умолчанию
+            Unit u = (unitInt == 0) ? Unit::Kilogram : (unitInt == 2 ? Unit::Liter : Unit::Gram);
 
             RecipeIngredient ing;
             ing.productId = productId;
             ing.quantityRequired = Quantity{quantity};
+            ing.quantityUnit = u;
 
             grouped[recipeId].push_back(ing);
         }
@@ -119,14 +128,23 @@ Money MenuService::getDishCost(const std::string& dishId) const {
         return Money::zero("RUB");
     }
 
+    const auto products = warehouseService_.getAllProducts();
     const auto& recipe = recipeIt->second;
     Money totalCost = Money::zero("RUB");
 
     for (const auto& ingredient : recipe.ingredients()) {
+        Unit productUnit = Unit::Gram;
+        for (const auto& p : products) {
+            if (p.id() == ingredient.productId) {
+                productUnit = p.unit();
+                break;
+            }
+        }
+        const double qtyInProductUnit = application::convertToProductUnit(
+            ingredient.quantityRequired.value(), ingredient.quantityUnit, productUnit);
         Money avgPrice = warehouseService_.getAveragePurchasePrice(ingredient.productId);
-        const double qty = ingredient.quantityRequired.value();
         const std::int64_t pricePerUnit = avgPrice.minorUnits();
-        const std::int64_t ingredientCost = static_cast<std::int64_t>(std::llround(pricePerUnit * qty));
+        const std::int64_t ingredientCost = static_cast<std::int64_t>(std::llround(pricePerUnit * qtyInProductUnit));
         totalCost = totalCost + Money{ingredientCost, "RUB"};
     }
 
@@ -160,13 +178,15 @@ void MenuService::setRecipe(const std::string& dishId,
 
         QSqlQuery ins(db);
         ins.prepare(QStringLiteral(
-            "INSERT INTO menu_recipe_ingredients (recipe_id, product_id, quantity) "
-            "VALUES (:recipe_id, :product_id, :quantity)"));
+            "INSERT INTO menu_recipe_ingredients (recipe_id, product_id, quantity, quantity_unit) "
+            "VALUES (:recipe_id, :product_id, :quantity, :unit)"));
 
+        auto unitToInt = [](Unit u) { return u == Unit::Kilogram ? 0 : (u == Unit::Liter ? 2 : 1); };
         for (const auto& ing : ingredients) {
             ins.bindValue(QStringLiteral(":recipe_id"), QString::fromStdString(dish.recipeId()));
             ins.bindValue(QStringLiteral(":product_id"), QString::fromStdString(ing.productId));
             ins.bindValue(QStringLiteral(":quantity"), ing.quantityRequired.value());
+            ins.bindValue(QStringLiteral(":unit"), unitToInt(ing.quantityUnit));
             if (!ins.exec()) {
                 qWarning() << "Failed to insert recipe ingredient:" << ins.lastError().text();
             }

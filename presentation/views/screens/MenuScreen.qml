@@ -403,23 +403,11 @@ Rectangle {
                                 }
 
                                 Text {
-                                text: {
-                                    var unitStr = "г"
-                                    for (var i = 0; i < warehouseViewModel.products.length; i++) {
-                                        if (warehouseViewModel.products[i].id === modelData.productId) {
-                                            var u = warehouseViewModel.products[i].unit
-                                            if (u === "Kilogram") {
-                                                unitStr = "кг"
-                                            } else if (u === "Gram") {
-                                                unitStr = "г"
-                                            } else if (u === "Liter") {
-                                                unitStr = "л"
-                                            }
-                                            break
-                                        }
+                                    text: {
+                                        var u = modelData.unit || "Gram"
+                                        var unitStr = (u === "Kilogram") ? "кг" : ((u === "Liter") ? "л" : "г")
+                                        return modelData.quantity + " " + unitStr
                                     }
-                                    return modelData.quantity + " " + unitStr
-                                }
                                     font.pixelSize: 13
                                     color: "#666666"
                                 }
@@ -535,9 +523,23 @@ Rectangle {
 
                     TextField {
                         id: quantityField
-                        Layout.preferredWidth: 120
+                        Layout.preferredWidth: 80
                         height: 48
                         placeholderText: "Кол-во"
+                        background: Rectangle {
+                            radius: 8
+                            border.color: "#E0E0E0"
+                            border.width: 1
+                            color: "#FFFFFF"
+                        }
+                    }
+
+                    ComboBox {
+                        id: recipeUnitComboBox
+                        Layout.preferredWidth: 70
+                        height: 48
+                        model: ["кг", "г", "л"]
+                        currentIndex: 1
                         background: Rectangle {
                             radius: 8
                             border.color: "#E0E0E0"
@@ -552,7 +554,10 @@ Rectangle {
                             if (productComboBox.currentIndex >= 0 && quantityField.text.length > 0) {
                                 const product = warehouseViewModel.products[productComboBox.currentIndex]
                                 const quantity = Number(quantityField.text)
-                                
+                                var unitVal = "Gram"
+                                if (recipeUnitComboBox.currentIndex === 0) unitVal = "Kilogram"
+                                else if (recipeUnitComboBox.currentIndex === 2) unitVal = "Liter"
+
                                 if (!selectedDish)
                                     return
 
@@ -561,6 +566,7 @@ Rectangle {
                                 for (var i = 0; i < ingredients.length; i++) {
                                     if (ingredients[i].productId === product.id) {
                                         ingredients[i].quantity = quantity
+                                        ingredients[i].unit = unitVal
                                         found = true
                                         break
                                     }
@@ -568,7 +574,8 @@ Rectangle {
                                 if (!found) {
                                     ingredients.push({
                                         productId: product.id,
-                                        quantity: quantity
+                                        quantity: quantity,
+                                        unit: unitVal
                                     })
                                 }
                                 
@@ -629,23 +636,11 @@ Rectangle {
                                 }
 
                                 Text {
-                                text: {
-                                    var unitStr = "г"
-                                    for (var i = 0; i < warehouseViewModel.products.length; i++) {
-                                        if (warehouseViewModel.products[i].id === modelData.productId) {
-                                            var u = warehouseViewModel.products[i].unit
-                                            if (u === "Kilogram") {
-                                                unitStr = "кг"
-                                            } else if (u === "Gram") {
-                                                unitStr = "г"
-                                            } else if (u === "Liter") {
-                                                unitStr = "л"
-                                            }
-                                            break
-                                        }
+                                    text: {
+                                        var u = modelData.unit || "Gram"
+                                        var unitStr = (u === "Kilogram") ? "кг" : ((u === "Liter") ? "л" : "г")
+                                        return modelData.quantity + " " + unitStr
                                     }
-                                    return modelData.quantity + " " + unitStr
-                                }
                                     font.pixelSize: 13
                                     color: "#666666"
                                 }

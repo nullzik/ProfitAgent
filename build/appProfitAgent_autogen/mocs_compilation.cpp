@@ -6,5 +6,6 @@
 #include "3CQJ3XQJTM/moc_EmployeeViewModel.cpp"
 #include "3CQJ3XQJTM/moc_MenuViewModel.cpp"
 #include "3CQJ3XQJTM/moc_NavigationViewModel.cpp"
+#include "3CQJ3XQJTM/moc_ShiftViewModel.cpp"
 #include "3CQJ3XQJTM/moc_WaiterViewModel.cpp"
 #include "3CQJ3XQJTM/moc_WarehouseViewModel.cpp"

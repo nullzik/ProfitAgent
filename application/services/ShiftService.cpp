@@ -1,6 +1,7 @@
 #include "application/services/ShiftService.h"
 #include "application/database/Database.h"
 #include "application/services/EmployeeService.h"
+#include "application/services/FinanceService.h"
 
 #include <QDateTime>
 #include <QSqlError>
@@ -125,6 +126,17 @@ bool ShiftService::closeShift(const QString& shiftId, const QDateTime& closedAtU
     empUpd.bindValue(QStringLiteral(":earnings"), earningsMinor);
     empUpd.bindValue(QStringLiteral(":id"), employeeId);
     if (!empUpd.exec()) return false;
+
+    // Финансовый учёт: зарплата за смену как расход
+    if (earningsMinor > 0) {
+        const double rubles = static_cast<double>(earningsMinor) / 100.0;
+        const QString fullName = emp.value(QStringLiteral("fullName")).toString();
+        const QString category = QStringLiteral("Зарплата: %1").arg(fullName);
+        const QString description = QStringLiteral("Смена %1 ч по ставке %2 ₽/ч")
+            .arg(QString::number(hours, 'f', 2))
+            .arg(QString::number(hourlyRate, 'f', 2));
+        FinanceService::addTransaction(FinanceService::Expense, rubles, category, description);
+    }
 
     return true;
 }
