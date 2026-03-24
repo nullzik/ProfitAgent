@@ -303,6 +303,55 @@ Dialog {
                         onClicked: {
                             const ok = waiterViewModel.closeSelectedTable()
                             if (ok) {
+                                // Формируем детали продажи: позиции, выручка и чистая прибыль
+                                let totalRevenue = 0
+                                let totalProfit = 0
+                                let lines = []
+
+                                for (let i = 0; i < existingItemsModel.count; ++i) {
+                                    const item = existingItemsModel.get(i)
+                                    const dishId = item.dishId
+                                    const name = item.name
+                                    const qty = Number(item.quantity) || 0
+
+                                    let salePrice = 0
+                                    let costPrice = 0
+                                    // Ищем блюдо в меню, чтобы взять цену продажи и себестоимость
+                                    for (let j = 0; j < menuViewModel.dishes.length; ++j) {
+                                        const d = menuViewModel.dishes[j]
+                                        if (d.id === dishId) {
+                                            salePrice = Number(d.salePrice) || 0
+                                            costPrice = Number(d.costPrice) || 0
+                                            break
+                                        }
+                                    }
+
+                                    const revenue = salePrice * qty
+                                    const profit = (salePrice - costPrice) * qty
+                                    totalRevenue += revenue
+                                    totalProfit += profit
+
+                                    lines.push(
+                                                "- " + name + " × " + qty
+                                                + " (выручка " + revenue.toFixed(2) + " ₽"
+                                                + ", прибыль " + profit.toFixed(2) + " ₽)")
+                                }
+
+                                let details = ""
+                                if (lines.length > 0) {
+                                    details = "Проданные позиции:\n" + lines.join("\n")
+                                    details += "\n\nИтого выручка: " + totalRevenue.toFixed(2) + " ₽"
+                                    details += "\nИтого чистая прибыль: " + totalProfit.toFixed(2) + " ₽"
+                                } else {
+                                    details = "Выручка по закрытию стола (детали недоступны)."
+                                }
+
+                                dashboardViewModel.logUiEvent(
+                                            "Продажа",
+                                            "Продажи стол " + (waiterViewModel.selectedTableId + 1),
+                                            details,
+                                            totalRevenue)
+                                dashboardViewModel.reload()
                                 waiterViewModel.closeOrderEntry()
                             }
                         }

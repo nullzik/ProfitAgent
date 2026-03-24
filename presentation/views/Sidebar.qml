@@ -6,6 +6,25 @@ Rectangle {
     id: sidebar
     width: 250
     color: "#1E1E2E"
+    property var menuItems: {
+        // У повара скрываем "Сотрудники" и "Доходы и расходы".
+        if (navigationViewModel.userRole === "Повар") {
+            return [
+                { text: "Главная", section: NavigationViewModel.Dashboard },
+                { text: "Склад", section: NavigationViewModel.Warehouse },
+                { text: "Меню", section: NavigationViewModel.Menu },
+                { text: "Помощь", section: NavigationViewModel.Help }
+            ]
+        }
+        return [
+            { text: "Главная", section: NavigationViewModel.Dashboard },
+            { text: "Склад", section: NavigationViewModel.Warehouse },
+            { text: "Меню", section: NavigationViewModel.Menu },
+            { text: "Сотрудники", section: NavigationViewModel.Employees },
+            { text: "Доходы и расходы", section: NavigationViewModel.Finance },
+            { text: "Помощь", section: NavigationViewModel.Help }
+        ]
+    }
 
     ColumnLayout {
         anchors.fill: parent
@@ -33,26 +52,26 @@ Rectangle {
             padding: 16
 
             Repeater {
-                model: ["Главная", "Склад", "Меню", "Сотрудники", "Доходы и расходы", "Помощь"]
+                model: sidebar.menuItems
 
                 Rectangle {
                     width: parent.width
                     height: 48
-                    color: navigationViewModel.activeMenuItem === index ? "#3B3B5C" : "transparent"
+                    color: navigationViewModel.activeMenuItem === modelData.section ? "#3B3B5C" : "transparent"
                     radius: 8
 
                     Text {
                         anchors.left: parent.left
                         anchors.leftMargin: 16
                         anchors.verticalCenter: parent.verticalCenter
-                        text: modelData
+                        text: modelData.text
                         font.pixelSize: 16
-                        color: navigationViewModel.activeMenuItem === index ? "#FFFFFF" : "#B0B0B0"
+                        color: navigationViewModel.activeMenuItem === modelData.section ? "#FFFFFF" : "#B0B0B0"
                     }
 
                     MouseArea {
                         anchors.fill: parent
-                        onClicked: navigationViewModel.setActiveMenuItem(index)
+                        onClicked: navigationViewModel.setActiveMenuItem(modelData.section)
                         cursorShape: Qt.PointingHandCursor
                     }
                 }
@@ -63,7 +82,7 @@ Rectangle {
         Item {
             Layout.fillWidth: true
             Layout.fillHeight: true
-            Layout.minimumHeight: 100
+            Layout.minimumHeight: 50
 
             Rectangle {
                 anchors.fill: parent

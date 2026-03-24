@@ -1,0 +1,268 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 380,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 122,
+                        "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "Cannot access value for name waiterViewModel",
+                        "functionName": "target",
+                        "line": 31
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 9,
+                        "durationMicroseconds": 205,
+                        "errorMessage": "",
+                        "functionName": "onOrderPlacedSuccess",
+                        "line": 32
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 133,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 42
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 605,
+                        "errorMessage": "Cannot access value for name appStateViewModel",
+                        "functionName": "visible",
+                        "line": 54
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 74
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 80
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 395,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 82
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 289,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 83
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 98
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 339,
+                        "errorMessage": "Cannot access value for name waiterViewModel",
+                        "functionName": "model",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 304,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "color",
+                        "line": 121
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 399,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "color",
+                        "line": 123
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 128,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 127
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 504,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 132
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 174,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 408,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 140
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 478,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "color",
+                        "line": 142
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 189,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 143
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 281,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "model",
+                        "line": 147
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 819,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 150
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 150,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 153
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 761,
+                        "errorMessage": "Cannot access value for name waiterViewModel",
+                        "functionName": "onClicked",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 46,
+                        "durationMicroseconds": 182,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 161
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 103,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 159
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"parent\".",
+                        "functionName": "parent",
+                        "line": 172
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 123,
+                        "errorMessage": "Cannot access value for name waiterViewModel",
+                        "functionName": "target",
+                        "line": 176
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 205,
+                        "errorMessage": "Cannot access value for name waiterViewModel",
+                        "functionName": "onIsOrderDialogOpenChanged",
+                        "line": 177
+                    }
+                ],
+                "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/WaiterScreen.qml"
+            }
+        ],
+        "moduleId": "ProfitAgent(appProfitAgent)"
+    }
+]

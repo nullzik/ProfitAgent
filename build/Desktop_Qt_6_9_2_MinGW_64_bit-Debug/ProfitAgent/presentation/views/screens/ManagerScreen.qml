@@ -126,21 +126,18 @@ Rectangle {
                     icon: "💰"
                     title: "Выручка"
                     value: dashboardViewModel.revenue
-                    change: dashboardViewModel.revenueChange
                 }
 
                 KPICard {
                     icon: "📈"
                     title: "Чистая прибыль"
                     value: dashboardViewModel.netProfit
-                    change: dashboardViewModel.netProfitChange
                 }
 
                 KPICard {
                     icon: "🛒"
                     title: "Кол-во продаж"
                     value: dashboardViewModel.salesCount
-                    change: dashboardViewModel.salesCountChange
                 }
             }
 
@@ -149,12 +146,14 @@ Rectangle {
                 id: operationsTableComponent
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                onOperationClicked: function(name, type, sender, date) {
-                    operationDetailsDialog.operationName = name
-                    operationDetailsDialog.operationType = type
-                    operationDetailsDialog.operationSender = sender
-                    operationDetailsDialog.operationDate = date
-                    operationDetailsDialog.open()
+                onOperationClicked: function(name, type, sender, date, details, amount) {
+                    activityDetailsDialog.operationName = name
+                    activityDetailsDialog.operationType = type
+                    activityDetailsDialog.operationSender = sender
+                    activityDetailsDialog.operationDate = date
+                    activityDetailsDialog.operationDetails = details
+                    activityDetailsDialog.operationAmount = amount
+                    activityDetailsDialog.open()
                 }
             }
         }
@@ -185,10 +184,7 @@ Rectangle {
         HelpScreen {}
     }
 
-    OperationDetailsDialog {
-        id: operationDetailsDialog
+    ActivityDetailsDialog {
+        id: activityDetailsDialog
     }
 }
-
-
-

@@ -1,0 +1,148 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 329,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 10
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 132,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 197,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 26
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 472,
+                        "errorMessage": "Cannot access value for name appStateViewModel",
+                        "functionName": "visible",
+                        "line": 36
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 5368,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "text",
+                        "line": 49
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 66
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 68
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 15,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 72
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 312,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 74
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 230,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 75
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 1956,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "updateSource",
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 142,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 112
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 29,
+                        "durationMicroseconds": 94,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "target",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 156,
+                        "errorMessage": "",
+                        "functionName": "onCurrentSectionChanged",
+                        "line": 117
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 128
+                    }
+                ],
+                "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/ChefScreen.qml"
+            }
+        ],
+        "moduleId": "ProfitAgent(appProfitAgent)"
+    }
+]

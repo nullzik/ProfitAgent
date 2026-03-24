@@ -30,7 +30,9 @@ public:
                                      double quantity,
                                      double purchasePrice);
     Q_INVOKABLE void writeOffProduct(const QString &productId,
-                                     double quantity);
+                                     double quantity,
+                                     const QString &reason = QString(),
+                                     double unitCostRubles = 0.0);
     Q_INVOKABLE void setStopList(const QString &productId, bool enabled);
     Q_INVOKABLE void reloadProducts();
 

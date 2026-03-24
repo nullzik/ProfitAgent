@@ -296,6 +296,7 @@ Rectangle {
                             }
 
                             warehouseViewModel.createProduct(id, name, unit)
+                            dashboardViewModel.reload()
                             createProductDialog.close()
                             
                             // Очистка полей

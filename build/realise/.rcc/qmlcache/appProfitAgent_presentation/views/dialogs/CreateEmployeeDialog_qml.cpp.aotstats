@@ -1,0 +1,140 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 15,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"opened\".",
+                        "functionName": "onOpened",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "fill",
+                        "line": 34
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"model\".",
+                        "functionName": "model",
+                        "line": 95
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"echoMode\".",
+                        "functionName": "echoMode",
+                        "line": 133
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 651,
+                        "errorMessage": "Cannot access value for name employeeViewModel",
+                        "functionName": "visible",
+                        "line": 139
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 482,
+                        "errorMessage": "Cannot access value for name employeeViewModel",
+                        "functionName": "text",
+                        "line": 140
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 153
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 154
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 155
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 99,
+                        "durationMicroseconds": 309,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 155
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 137,
+                        "durationMicroseconds": 308,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 155
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 159
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 168
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 169
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 99,
+                        "durationMicroseconds": 344,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 169
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 137,
+                        "durationMicroseconds": 269,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 169
+                    }
+                ],
+                "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/CreateEmployeeDialog.qml"
+            }
+        ],
+        "moduleId": "ProfitAgent(appProfitAgent)"
+    }
+]

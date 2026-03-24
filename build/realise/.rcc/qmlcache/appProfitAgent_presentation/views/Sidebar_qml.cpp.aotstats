@@ -1,0 +1,164 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 328,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 90,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 403,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "model",
+                        "line": 36
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 141,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 496,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "color",
+                        "line": 41
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 388,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 48
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 856,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "color",
+                        "line": 50
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 49,
+                        "durationMicroseconds": 132,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 47
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 652,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "onClicked",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 56
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 54
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 60,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 69
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 75
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 1243,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "text",
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 128,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 86
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 49,
+                        "durationMicroseconds": 158,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 95
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 657,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "text",
+                        "line": 99
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 500,
+                        "errorMessage": "Cannot access value for name navigationViewModel",
+                        "functionName": "text",
+                        "line": 106
+                    }
+                ],
+                "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/Sidebar.qml"
+            }
+        ],
+        "moduleId": "ProfitAgent(appProfitAgent)"
+    }
+]

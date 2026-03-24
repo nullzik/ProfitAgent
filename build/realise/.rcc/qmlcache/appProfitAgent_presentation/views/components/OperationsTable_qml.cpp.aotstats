@@ -1,0 +1,372 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 331,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 163,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 20
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 41,
+                        "durationMicroseconds": 152,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 260,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 32
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 165,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 36
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"model\".",
+                        "functionName": "model",
+                        "line": 57
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"currentIndexChanged\".",
+                        "functionName": "onCurrentIndexChanged",
+                        "line": 59
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 172,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 69
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 332,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 70
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 1157,
+                        "errorMessage": "Cannot access value for name dashboardViewModel",
+                        "functionName": "model",
+                        "line": 78
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 120,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "Cannot access value for name listView",
+                        "functionName": "width",
+                        "line": 82
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 94,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 88
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 242,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 92
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 178,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 100
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 176,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 108
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 173,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 202,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 124
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot access value for name listView",
+                        "functionName": "width",
+                        "line": 130
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 104,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "color",
+                        "line": 132
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 147,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 135
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 198,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 139
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "text",
+                        "line": 140
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 124,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 143
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 233,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 147
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "text",
+                        "line": 148
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 151
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 184,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 155
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "text",
+                        "line": 156
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 109,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 159
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 234,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 163
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 84,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "text",
+                        "line": 164
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"width\".",
+                        "functionName": "width",
+                        "line": 170
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 178
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 60,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 175
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 146,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 196
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 422,
+                        "errorMessage": "Cannot access value for name dashboardViewModel",
+                        "functionName": "model",
+                        "line": 200
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"text\".",
+                        "functionName": "text",
+                        "line": 205
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 221
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 560,
+                        "errorMessage": "Cannot access value for name dashboardViewModel",
+                        "functionName": "color",
+                        "line": 208
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 589,
+                        "errorMessage": "Cannot access value for name dashboardViewModel",
+                        "functionName": "color",
+                        "line": 210
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 214
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 974,
+                        "errorMessage": "Cannot access value for name dashboardViewModel",
+                        "functionName": "color",
+                        "line": 216
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 302,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 217
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 268,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 218
+                    }
+                ],
+                "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/components/OperationsTable.qml"
+            }
+        ],
+        "moduleId": "ProfitAgent(appProfitAgent)"
+    }
+]

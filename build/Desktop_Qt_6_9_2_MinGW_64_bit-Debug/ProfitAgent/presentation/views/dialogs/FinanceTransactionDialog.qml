@@ -115,7 +115,10 @@ Dialog {
                         } else {
                             ok = financeViewModel.addExpense(amountField.value, cat, descriptionField.text.trim())
                         }
-                        if (ok) financeTransactionDialog.close()
+                        if (ok) {
+                            dashboardViewModel.reload()
+                            financeTransactionDialog.close()
+                        }
                     }
                     background: Rectangle {
                         color: parent.hovered ? (isIncome ? "#2E7D32" : "#C62828") : (isIncome ? "#4CAF50" : "#F44336")

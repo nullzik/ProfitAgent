@@ -1,0 +1,15 @@
+-rootPath
+C:/Users/boyko/Documents/ProfitAgent
+-cmake-output
+-output-file
+C:/Users/boyko/Documents/ProfitAgent/build/realise/.qt/qml_imports/appProfitAgent_build.cmake
+-importPath
+C:/Users/boyko/Documents/ProfitAgent/build/realise/ProfitAgent
+-importPath
+C:/Users/boyko/Documents/ProfitAgent/build/realise
+-importPath
+C:/Qt/6.9.2/mingw_64/qml
+-qrcFiles
+C:/Users/boyko/Documents/ProfitAgent/build/realise/.qt/rcc/qmake_ProfitAgent.qrc
+C:/Users/boyko/Documents/ProfitAgent/build/realise/.qt/rcc/appProfitAgent_raw_qml_0.qrc
+C:/Users/boyko/Documents/ProfitAgent/build/realise/.qt/rcc/appProfitAgent_raw_qml_0_extra_qmldirs.qrc

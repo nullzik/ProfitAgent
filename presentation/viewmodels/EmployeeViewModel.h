@@ -26,6 +26,7 @@ public:
                                     const QString& address, int role, double hourlyRate,
                                     const QString& login = QString(), const QString& password = QString());
     Q_INVOKABLE bool adjustSalaryBalance(const QString& id, double deltaRubles);
+    Q_INVOKABLE bool deleteEmployee(const QString& id);
 
 signals:
     void employeesChanged();

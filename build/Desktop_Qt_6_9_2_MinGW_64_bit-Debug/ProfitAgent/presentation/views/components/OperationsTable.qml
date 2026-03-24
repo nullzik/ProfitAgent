@@ -8,7 +8,7 @@ Rectangle {
     border.color: "#E0E0E0"
     border.width: 1
 
-    signal operationClicked(string name, string type, string sender, string date)
+    signal operationClicked(string name, string type, string sender, string date, string details, string amount)
 
     Column {
         anchors.fill: parent
@@ -54,8 +54,11 @@ Rectangle {
                     ComboBox {
                         width: 150
                         height: 40
-                        model: ["Все", "Продажа", "Закупка", "Расход"]
+                        model: ["Все", "Продажа", "Поставка", "Списание", "Премия", "Штраф", "Зарплата", "Доход", "Расход", "Блюдо", "Склад", "Сотрудники"]
                         currentIndex: 0
+                        onCurrentIndexChanged: {
+                            dashboardViewModel.setFilterIndex(currentIndex)
+                        }
                     }
                 }
             }
@@ -174,7 +177,13 @@ Rectangle {
                             }
                             onClicked: {
                                 // Сигнал для открытия окна деталей операции
-                                operationsTable.operationClicked(model.name, model.type, model.sender, model.date)
+                                operationsTable.operationClicked(
+                                            model.name,
+                                            model.type,
+                                            model.sender,
+                                            model.date,
+                                            model.details,
+                                            model.amount)
                             }
                         }
                     }

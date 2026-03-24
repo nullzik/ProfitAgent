@@ -150,6 +150,11 @@ Rectangle {
                                     text: "Удалить"
                                     onClicked: {
                                         menuViewModel.deleteDish(modelData.id)
+                                        dashboardViewModel.logUiEvent(
+                                                    "Блюдо",
+                                                    "Удалено блюдо: " + modelData.name,
+                                                    "",
+                                                    0)
                                     }
                                     background: Rectangle {
                                         color: parent.hovered ? "#F44336" : "#E53935"
@@ -312,8 +317,18 @@ Rectangle {
 
                             if (selectedDish) {
                                 menuViewModel.updateDish(id, name, price, isAvailableCheckBox.checked)
+                                dashboardViewModel.logUiEvent(
+                                            "Блюдо",
+                                            "Обновлено блюдо: " + name,
+                                            "Цена: " + price.toFixed(2) + " ₽",
+                                            0)
                             } else {
                                 menuViewModel.createDish(id, name, price)
+                                dashboardViewModel.logUiEvent(
+                                            "Блюдо",
+                                            "Добавлено блюдо: " + name,
+                                            "Цена: " + price.toFixed(2) + " ₽",
+                                            0)
                             }
 
                             createDishDialog.close()
@@ -580,6 +595,7 @@ Rectangle {
                                 }
                                 
                                 menuViewModel.setRecipe(selectedDish.id, ingredients)
+                                dashboardViewModel.reload()
                                 currentRecipeIngredients = ingredients
                                 quantityField.text = ""
                             }

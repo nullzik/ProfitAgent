@@ -10,12 +10,12 @@
 
 namespace application {
 
+
+
 bool Database::initialize(const QString& path)
 {
-    const QString dbPath = path.isEmpty()
-        ? QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QStringLiteral("/profitagent.db")
-        : path;
-
+    QString dbPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)
+    + "/profitagent.db";
     QDir().mkpath(QFileInfo(dbPath).absolutePath());
 
     QSqlDatabase db = QSqlDatabase::addDatabase(QStringLiteral("QSQLITE"));
@@ -146,6 +146,51 @@ bool Database::initialize(const QString& path)
         qWarning() << "Create financial_transactions table failed:" << q.lastError().text();
         return false;
     }
+
+    // activity_log: unified stream of recent operations (includes financial_transactions backfill + domain events)
+    if (!q.exec(QStringLiteral(
+        "CREATE TABLE IF NOT EXISTS activity_log ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+        "event_type TEXT NOT NULL,"
+        "title TEXT NOT NULL,"
+        "sender TEXT,"
+        "details TEXT,"
+        "created_at INTEGER NOT NULL,"
+        "source TEXT,"
+        "source_id TEXT,"
+        "amount_minor_units INTEGER DEFAULT 0,"
+        "has_amount INTEGER NOT NULL DEFAULT 0,"
+        "UNIQUE(source, source_id)"
+        ")"))) {
+        qWarning() << "Create activity_log table failed:" << q.lastError().text();
+        return false;
+    }
+
+    q.exec(QStringLiteral("CREATE INDEX IF NOT EXISTS idx_activity_log_created_at ON activity_log(created_at DESC)"));
+
+    // Backfill activity_log from existing financial_transactions (idempotent because of UNIQUE(source, source_id))
+    q.exec(QStringLiteral(
+        "INSERT OR IGNORE INTO activity_log "
+        "(event_type, title, sender, details, created_at, source, source_id, amount_minor_units, has_amount) "
+        "SELECT "
+        "CASE "
+        " WHEN category LIKE 'Продажи стол%' THEN 'Продажа' "
+        " WHEN category LIKE 'Поставка:%' THEN 'Поставка' "
+        " WHEN category LIKE 'Списание:%' THEN 'Списание' "
+        " WHEN category LIKE 'Зарплата:%' THEN 'Зарплата' "
+        " WHEN category LIKE 'Премия:%' THEN 'Премия' "
+        " WHEN category LIKE 'Штраф:%' THEN 'Штраф' "
+        " WHEN type = 1 THEN 'Доход' ELSE 'Расход' "
+        "END, "
+        "category, "
+        "'Финансы', "
+        "COALESCE(description, ''), "
+        "created_at, "
+        "'financial_transactions', "
+        "CAST(id AS TEXT), "
+        "amount_minor_units, "
+        "1 "
+        "FROM financial_transactions"));
 
     // Ensure default manager exists: hash of "manager" (same as AuthService)
     const QByteArray managerHash = QCryptographicHash::hash(

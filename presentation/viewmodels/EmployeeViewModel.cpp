@@ -90,6 +90,28 @@ bool EmployeeViewModel::adjustSalaryBalance(const QString& id, double deltaRuble
     }
 }
 
+bool EmployeeViewModel::deleteEmployee(const QString& id)
+{
+    try {
+        const bool ok = application::EmployeeService::deleteEmployee(id);
+        if (ok) {
+            reloadEmployees();
+            setLastError(QString{});
+            return true;
+        }
+        setLastError(tr("Не удалось удалить сотрудника"));
+        return false;
+    } catch (const std::exception& e) {
+        const auto msg = QString::fromUtf8(e.what());
+        qWarning() << "EmployeeViewModel::deleteEmployee failed:" << msg;
+        setLastError(msg);
+        return false;
+    } catch (...) {
+        setLastError(tr("Неизвестная ошибка"));
+        return false;
+    }
+}
+
 void EmployeeViewModel::setLastError(const QString& message)
 {
     if (m_lastError != message) {

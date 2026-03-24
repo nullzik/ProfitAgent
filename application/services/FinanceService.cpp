@@ -1,5 +1,6 @@
 #include "application/services/FinanceService.h"
 #include "application/database/Database.h"
+#include "application/services/ActivityService.h"
 
 #include <QSqlQuery>
 #include <QSqlError>
@@ -88,6 +89,18 @@ bool FinanceService::addTransaction(int type, double amountRubles, const QString
         qWarning() << "addTransaction failed:" << q.lastError().text();
         return false;
     }
+
+    const QVariant idVar = q.lastInsertId();
+    if (idVar.isValid()) {
+        const int txId = idVar.toInt();
+        ActivityService::logFinancialTransaction(
+            txId,
+            type,
+            minor,
+            category.trimmed(),
+            description.trimmed(),
+            now);
+    }
     return true;
 }
 
@@ -147,6 +160,93 @@ double FinanceService::getTotalExpenses()
 double FinanceService::getProfit()
 {
     return getTotalIncome() - getTotalExpenses();
+}
+
+static void calcWindowMs(int days, int offsetDays, qint64& fromMs, qint64& toMs)
+{
+    if (days <= 0) days = 1;
+    if (offsetDays < 0) offsetDays = 0;
+    const qint64 now = QDateTime::currentDateTime().toMSecsSinceEpoch();
+    const qint64 dayMs = 24LL * 60LL * 60LL * 1000LL;
+    toMs = now - static_cast<qint64>(offsetDays) * dayMs;
+    fromMs = now - static_cast<qint64>(offsetDays + days) * dayMs;
+}
+
+double FinanceService::getSalesRevenueForDays(int days, int offsetDays)
+{
+    qint64 fromMs = 0, toMs = 0;
+    calcWindowMs(days, offsetDays, fromMs, toMs);
+
+    QSqlQuery q(Database::connection());
+    q.prepare(QStringLiteral(
+        "SELECT COALESCE(SUM(amount_minor_units), 0) "
+        "FROM financial_transactions "
+        "WHERE type = 1 AND category LIKE 'Продажи стол%' "
+        "AND created_at >= :from AND created_at < :to"));
+    q.bindValue(QStringLiteral(":from"), fromMs);
+    q.bindValue(QStringLiteral(":to"), toMs);
+    if (!q.exec() || !q.next()) return 0.0;
+    return q.value(0).toLongLong() / 100.0;
+}
+
+int FinanceService::getSalesCountForDays(int days, int offsetDays)
+{
+    qint64 fromMs = 0, toMs = 0;
+    calcWindowMs(days, offsetDays, fromMs, toMs);
+
+    QSqlQuery q(Database::connection());
+    q.prepare(QStringLiteral(
+        "SELECT COUNT(*) "
+        "FROM financial_transactions "
+        "WHERE type = 1 AND category LIKE 'Продажи стол%' "
+        "AND created_at >= :from AND created_at < :to"));
+    q.bindValue(QStringLiteral(":from"), fromMs);
+    q.bindValue(QStringLiteral(":to"), toMs);
+    if (!q.exec() || !q.next()) return 0;
+    return q.value(0).toInt();
+}
+
+double FinanceService::getNetProfitForDays(int days, int offsetDays)
+{
+    qint64 fromMs = 0, toMs = 0;
+    calcWindowMs(days, offsetDays, fromMs, toMs);
+
+    QSqlQuery q(Database::connection());
+    q.prepare(QStringLiteral(
+        "SELECT "
+        "(SELECT COALESCE(SUM(amount_minor_units), 0) FROM financial_transactions "
+        " WHERE type = 1 AND created_at >= :from AND created_at < :to) - "
+        "(SELECT COALESCE(SUM(amount_minor_units), 0) FROM financial_transactions "
+        " WHERE type = 2 AND created_at >= :from AND created_at < :to)"));
+    q.bindValue(QStringLiteral(":from"), fromMs);
+    q.bindValue(QStringLiteral(":to"), toMs);
+    if (!q.exec() || !q.next()) return 0.0;
+    return q.value(0).toLongLong() / 100.0;
+}
+
+QVariantList FinanceService::getWaiterAggregates()
+{
+    QVariantList result;
+    QSqlQuery q(Database::connection());
+
+    // role = 0 -> официант
+    if (!q.exec(QStringLiteral(
+            "SELECT id, full_name, worked_hours, salary_balance "
+            "FROM employees WHERE role = 0 ORDER BY full_name"))) {
+        qWarning() << "getWaiterAggregates failed:" << q.lastError().text();
+        return result;
+    }
+
+    while (q.next()) {
+        QVariantMap m;
+        m.insert(QStringLiteral("id"), q.value(0).toString());
+        m.insert(QStringLiteral("fullName"), q.value(1).toString());
+        m.insert(QStringLiteral("workedHours"), q.value(2).toDouble());
+        m.insert(QStringLiteral("salaryRubles"), q.value(3).toInt() / 100.0);
+        result.append(m);
+    }
+
+    return result;
 }
 
 } // namespace application

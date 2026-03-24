@@ -9,6 +9,8 @@ Rectangle {
     property string selectedEmployeeId: ""
     property string selectedEmployeeName: ""
     property bool isBonusOperation: true
+    property string deleteEmployeeId: ""
+    property string deleteEmployeeName: ""
 
     CreateEmployeeDialog {
         id: createEmployeeDialog
@@ -51,6 +53,15 @@ Rectangle {
                     font.pixelSize: 14
                 }
             }
+        }
+
+        Text {
+            visible: employeeViewModel.lastError.length > 0
+            text: employeeViewModel.lastError
+            color: "#F44336"
+            font.pixelSize: 12
+            wrapMode: Text.Wrap
+            Layout.fillWidth: true
         }
 
         Rectangle {
@@ -212,6 +223,26 @@ Rectangle {
                                             verticalAlignment: Text.AlignVCenter
                                         }
                                     }
+
+                                    Button {
+                                        text: "Удалить"
+                                        onClicked: {
+                                            employeesScreen.deleteEmployeeId = modelData.id
+                                            employeesScreen.deleteEmployeeName = modelData.fullName || ""
+                                            deleteEmployeeDialog.open()
+                                        }
+                                        background: Rectangle {
+                                            color: parent.hovered ? "#B71C1C" : "#D32F2F"
+                                            radius: 6
+                                        }
+                                        contentItem: Text {
+                                            text: parent.text
+                                            color: "#FFFFFF"
+                                            font.pixelSize: 12
+                                            horizontalAlignment: Text.AlignHCenter
+                                            verticalAlignment: Text.AlignVCenter
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -299,6 +330,7 @@ Rectangle {
                             const delta = employeesScreen.isBonusOperation ? amount : -amount
                             const ok = employeeViewModel.adjustSalaryBalance(employeesScreen.selectedEmployeeId, delta)
                             if (ok) {
+                                dashboardViewModel.reload()
                                 adjustBalanceDialog.close()
                                 adjustAmountField.text = ""
                             }
@@ -315,6 +347,46 @@ Rectangle {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    Dialog {
+        id: deleteEmployeeDialog
+        modal: true
+        title: "Удалить сотрудника: " + (employeesScreen.deleteEmployeeName || "")
+        standardButtons: Dialog.Ok | Dialog.Cancel
+
+        onAccepted: {
+            const ok = employeeViewModel.deleteEmployee(employeesScreen.deleteEmployeeId)
+            if (ok) {
+                shiftViewModel.refresh()
+                dashboardViewModel.logUiEvent(
+                            "Сотрудники",
+                            "Удалён сотрудник: " + (employeesScreen.deleteEmployeeName || employeesScreen.deleteEmployeeId),
+                            "",
+                            0)
+            }
+        }
+
+        contentItem: Rectangle {
+            color: "#FFFFFF"
+            radius: 12
+            implicitWidth: 420
+
+            ColumnLayout {
+                anchors.fill: parent
+                anchors.margins: 24
+                spacing: 12
+
+                Text {
+                    text: "Сотрудник будет удалён без возможности восстановления."
+                    font.pixelSize: 14
+                    color: "#1E1E2E"
+                    wrapMode: Text.WordWrap
+                    Layout.fillWidth: true
+                }
+
             }
         }
     }

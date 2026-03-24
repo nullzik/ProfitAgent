@@ -73,7 +73,7 @@ Dialog {
                 }
 
                 Text {
-                    text: "Закупочная цена (за единицу)"
+                    text: "Цена за единицу"
                     font.pixelSize: 14
                     color: "#666666"
                 }
@@ -84,6 +84,25 @@ Dialog {
                     height: 48
                     placeholderText: "Введите цену, например 150.50"
                     text: "0"
+                    background: Rectangle {
+                        radius: 8
+                        border.color: "#E0E0E0"
+                        border.width: 1
+                        color: "#FFFFFF"
+                    }
+                }
+
+                Text {
+                    text: "Причина списания"
+                    font.pixelSize: 14
+                    color: "#666666"
+                }
+
+                TextField {
+                    id: reasonField
+                    Layout.fillWidth: true
+                    height: 48
+                    placeholderText: "Например: порча, просрочка, брак"
                     background: Rectangle {
                         radius: 8
                         border.color: "#E0E0E0"
@@ -110,6 +129,14 @@ Dialog {
                             const qty = Number(quantityField.text)
                             const price = Number(priceField.text)
                             warehouseViewModel.addProductBatch(product.id, qty, price)
+                            const total = qty * price
+                            if (total > 0) {
+                                dashboardViewModel.logUiEvent(
+                                            "Поставка",
+                                            "Поставка: " + product.name,
+                                            qty.toFixed(2) + " ед. по " + price.toFixed(2) + " ₽",
+                                            total)
+                            }
                             productDialog.close()
                         }
                     }
@@ -132,7 +159,9 @@ Dialog {
                     onClicked: {
                         if (product) {
                             const qty = Number(quantityField.text)
-                            warehouseViewModel.writeOffProduct(product.id, qty)
+                            const price = Number(priceField.text)
+                            const reason = reasonField.text.trim()
+                            warehouseViewModel.writeOffProduct(product.id, qty, reason, price)
                             productDialog.close()
                         }
                     }

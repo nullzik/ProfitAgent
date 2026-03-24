@@ -25,6 +25,9 @@ public:
 
     // Adjusts salary balance for employee (positive = премия, negative = штраф), in rubles.
     static bool adjustSalaryBalance(const QString& id, double deltaRubles);
+
+    // Deletes employee and related data (user account, shifts).
+    static bool deleteEmployee(const QString& id);
 };
 
 } // namespace application

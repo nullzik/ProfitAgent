@@ -1,0 +1,153 @@
+{
+    "classes": [
+        {
+            "className": "AuthViewModel",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "Role",
+                    "values": [
+                        "Waiter",
+                        "Chef",
+                        "Manager"
+                    ]
+                }
+            ],
+            "lineNumber": 7,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "performLogin",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "logout",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "login",
+                    "notify": "loginChanged",
+                    "read": "login",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setLogin"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "password",
+                    "notify": "passwordChanged",
+                    "read": "password",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setPassword"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "isAuthenticated",
+                    "notify": "isAuthenticatedChanged",
+                    "read": "isAuthenticated",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "AuthViewModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "loginChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "passwordChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "isAuthenticatedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "role",
+                            "type": "int"
+                        },
+                        {
+                            "name": "login",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "employeeId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "loginSuccess",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "role",
+                            "type": "int"
+                        },
+                        {
+                            "name": "login",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "isCloned": true,
+                    "name": "loginSuccess",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "loginFailed",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "AuthViewModel.h",
+    "outputRevision": 69
+}

@@ -15,9 +15,11 @@ void FinanceViewModel::reload()
     m_transactions = application::FinanceService::getAllTransactions();
     m_incomeTransactions = application::FinanceService::getTransactionsByType(application::FinanceService::Income);
     m_expenseTransactions = application::FinanceService::getTransactionsByType(application::FinanceService::Expense);
+    m_waiterAggregates = application::FinanceService::getWaiterAggregates();
     updateTotals();
     emit transactionsChanged();
     emit totalsChanged();
+    emit waiterAggregatesChanged();
 }
 
 bool FinanceViewModel::addIncome(double amountRubles, const QString& category, const QString& description)

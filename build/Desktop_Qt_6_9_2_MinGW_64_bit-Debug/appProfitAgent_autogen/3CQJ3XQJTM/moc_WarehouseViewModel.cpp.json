@@ -66,9 +66,55 @@
                         {
                             "name": "quantity",
                             "type": "double"
+                        },
+                        {
+                            "name": "reason",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "unitCostRubles",
+                            "type": "double"
                         }
                     ],
                     "index": 5,
+                    "name": "writeOffProduct",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "productId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "double"
+                        },
+                        {
+                            "name": "reason",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 6,
+                    "isCloned": true,
+                    "name": "writeOffProduct",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "productId",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 7,
+                    "isCloned": true,
                     "name": "writeOffProduct",
                     "returnType": "void"
                 },
@@ -84,13 +130,13 @@
                             "type": "bool"
                         }
                     ],
-                    "index": 6,
+                    "index": 8,
                     "name": "setStopList",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 7,
+                    "index": 9,
                     "name": "reloadProducts",
                     "returnType": "void"
                 }

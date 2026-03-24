@@ -50,7 +50,6 @@ Rectangle {
                               ("Привет " + dashboardViewModel.userName + " 👋") : 
                               (navigationViewModel.currentSection === NavigationViewModel.Warehouse ? "Склад" :
                               navigationViewModel.currentSection === NavigationViewModel.Menu ? "Меню" :
-                              navigationViewModel.currentSection === NavigationViewModel.Employees ? "Сотрудники" :
                               navigationViewModel.currentSection === NavigationViewModel.Finance ? "Доходы и расходы" : "Помощь")
                         font.pixelSize: 28
                         font.bold: true
@@ -94,12 +93,6 @@ Rectangle {
                             break
                         case NavigationViewModel.Menu:
                             sourceComponent = menuComponent
-                            break
-                        case NavigationViewModel.Employees:
-                            sourceComponent = employeesComponent
-                            break
-                        case NavigationViewModel.Finance:
-                            sourceComponent = financeComponent
                             break
                         case NavigationViewModel.Help:
                             sourceComponent = helpComponent
@@ -145,11 +138,6 @@ Rectangle {
     Component {
         id: menuComponent
         MenuScreen {}
-    }
-
-    Component {
-        id: employeesComponent
-        EmployeesScreen {}
     }
 
     Component {

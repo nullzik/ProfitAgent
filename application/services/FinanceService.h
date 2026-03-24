@@ -35,6 +35,19 @@ public:
 
     // Returns profit (income - expenses).
     static double getProfit();
+
+    // Revenue from sales transactions (category starts with "Продажи стол") in the last `days` days.
+    // offsetDays=0 => latest window; offsetDays=days => previous window.
+    static double getSalesRevenueForDays(int days, int offsetDays = 0);
+
+    // Count of sales transactions (category starts with "Продажи стол") in the last `days` days.
+    static int getSalesCountForDays(int days, int offsetDays = 0);
+
+    // Net profit (income - expenses) in the last `days` days.
+    static double getNetProfitForDays(int days, int offsetDays = 0);
+
+    // Returns aggregates for waiters (role=0): id, fullName, workedHours, salaryRubles.
+    static QVariantList getWaiterAggregates();
 };
 
 } // namespace application

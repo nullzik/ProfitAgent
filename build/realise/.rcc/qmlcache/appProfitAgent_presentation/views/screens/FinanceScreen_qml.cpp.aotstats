@@ -1,0 +1,636 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 336,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "currentModel",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "matchesTypeFilter",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 1235,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: tabBar",
+                        "functionName": "baseListForCurrentTab",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 519,
+                        "errorMessage": "Cannot load property length from call to method baseListForCurrentTab, returning QVariant.",
+                        "functionName": "rebuildCurrentModel",
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 97,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 58
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 79
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 85
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 9,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 89
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 214,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 91
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 146,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 92
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 99
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 105
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 9,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 109
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 192,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 111
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 141,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 112
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 291,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "visible",
+                        "line": 119
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 19,
+                        "durationMicroseconds": 262,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "text",
+                        "line": 120
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 123,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 123
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 139
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 145
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 152
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 553,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "text",
+                        "line": 156
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 174
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 180
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 187
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 568,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "text",
+                        "line": 191
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 195
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 209
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 215
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 222
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 579,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "text",
+                        "line": 226
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 304,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "color",
+                        "line": 229
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 230
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"currentIndexChanged\".",
+                        "functionName": "onCurrentIndexChanged",
+                        "line": 252
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"width\".",
+                        "functionName": "width",
+                        "line": 242
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"width\".",
+                        "functionName": "width",
+                        "line": 246
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"width\".",
+                        "functionName": "width",
+                        "line": 250
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: detailsTabBar",
+                        "functionName": "visible",
+                        "line": 269
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 278
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: tabBar",
+                        "functionName": "text",
+                        "line": 283
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"model\".",
+                        "functionName": "model",
+                        "line": 302
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"currentIndexChanged\".",
+                        "functionName": "onCurrentIndexChanged",
+                        "line": 303
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 192,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 318
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "",
+                        "functionName": "model",
+                        "line": 320
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "Cannot access value for name transactionsList",
+                        "functionName": "width",
+                        "line": 323
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 37,
+                        "durationMicroseconds": 165,
+                        "errorMessage": "Cannot access value for name financeScreen",
+                        "functionName": "height",
+                        "line": 324
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"centerIn\".",
+                        "functionName": "centerIn",
+                        "line": 326
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "Cannot access value for name transactionsList",
+                        "functionName": "width",
+                        "line": 334
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 112,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "color",
+                        "line": 336
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 339
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 395,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 344
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 322,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "color",
+                        "line": 347
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 847,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 356
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 122,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 359
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 219,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 364
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 558,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "text",
+                        "line": 371
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 363,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "color",
+                        "line": 374
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 382
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 393
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 403
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 408
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: detailsTabBar",
+                        "functionName": "visible",
+                        "line": 422
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 431
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 265,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "visible",
+                        "line": 443
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 528,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "model",
+                        "line": 461
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 76,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 465
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "color",
+                        "line": 467
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 470
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 269,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 475
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 478
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 275,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 482
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 483,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "text",
+                        "line": 488
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"standardButtons\".",
+                        "functionName": "standardButtons",
+                        "line": 508
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"accepted\".",
+                        "functionName": "onAccepted",
+                        "line": 509
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 214,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "onCompleted",
+                        "line": 514
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "Cannot access value for name financeViewModel",
+                        "functionName": "target",
+                        "line": 520
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "method rebuildCurrentModel cannot be resolved.",
+                        "functionName": "onTransactionsChanged",
+                        "line": 521
+                    }
+                ],
+                "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/screens/FinanceScreen.qml"
+            }
+        ],
+        "moduleId": "ProfitAgent(appProfitAgent)"
+    }
+]

@@ -1,6 +1,7 @@
 #include "application/services/EmployeeService.h"
 #include "application/database/Database.h"
 #include "application/services/FinanceService.h"
+#include "application/services/ActivityService.h"
 
 #include <QSqlQuery>
 #include <QCryptographicHash>
@@ -131,6 +132,12 @@ bool EmployeeService::createEmployee(const QString& fullName, int age, const QSt
         }
     }
 
+    ActivityService::logEvent(
+        QStringLiteral("Сотрудники"),
+        QStringLiteral("Добавлен сотрудник: %1").arg(fullName.trimmed()),
+        QStringLiteral("Сотрудники"),
+        QStringLiteral("Роль: %1").arg(roleNames().value(role, QStringLiteral("Другое"))));
+
     return true;
 }
 
@@ -253,6 +260,59 @@ bool EmployeeService::adjustSalaryBalance(const QString& id, double deltaRubles)
     }
 
     return true;
+}
+
+bool EmployeeService::deleteEmployee(const QString& id)
+{
+    if (id.trimmed().isEmpty()) {
+        return false;
+    }
+
+    const QVariantMap emp = EmployeeService::getEmployeeById(id);
+    const QString fullName = emp.value(QStringLiteral("fullName")).toString();
+
+    QSqlDatabase db = Database::connection();
+    if (!db.isOpen()) {
+        return false;
+    }
+
+    QSqlQuery q(db);
+
+    // Delete related user account
+    q.prepare(QStringLiteral("DELETE FROM users WHERE employee_id = :id"));
+    q.bindValue(QStringLiteral(":id"), id);
+    if (!q.exec()) {
+        qWarning() << "deleteEmployee: delete users failed:" << q.lastError().text();
+        return false;
+    }
+
+    // Delete related shifts
+    QSqlQuery qs(db);
+    qs.prepare(QStringLiteral("DELETE FROM shifts WHERE employee_id = :id"));
+    qs.bindValue(QStringLiteral(":id"), id);
+    if (!qs.exec()) {
+        qWarning() << "deleteEmployee: delete shifts failed:" << qs.lastError().text();
+        return false;
+    }
+
+    // Finally delete employee
+    QSqlQuery qe(db);
+    qe.prepare(QStringLiteral("DELETE FROM employees WHERE id = :id"));
+    qe.bindValue(QStringLiteral(":id"), id);
+    if (!qe.exec()) {
+        qWarning() << "deleteEmployee: delete employee failed:" << qe.lastError().text();
+        return false;
+    }
+
+    const bool ok = qe.numRowsAffected() > 0;
+    if (ok) {
+        ActivityService::logEvent(
+            QStringLiteral("Сотрудники"),
+            QStringLiteral("Удалён сотрудник: %1").arg(fullName.isEmpty() ? id : fullName),
+            QStringLiteral("Сотрудники"),
+            QStringLiteral("ID: %1").arg(id.trimmed()));
+    }
+    return ok;
 }
 
 } // namespace application

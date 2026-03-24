@@ -44,6 +44,8 @@ add_library(domain_model STATIC
 # Application layer: use case implementations (services)
 # -----------------------------------------------------------------------------
 add_library(application_services STATIC
+    application/services/ActivityService.h
+    application/services/ActivityService.cpp
     application/services/MenuService.h
     application/services/MenuService.cpp
     application/services/OrderService.h
@@ -72,6 +74,7 @@ qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(appProfitAgent
     main.cpp
+    app.rc
     presentation/viewmodels/AppStateViewModel.cpp
     presentation/viewmodels/AppStateViewModel.h
     presentation/viewmodels/AuthViewModel.cpp
@@ -106,6 +109,7 @@ qt_add_qml_module(appProfitAgent
         presentation/views/components/OperationsTable.qml
         presentation/views/components/ShiftPanel.qml
         presentation/views/dialogs/OperationDetailsDialog.qml
+        presentation/views/dialogs/ActivityDetailsDialog.qml
         presentation/views/dialogs/OrderEntryDialog.qml
         presentation/views/dialogs/ProductOperationDialog.qml
         presentation/views/dialogs/CreateEmployeeDialog.qml

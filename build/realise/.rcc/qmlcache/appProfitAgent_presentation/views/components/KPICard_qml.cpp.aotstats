@@ -1,0 +1,84 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 279,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 19
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 146,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 25
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 28
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 41,
+                        "durationMicroseconds": 175,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 33
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 129,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 37
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 120,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 43
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 329,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 52
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 108,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 56
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 605,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "color",
+                        "line": 58
+                    }
+                ],
+                "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/components/KPICard.qml"
+            }
+        ],
+        "moduleId": "ProfitAgent(appProfitAgent)"
+    }
+]

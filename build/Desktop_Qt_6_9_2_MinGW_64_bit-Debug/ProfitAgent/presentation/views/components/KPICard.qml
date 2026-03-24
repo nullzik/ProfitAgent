@@ -49,6 +49,7 @@ Rectangle {
         }
 
         Row {
+            visible: card.change.length > 0
             spacing: 8
 
             Text {

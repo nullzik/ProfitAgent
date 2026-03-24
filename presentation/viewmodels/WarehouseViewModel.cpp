@@ -3,6 +3,7 @@
 #include <QVariantMap>
 #include <QDebug>
 
+#include <algorithm>
 #include <cmath>
 #include <cstdint>
 #include <exception>
@@ -12,6 +13,7 @@
 #include "domain/value_objects/Quantity.h"
 #include "domain/value_objects/Money.h"
 #include "application/services/FinanceService.h"
+#include "application/services/ActivityService.h"
 
 using namespace domain;
 
@@ -43,6 +45,12 @@ void WarehouseViewModel::createProduct(const QString &productId,
 
         m_service.createProduct(id, nameStr, unitEnum);
 
+        application::ActivityService::logEvent(
+            QStringLiteral("Склад"),
+            QStringLiteral("Добавлен товар: %1").arg(name.trimmed()),
+            QStringLiteral("Склад"),
+            QStringLiteral("ID: %1").arg(productId.trimmed()));
+
         reloadProducts();
         setLastError(QString{});
     } catch (const std::exception &e) {
@@ -60,7 +68,23 @@ void WarehouseViewModel::deleteProduct(const QString &productId)
 {
     try {
         const std::string id = productId.toStdString();
+
+        QString productName = productId;
+        for (const auto &v : m_products) {
+            const auto map = v.toMap();
+            if (map.value(QStringLiteral("id")).toString() == productId) {
+                productName = map.value(QStringLiteral("name")).toString();
+                break;
+            }
+        }
+
         m_service.deleteProduct(id);
+
+        application::ActivityService::logEvent(
+            QStringLiteral("Склад"),
+            QStringLiteral("Удалён товар: %1").arg(productName),
+            QStringLiteral("Склад"),
+            QStringLiteral("ID: %1").arg(productId.trimmed()));
 
         reloadProducts();
         setLastError(QString{});
@@ -124,13 +148,66 @@ void WarehouseViewModel::addProductBatch(const QString &productId,
     }
 }
 
-void WarehouseViewModel::writeOffProduct(const QString &productId, double quantity)
+void WarehouseViewModel::writeOffProduct(const QString &productId,
+                                         double quantity,
+                                         const QString &reason,
+                                         double unitCostRubles)
 {
     try {
         const std::string id = productId.toStdString();
         Quantity qty{quantity};
 
-        (void)m_service.writeOffProduct(id, qty);
+        const bool ok = m_service.writeOffProduct(id, qty);
+        if (!ok) {
+            setLastError(QStringLiteral("Недостаточно товара для списания"));
+            return;
+        }
+
+        QString productName = productId;
+        QString unitStr;
+        for (const auto &v : m_products) {
+            const auto map = v.toMap();
+            if (map.value(QStringLiteral("id")).toString() == productId) {
+                productName = map.value(QStringLiteral("name")).toString();
+                const QString u = map.value(QStringLiteral("unit")).toString();
+                if (u == QStringLiteral("Kilogram")) unitStr = QStringLiteral("кг");
+                else if (u == QStringLiteral("Gram")) unitStr = QStringLiteral("г");
+                else if (u == QStringLiteral("Liter")) unitStr = QStringLiteral("л");
+                break;
+            }
+        }
+
+        const QString trimmedReason = reason.trimmed();
+        const double totalCostRubles = quantity * std::max(0.0, unitCostRubles);
+        const QString details = trimmedReason.isEmpty()
+            ? QStringLiteral("%1 %2").arg(QString::number(quantity, 'f', 2), unitStr)
+            : QStringLiteral("%1 %2; причина: %3")
+                  .arg(QString::number(quantity, 'f', 2), unitStr, trimmedReason);
+
+        if (totalCostRubles > 0.0) {
+            const QString category = QStringLiteral("Списание: %1").arg(productName);
+            const QString financeDescription = trimmedReason.isEmpty()
+                ? QStringLiteral("%1 %2 по %3 ₽")
+                      .arg(QString::number(quantity, 'f', 2),
+                           unitStr,
+                           QString::number(unitCostRubles, 'f', 2))
+                : QStringLiteral("%1 %2 по %3 ₽; причина: %4")
+                      .arg(QString::number(quantity, 'f', 2),
+                           unitStr,
+                           QString::number(unitCostRubles, 'f', 2),
+                           trimmedReason);
+            application::FinanceService::addTransaction(
+                application::FinanceService::Expense,
+                totalCostRubles,
+                category,
+                financeDescription);
+        }
+
+        application::ActivityService::logEvent(
+            QStringLiteral("Списание"),
+            QStringLiteral("Списание: %1").arg(productName),
+            QStringLiteral("Склад"),
+            details);
 
         reloadProducts();
         setLastError(QString{});
@@ -149,7 +226,24 @@ void WarehouseViewModel::setStopList(const QString &productId, bool enabled)
 {
     try {
         const std::string id = productId.toStdString();
+
+        QString productName = productId;
+        for (const auto &v : m_products) {
+            const auto map = v.toMap();
+            if (map.value(QStringLiteral("id")).toString() == productId) {
+                productName = map.value(QStringLiteral("name")).toString();
+                break;
+            }
+        }
         m_service.setStopList(id, enabled);
+
+        application::ActivityService::logEvent(
+            QStringLiteral("Склад"),
+            enabled
+                ? QStringLiteral("Стоп-лист включён: %1").arg(productName)
+                : QStringLiteral("Стоп-лист выключен: %1").arg(productName),
+            QStringLiteral("Склад"),
+            QStringLiteral("ID: %1").arg(productId.trimmed()));
 
         reloadProducts();
         setLastError(QString{});

@@ -1,0 +1,183 @@
+{
+    "classes": [
+        {
+            "className": "WaiterViewModel",
+            "lineNumber": 13,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "tableId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "onTableSelected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "tableId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "openOrderEntry",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "closeOrderEntry",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "orderItems",
+                            "type": "QVariantList"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "placeOrder",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "tableId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 10,
+                    "isConst": true,
+                    "name": "getTableOrderItems",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "name": "closeSelectedTable",
+                    "returnType": "bool"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "selectedTableId",
+                    "notify": "selectedTableIdChanged",
+                    "read": "selectedTableId",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "isOrderDialogOpen",
+                    "notify": "isOrderDialogOpenChanged",
+                    "read": "isOrderDialogOpen",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "orderMessage",
+                    "notify": "orderMessageChanged",
+                    "read": "orderMessage",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "tables",
+                    "notify": "tablesChanged",
+                    "read": "tables",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "WaiterViewModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "selectedTableIdChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "isOrderDialogOpenChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "orderMessageChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "orderPlacedSuccess",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "reason",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "orderPlacedFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "tablesChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "WaiterViewModel.h",
+    "outputRevision": 69
+}

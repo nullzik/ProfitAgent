@@ -14,6 +14,8 @@ set(src_and_dest_list
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/components/ShiftPanel.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/dialogs/OperationDetailsDialog.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/ActivityDetailsDialog.qml"
+    "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/dialogs/ActivityDetailsDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/ProfitAgent/presentation/views/dialogs/OrderEntryDialog.qml"
     "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml"

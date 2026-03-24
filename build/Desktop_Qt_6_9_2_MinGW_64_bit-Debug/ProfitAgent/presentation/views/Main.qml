@@ -66,13 +66,19 @@ ApplicationWindow {
         ManagerScreen {}
     }
 
-    // Обработка успешного входа
+    // Обработка успешного входа: в «Отправитель» и приветствие подставляем ФИО, а не логин
     Connections {
         target: authViewModel
         function onLoginSuccess(role, login, employeeId) {
             appStateViewModel.setCurrentUser(login, role, employeeId || "")
-            navigationViewModel.setCurrentUser(login, role)
-            dashboardViewModel.setUserName(login)
+            var displayName = login
+            if (employeeId && employeeId.length > 0) {
+                var emp = employeeViewModel.getEmployeeById(employeeId)
+                if (emp && emp.fullName && emp.fullName.length > 0)
+                    displayName = emp.fullName
+            }
+            navigationViewModel.setCurrentUser(displayName, role)
+            dashboardViewModel.setUserName(displayName)
         }
     }
 }

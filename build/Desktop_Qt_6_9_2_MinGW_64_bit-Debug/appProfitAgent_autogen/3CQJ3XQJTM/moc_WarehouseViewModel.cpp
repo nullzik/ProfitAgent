@@ -51,6 +51,8 @@ template <> constexpr inline auto WarehouseViewModel::qt_create_metaobjectdata<q
         "quantity",
         "purchasePrice",
         "writeOffProduct",
+        "reason",
+        "unitCostRubles",
         "setStopList",
         "enabled",
         "reloadProducts",
@@ -77,21 +79,29 @@ template <> constexpr inline auto WarehouseViewModel::qt_create_metaobjectdata<q
             { QMetaType::QString, 5 }, { QMetaType::Double, 10 }, { QMetaType::Double, 11 },
         }}),
         // Method 'writeOffProduct'
-        QtMocHelpers::MethodData<void(const QString &, double)>(12, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::MethodData<void(const QString &, double, const QString &, double)>(12, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 5 }, { QMetaType::Double, 10 }, { QMetaType::QString, 13 }, { QMetaType::Double, 14 },
+        }}),
+        // Method 'writeOffProduct'
+        QtMocHelpers::MethodData<void(const QString &, double, const QString &)>(12, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
+            { QMetaType::QString, 5 }, { QMetaType::Double, 10 }, { QMetaType::QString, 13 },
+        }}),
+        // Method 'writeOffProduct'
+        QtMocHelpers::MethodData<void(const QString &, double)>(12, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
             { QMetaType::QString, 5 }, { QMetaType::Double, 10 },
         }}),
         // Method 'setStopList'
-        QtMocHelpers::MethodData<void(const QString &, bool)>(13, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 5 }, { QMetaType::Bool, 14 },
+        QtMocHelpers::MethodData<void(const QString &, bool)>(15, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 5 }, { QMetaType::Bool, 16 },
         }}),
         // Method 'reloadProducts'
-        QtMocHelpers::MethodData<void()>(15, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(17, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'products'
-        QtMocHelpers::PropertyData<QVariantList>(16, 0x80000000 | 17, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
+        QtMocHelpers::PropertyData<QVariantList>(18, 0x80000000 | 19, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
         // property 'lastError'
-        QtMocHelpers::PropertyData<QString>(18, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<QString>(20, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -118,9 +128,11 @@ void WarehouseViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 2: _t->createProduct((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
         case 3: _t->deleteProduct((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 4: _t->addProductBatch((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[3]))); break;
-        case 5: _t->writeOffProduct((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[2]))); break;
-        case 6: _t->setStopList((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
-        case 7: _t->reloadProducts(); break;
+        case 5: _t->writeOffProduct((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[4]))); break;
+        case 6: _t->writeOffProduct((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
+        case 7: _t->writeOffProduct((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[2]))); break;
+        case 8: _t->setStopList((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[2]))); break;
+        case 9: _t->reloadProducts(); break;
         default: ;
         }
     }
@@ -159,14 +171,14 @@ int WarehouseViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 10;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 10)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 10;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

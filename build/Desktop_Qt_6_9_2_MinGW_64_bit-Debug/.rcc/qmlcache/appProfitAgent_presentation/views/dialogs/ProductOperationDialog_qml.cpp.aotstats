@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 34,
-                        "durationMicroseconds": 187,
+                        "durationMicroseconds": 284,
                         "errorMessage": "Cannot load property name from (component in C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml)::product with type QVariant.",
                         "functionName": "productName",
                         "line": 18
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 21,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "fill",
                         "line": 27
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 90,
                         "errorMessage": "Cannot access value for name productDialog",
                         "functionName": "text",
                         "line": 38
@@ -33,7 +33,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"enabled\".",
                         "functionName": "enabled",
-                        "line": 107
+                        "line": 126
                     },
                     {
                         "codegenSuccessful": false,
@@ -41,39 +41,39 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 108
+                        "line": 127
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 98,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 117
+                        "line": 144
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 31,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 37,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
-                        "line": 121
+                        "line": 148
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 46,
-                        "durationMicroseconds": 361,
+                        "durationMicroseconds": 367,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
-                        "line": 123
+                        "line": 150
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 44,
-                        "durationMicroseconds": 282,
+                        "durationMicroseconds": 263,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
-                        "line": 124
+                        "line": 151
                     },
                     {
                         "codegenSuccessful": false,
@@ -81,7 +81,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"enabled\".",
                         "functionName": "enabled",
-                        "line": 131
+                        "line": 158
                     },
                     {
                         "codegenSuccessful": false,
@@ -89,39 +89,39 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 132
+                        "line": 159
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 45,
+                        "durationMicroseconds": 60,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 140
+                        "line": 169
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 31,
-                        "durationMicroseconds": 13,
+                        "durationMicroseconds": 109,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
-                        "line": 144
+                        "line": 173
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 46,
-                        "durationMicroseconds": 297,
+                        "durationMicroseconds": 491,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
-                        "line": 146
+                        "line": 175
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 44,
-                        "durationMicroseconds": 267,
+                        "durationMicroseconds": 270,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
-                        "line": 147
+                        "line": 176
                     },
                     {
                         "codegenSuccessful": false,
@@ -129,39 +129,39 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
-                        "line": 155
+                        "line": 184
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 81,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 157
+                        "line": 186
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 12,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
-                        "line": 161
+                        "line": 190
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 42,
-                        "durationMicroseconds": 280,
+                        "durationMicroseconds": 307,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
-                        "line": 163
+                        "line": 192
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 40,
-                        "durationMicroseconds": 244,
+                        "durationMicroseconds": 255,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
-                        "line": 164
+                        "line": 193
                     }
                 ],
                 "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/ProductOperationDialog.qml"

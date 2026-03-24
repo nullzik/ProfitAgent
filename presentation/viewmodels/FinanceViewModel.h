@@ -14,6 +14,7 @@ class FinanceViewModel : public QObject
     Q_PROPERTY(QVariantList incomeTransactions READ incomeTransactions NOTIFY transactionsChanged)
     Q_PROPERTY(QVariantList expenseTransactions READ expenseTransactions NOTIFY transactionsChanged)
     Q_PROPERTY(QString lastError READ lastError NOTIFY lastErrorChanged)
+    Q_PROPERTY(QVariantList waiterAggregates READ waiterAggregates NOTIFY waiterAggregatesChanged)
 
 public:
     explicit FinanceViewModel(QObject *parent = nullptr);
@@ -25,6 +26,7 @@ public:
     QVariantList incomeTransactions() const { return m_incomeTransactions; }
     QVariantList expenseTransactions() const { return m_expenseTransactions; }
     QString lastError() const { return m_lastError; }
+    QVariantList waiterAggregates() const { return m_waiterAggregates; }
 
     Q_INVOKABLE void reload();
     Q_INVOKABLE bool addIncome(double amountRubles, const QString& category, const QString& description = QString());
@@ -37,6 +39,7 @@ signals:
     void totalsChanged();
     void transactionsChanged();
     void lastErrorChanged();
+    void waiterAggregatesChanged();
 
 private:
     void setLastError(const QString& message);
@@ -48,5 +51,6 @@ private:
     QVariantList m_transactions;
     QVariantList m_incomeTransactions;
     QVariantList m_expenseTransactions;
+    QVariantList m_waiterAggregates;
     QString m_lastError;
 };

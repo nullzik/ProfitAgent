@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 318,
+                        "durationMicroseconds": 80,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "fill",
                         "line": 42
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 26,
-                        "durationMicroseconds": 491,
+                        "durationMicroseconds": 597,
                         "errorMessage": "Cannot access value for name financeViewModel",
                         "functionName": "visible",
                         "line": 85
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 272,
+                        "durationMicroseconds": 410,
                         "errorMessage": "Cannot access value for name financeViewModel",
                         "functionName": "text",
                         "line": 86
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 52,
-                        "durationMicroseconds": 45,
+                        "durationMicroseconds": 80,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
                         "line": 100
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 47,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 13,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
                         "line": 101
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 99,
-                        "durationMicroseconds": 161,
+                        "durationMicroseconds": 259,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 101
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 137,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 210,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 101
@@ -102,34 +102,34 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 71,
+                        "durationMicroseconds": 121,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "color",
-                        "line": 121
+                        "line": 124
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 47,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 31,
                         "errorMessage": "Cannot access value for name parent",
                         "functionName": "text",
-                        "line": 124
+                        "line": 127
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 99,
-                        "durationMicroseconds": 207,
+                        "durationMicroseconds": 243,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
-                        "line": 124
+                        "line": 127
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 137,
-                        "durationMicroseconds": 137,
+                        "durationMicroseconds": 204,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
-                        "line": 124
+                        "line": 127
                     }
                 ],
                 "filePath": "C:/Users/boyko/Documents/ProfitAgent/presentation/views/dialogs/FinanceTransactionDialog.qml"

@@ -433,7 +433,7 @@
         "classes": [
             {
                 "className": "OperationsModel",
-                "lineNumber": 30,
+                "lineNumber": 45,
                 "object": true,
                 "qualifiedClassName": "OperationsModel",
                 "superClasses": [
@@ -445,7 +445,7 @@
             },
             {
                 "className": "DashboardViewModel",
-                "lineNumber": 52,
+                "lineNumber": 71,
                 "methods": [
                     {
                         "access": "public",
@@ -455,7 +455,7 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 2,
+                        "index": 10,
                         "name": "setCurrentPage",
                         "returnType": "void"
                     },
@@ -467,8 +467,88 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 3,
+                        "index": 11,
                         "name": "setUserName",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "name": "reload",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 13,
+                        "name": "setFilterIndex",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "eventType",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "details",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "amountRubles",
+                                "type": "double"
+                            }
+                        ],
+                        "index": 14,
+                        "name": "logUiEvent",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "eventType",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "details",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 15,
+                        "isCloned": true,
+                        "name": "logUiEvent",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "eventType",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "title",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 16,
+                        "isCloned": true,
+                        "name": "logUiEvent",
                         "returnType": "void"
                     }
                 ],
@@ -489,11 +569,12 @@
                         "user": false
                     },
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 1,
                         "name": "revenue",
+                        "notify": "revenueChanged",
                         "read": "revenue",
                         "required": false,
                         "scriptable": true,
@@ -502,11 +583,12 @@
                         "user": false
                     },
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 2,
                         "name": "revenueChange",
+                        "notify": "revenueChangeChanged",
                         "read": "revenueChange",
                         "required": false,
                         "scriptable": true,
@@ -515,11 +597,12 @@
                         "user": false
                     },
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 3,
                         "name": "netProfit",
+                        "notify": "netProfitChanged",
                         "read": "netProfit",
                         "required": false,
                         "scriptable": true,
@@ -528,11 +611,12 @@
                         "user": false
                     },
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 4,
                         "name": "netProfitChange",
+                        "notify": "netProfitChangeChanged",
                         "read": "netProfitChange",
                         "required": false,
                         "scriptable": true,
@@ -541,11 +625,12 @@
                         "user": false
                     },
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 5,
                         "name": "salesCount",
+                        "notify": "salesCountChanged",
                         "read": "salesCount",
                         "required": false,
                         "scriptable": true,
@@ -554,11 +639,12 @@
                         "user": false
                     },
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 6,
                         "name": "salesCountChange",
+                        "notify": "salesCountChangeChanged",
                         "read": "salesCountChange",
                         "required": false,
                         "scriptable": true,
@@ -594,17 +680,33 @@
                         "user": false
                     },
                     {
-                        "constant": true,
+                        "constant": false,
                         "designable": true,
                         "final": false,
                         "index": 9,
                         "name": "totalPages",
+                        "notify": "totalPagesChanged",
                         "read": "totalPages",
                         "required": false,
                         "scriptable": true,
                         "stored": true,
                         "type": "int",
                         "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "name": "filterIndex",
+                        "notify": "filterIndexChanged",
+                        "read": "filterIndex",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setFilterIndex"
                     }
                 ],
                 "qualifiedClassName": "DashboardViewModel",
@@ -618,7 +720,55 @@
                     {
                         "access": "public",
                         "index": 1,
+                        "name": "totalPagesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
                         "name": "userNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "revenueChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "revenueChangeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "netProfitChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "netProfitChangeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "salesCountChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "salesCountChangeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "name": "filterIndexChanged",
                         "returnType": "void"
                     }
                 ],
@@ -905,6 +1055,18 @@
                         "index": 10,
                         "name": "adjustSalaryBalance",
                         "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "id",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 11,
+                        "name": "deleteEmployee",
+                        "returnType": "bool"
                     }
                 ],
                 "object": true,
@@ -972,7 +1134,7 @@
                 "methods": [
                     {
                         "access": "public",
-                        "index": 3,
+                        "index": 4,
                         "name": "reload",
                         "returnType": "void"
                     },
@@ -992,7 +1154,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 4,
+                        "index": 5,
                         "name": "addIncome",
                         "returnType": "bool"
                     },
@@ -1008,7 +1170,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 5,
+                        "index": 6,
                         "isCloned": true,
                         "name": "addIncome",
                         "returnType": "bool"
@@ -1029,7 +1191,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 6,
+                        "index": 7,
                         "name": "addExpense",
                         "returnType": "bool"
                     },
@@ -1045,7 +1207,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 7,
+                        "index": 8,
                         "isCloned": true,
                         "name": "addExpense",
                         "returnType": "bool"
@@ -1074,7 +1236,7 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 8,
+                        "index": 9,
                         "name": "updateTransaction",
                         "returnType": "bool"
                     },
@@ -1086,7 +1248,7 @@
                                 "type": "int"
                             }
                         ],
-                        "index": 9,
+                        "index": 10,
                         "name": "deleteTransaction",
                         "returnType": "bool"
                     },
@@ -1098,7 +1260,7 @@
                                 "type": "double"
                             }
                         ],
-                        "index": 10,
+                        "index": 11,
                         "isConst": true,
                         "name": "formatMoney",
                         "returnType": "QString"
@@ -1203,6 +1365,20 @@
                         "stored": true,
                         "type": "QString",
                         "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "waiterAggregates",
+                        "notify": "waiterAggregatesChanged",
+                        "read": "waiterAggregates",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
                     }
                 ],
                 "qualifiedClassName": "FinanceViewModel",
@@ -1223,6 +1399,12 @@
                         "access": "public",
                         "index": 2,
                         "name": "lastErrorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "waiterAggregatesChanged",
                         "returnType": "void"
                     }
                 ],
@@ -1982,9 +2164,55 @@
                             {
                                 "name": "quantity",
                                 "type": "double"
+                            },
+                            {
+                                "name": "reason",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "unitCostRubles",
+                                "type": "double"
                             }
                         ],
                         "index": 5,
+                        "name": "writeOffProduct",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "productId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "quantity",
+                                "type": "double"
+                            },
+                            {
+                                "name": "reason",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "isCloned": true,
+                        "name": "writeOffProduct",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "productId",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "quantity",
+                                "type": "double"
+                            }
+                        ],
+                        "index": 7,
+                        "isCloned": true,
                         "name": "writeOffProduct",
                         "returnType": "void"
                     },
@@ -2000,13 +2228,13 @@
                                 "type": "bool"
                             }
                         ],
-                        "index": 6,
+                        "index": 8,
                         "name": "setStopList",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 7,
+                        "index": 9,
                         "name": "reloadProducts",
                         "returnType": "void"
                     }
