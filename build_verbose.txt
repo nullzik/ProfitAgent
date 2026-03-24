@@ -1,7 +1,0 @@
-﻿cmake : ninja: error: unknown target 'VERBOSE=1'
-C:\Users\boyko\AppData\Local\Temp\ps-script-ba4ea691-f670-4bc1-b587-efb1ae0cb01b.ps1:74 знак:42
-+ ... \Documents\ProfitAgent; cmake --build build -- VERBOSE=1 2>&1 | Out-F ...
-+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (ninja: error: unknown target 'VERBOSE=1':String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
